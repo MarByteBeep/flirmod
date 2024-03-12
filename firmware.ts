@@ -2,8 +2,8 @@ import { existsSync, readFileSync } from 'fs';
 import { decryptToFile, encryptToFile, verifyEncryption } from './crypt';
 import { ensureLocalDirectory } from './utils';
 
-export async function modFiles(backupPath: string, modifiedPath: string) {
-	await ensureLocalDirectory(modifiedPath);
+export async function modFiles(backupPath: string, moddedFilesPath: string) {
+	await ensureLocalDirectory(moddedFilesPath);
 
 	console.info('checking existence of vital files');
 	// Confirm vital files have been backed up
@@ -27,7 +27,7 @@ export async function modFiles(backupPath: string, modifiedPath: string) {
 		const filein = backupPath + 'FlashFS/system/appcore.d/config.d/conf.cfc';
 		verifyEncryption(filein, suid);
 
-		decryptToFile(filein, suid, './test.cfg');
+		decryptToFile(filein, suid, moddedFilesPath + '/conf.cfg');
 	}
 }
 

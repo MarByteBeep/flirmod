@@ -1,45 +1,56 @@
-import { expect } from 'bun:test';
-import { promise as ping } from 'ping';
 import * as ftp from './ftp';
 import { modFiles } from './firmware';
-
-const cameraSerialId = process.env.SERIAL_ID;
-expect(cameraSerialId).toBeDefined();
+import { MenuOption, displayMenu, exit, getCameraIpAddress, spinner } from './utils';
+import { strict as assert } from 'assert';
 
 const username = 'flir';
 const password = '3vlig';
 
 const backupPath = './backup/';
-const modifiedPath = './modded/';
+const moddedFilesPath = './modded/';
 
-async function getCameraIpAddress(serialId: string): Promise<string | undefined> {
-	const camName = `IRCAM${serialId.slice(-4)}`;
-	console.log(`pinging '${camName}' on local network`);
-	const pingResult = await ping.probe(camName);
-	return pingResult.numeric_host;
-}
-
-const camIp = await getCameraIpAddress(cameraSerialId!);
-if (!camIp) {
-	console.error(`no camera found with serial ${cameraSerialId}`);
-	process.exit(1);
-}
-console.info(`camera found @ '${camIp}'`);
-
-const connected = await ftp.connect(camIp, username, password);
-if (!connected) {
-	console.error(`cannot connect to camera FTP server`);
-	process.exit(1);
-}
-console.info(`connected to camera FTP server`);
 try {
-	await ftp.downloadToDir(backupPath, './');
-	await modFiles(backupPath, modifiedPath);
+	const camIp = await getCameraIpAddress();
+	if (!camIp) {
+		exit(1);
+	}
+
+	const connected = await ftp.connect(camIp!, username, password);
+	if (!connected) {
+		exit(1);
+	}
+
+	let done = false;
+	while (true) {
+		const option = await displayMenu();
+
+		switch (option) {
+			case MenuOption.Backup:
+				await ftp.downloadToDir(backupPath, './');
+				break;
+
+			//case MenuOption.Mod:
+			//	await modFiles(backupPath, moddedFilesPath);
+			//	break;
+
+			case MenuOption.Exit:
+				done = true;
+				break;
+
+			default:
+				break;
+		}
+		if (done) {
+			console.log('exiting ...');
+			break;
+		}
+	}
 } catch (e: any) {
-	console.error(e.message);
+	// FIXME: Color error message
+	console.error(e);
 	ftp.close();
-	process.exit(1);
+	exit(1);
 }
 
 ftp.close();
-process.exit(0);
+exit(0);
