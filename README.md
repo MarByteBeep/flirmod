@@ -4,22 +4,22 @@
 
 -   rename `.env.template` file to `.env` and replace `XXXXXXXXX` with your serial id (as found on camera)
 
--   install bun: https://bun.sh/
+-   download and install node: https://nodejs.org (tested with v21)
 
 -   install dependencies:
 
 ```bash
-bun install
+npm install
 ```
 
 # run
 
 ```bash
-bun run index.ts
+npm run dev
 ```
 
 # limitations
 
--   Tested only on Windows. Doesn't run on WSL (yet?)
+-   Tested on Windows and WSL.
 -   Only works for Flir E4 that is connected to local WIFI
--   Currently only downloads all Flir files to a local folder
+-   Currently only downloads all Flir files to a local folder. Modding is WIP
