@@ -31,10 +31,6 @@ export async function ensureLocalDirectory(path: string) {
 	}
 }
 
-export function exit(code: number) {
-	process.exit(code);
-}
-
 export const spinner = ora({
 	color: 'green',
 });

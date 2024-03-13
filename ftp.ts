@@ -2,6 +2,7 @@ import { Client } from 'basic-ftp/dist';
 import { join } from 'node:path';
 import { ensureLocalDirectory, spinner } from './utils';
 import { strict as assert } from 'assert';
+import MemoryStream from 'memorystream';
 
 let client: Client | undefined = undefined;
 
@@ -10,6 +11,42 @@ type Stats = {
 	success: number;
 	failed: string[];
 };
+
+export async function downloadFileInMemory(path: string, encoding?: BufferEncoding) {
+	assert.notEqual(client, undefined);
+	const stream = new MemoryStream();
+
+	await client!.downloadTo(stream, path);
+	stream.end();
+
+	const chunks = [];
+	for await (const chunk of stream) {
+		chunks.push(Buffer.from(chunk));
+	}
+
+	if (encoding) {
+		return Buffer.concat(chunks).toString(encoding);
+	}
+	return Buffer.concat(chunks);
+}
+
+export async function suid() {
+	assert.notEqual(client, undefined);
+
+	const file = (await downloadFileInMemory('/FlashIFS/version.rsc', 'ascii')) as string;
+
+	const regex = /^\.version\.SUID text "([0-9A-F]{16})"$/gm;
+
+	// FIXME: this method to get the first capture group seems too convoluted
+	const matches = [...file.matchAll(regex)];
+	if (matches.length !== 1 || matches[0].length !== 2) {
+		throw new Error('cannot find SUID');
+	}
+	if (matches[0][1].length !== 16) {
+		throw new Error('incorrect SUID length');
+	}
+	return matches[0][1];
+}
 
 async function downloadFromWorkingDir(localDirPath: string, stats?: Stats) {
 	assert.notEqual(client, undefined);
@@ -60,9 +97,10 @@ export async function downloadToDir(localDirPath: string, remoteDirPath?: string
 }
 
 export async function connect(host: string, username: string, password: string): Promise<boolean> {
+	const port = 21;
 	assert.equal(client, undefined);
 
-	spinner.start(`connect to '${host}':21`);
+	spinner.start(`ftp: connect to '${host}:${port}'`);
 	client = new Client();
 	client.ftp.verbose = false;
 	// Server doesn't support 'LIST -a'
@@ -75,10 +113,10 @@ export async function connect(host: string, username: string, password: string):
 		assert.equal(cwd.message, '257 "/".');
 
 		await client.send('TYPE I'); // Binary mode
-		spinner.succeed(`connected to ${host}:21`);
+		spinner.succeed(`ftp: connected to '${host}:${port}'`);
 		return true;
 	} catch (err: any) {
-		spinner.fail(`failed to connect to ${host}:21, reason: ${err.message}'`);
+		spinner.fail(`failed to connect to '${host}:${port}', reason: ${chalk.yellow(err.message)}`);
 	}
 	close();
 	return false;
