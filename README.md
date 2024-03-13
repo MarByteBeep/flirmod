@@ -18,6 +18,10 @@ npm install
 npm run dev
 ```
 
+If the installation was successful, you should get a CLI options menu like this;
+
+![cli](https://github.com/MarByteBeep/flirmod/assets/58225562/81ffc2d3-b2a2-46d9-9fcd-3ded6cdd2486)
+
 # limitations
 
 -   Tested on Windows and WSL.
