@@ -14,11 +14,16 @@ type Stats = {
 	failed: string[];
 };
 
-export async function downloadFileInMemory(path: string, encoding?: BufferEncoding) {
+export async function downloadFileInMemory(path: string, encoding?: BufferEncoding): Promise<Buffer | string> {
 	assert.notEqual(client, undefined);
 	const stream = new MemoryStream();
 
-	await client!.downloadTo(stream, path);
+	try {
+		await client!.downloadTo(stream, path);
+	} catch (_) {
+		stream.end();
+		throw new Error(`${path}: download failed`);
+	}
 	stream.end();
 
 	const chunks = [];
@@ -39,7 +44,7 @@ export async function getSUID(): Promise<SUID> {
 
 	const regex = /^\.version\.SUID text "([0-9A-F]{16})"$/gm;
 
-	const suid = regex.exec(file ?? '')?.at(1);
+	const suid = regex.exec(file)?.at(1);
 
 	assert.notEqual(suid, undefined, `couldn't pattern match suid`);
 
