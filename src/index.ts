@@ -1,10 +1,10 @@
 import * as ftp from './ftp';
 import * as telnet from './telnet';
-import { modFiles, type SUID } from './firmware';
+import { modFiles, type CamIDs, type SUID } from './firmware';
 import { strict as assert } from 'assert';
 import * as menu from './menu';
 import { MainMenuOption } from './menu';
-import { getCameraIpAddress, spinner } from './utils';
+import { getCameraIpAddress, initIds, spinner } from './utils';
 import chalk from 'chalk';
 
 const username = 'flir';
@@ -20,7 +20,9 @@ async function exit(code: number) {
 }
 
 try {
-	const camIp = await getCameraIpAddress();
+	const ids = initIds();
+
+	const camIp = await getCameraIpAddress(ids);
 	if (!camIp) {
 		await exit(1);
 	}
@@ -51,6 +53,7 @@ try {
 	}
 
 	spinner.succeed(`suid: ${chalk.green(suid)}`);
+	ids.suid = suid!;
 
 	let done = false;
 	while (true) {
@@ -64,7 +67,7 @@ try {
 				break;
 
 			//case MenuOption.Mod:
-			//	await modFiles(backupPath, moddedFilesPath);
+			//	await modFiles(backupPath, moddedFilesPath, suid);
 			//	break;
 
 			case MainMenuOption.Exit:

@@ -4,7 +4,13 @@ import { ensureLocalDirectory } from './utils';
 
 export type SUID = string;
 
-export async function modFiles(backupPath: string, moddedFilesPath: string) {
+// FIXME: Make name CamIds more descriptive
+export type CamIDs = {
+	serial: string;
+	suid: SUID;
+};
+
+export async function modFiles(backupPath: string, moddedFilesPath: string, ids: CamIDs) {
 	await ensureLocalDirectory(moddedFilesPath);
 
 	console.info('checking existence of vital files');
@@ -23,14 +29,11 @@ export async function modFiles(backupPath: string, moddedFilesPath: string) {
 	}
 	console.log('all vital files have been backed up');
 
-	const suid = getSUID(backupPath + 'FlashIFS/version.rsc');
-	console.info(`found suid: ${suid}`);
-
 	{
 		const filein = backupPath + 'FlashFS/system/appcore.d/config.d/conf.cfc';
-		verifyEncryption(filein, suid);
+		verifyEncryption(filein, ids);
 
-		decryptToFile(filein, suid, moddedFilesPath + '/conf.cfg');
+		decryptToFile(filein, ids, moddedFilesPath + '/conf.cfg');
 	}
 }
 

@@ -1,21 +1,21 @@
 import { strict as assert } from 'assert';
 import * as crypto from 'crypto';
 import * as fs from 'fs';
-import type { SUID } from './firmware';
+import type { CamIDs, SUID } from './firmware';
 import CRC32 from 'crc-32';
 
 const ver1 = 0x04;
 const ver2 = 0x04;
 const signatureLength = 0x80;
 const tailLength = 0x10;
-const tailMarkerStart = Buffer.from('CFC\0'); // 'CFC\0'
+const tailMarkerStart = Buffer.from('CFC\0');
 const tailMarkerEnd = 0x00;
 
 function getKey(suid: SUID) {
-	const hashTail = '2A00';
+	const hashTail = '\x2a\x00';
 	const hash = crypto.createHash('sha1');
 	hash.update(Buffer.from(suid, 'hex').reverse());
-	hash.update(Buffer.from(hashTail, 'hex'));
+	hash.update(hashTail);
 	return hash.digest().subarray(0, 16);
 }
 
@@ -43,7 +43,7 @@ function getPadding(length: number) {
 	return Math.ceil(length / 16.0) * 16 - length;
 }
 
-function decryptBuffer(contents: Buffer, suid: SUID): Buffer {
+function decryptBuffer(contents: Buffer, ids: CamIDs): Buffer {
 	const offset = contents.length - tailLength;
 
 	// Verify constants in tail
@@ -55,21 +55,23 @@ function decryptBuffer(contents: Buffer, suid: SUID): Buffer {
 
 	const cfgSize = contents.readInt32LE(offset + 8);
 
-	return RC4(contents.subarray(0, cfgSize), getKey(suid));
+	const decrypted = RC4(contents.subarray(0, cfgSize), getKey(ids.suid));
+
+	return decrypted;
 }
 
-export function decrypt(filepath: string, suid: SUID): Buffer {
+export function decrypt(filepath: string, ids: CamIDs): Buffer {
 	const contents = fs.readFileSync(filepath);
-	return decryptBuffer(contents, suid);
+	return decryptBuffer(contents, ids);
 }
 
-export function decryptToFile(filein: string, suid: SUID, fileout: string) {
-	const contents = decrypt(filein, suid);
+export function decryptToFile(filein: string, ids: CamIDs, fileout: string) {
+	const contents = decrypt(filein, ids);
 	fs.writeFileSync(fileout, contents);
 }
 
-function encryptBuffer(contents: Buffer, suid: SUID): Buffer {
-	const key = getKey(suid);
+function encryptBuffer(contents: Buffer, ids: CamIDs): Buffer {
+	const key = getKey(ids.suid);
 
 	const encrypted = RC4(contents, key);
 
@@ -90,20 +92,20 @@ function encryptBuffer(contents: Buffer, suid: SUID): Buffer {
 	return Buffer.concat([encrypted, appendix]);
 }
 
-export function encrypt(filepath: string, suid: SUID): Buffer {
+export function encrypt(filepath: string, ids: CamIDs): Buffer {
 	const contents = fs.readFileSync(filepath, 'ascii');
-	return encryptBuffer(Buffer.from(contents), suid);
+	return encryptBuffer(Buffer.from(contents), ids);
 }
 
-export function encryptToFile(filein: string, suid: SUID, fileout: string) {
-	const contents = encrypt(filein, suid);
+export function encryptToFile(filein: string, ids: CamIDs, fileout: string) {
+	const contents = encrypt(filein, ids);
 	fs.writeFileSync(fileout, contents);
 }
 
-export function verifyEncryption(filepath: string, suid: SUID) {
+export function verifyEncryption(filepath: string, ids: CamIDs) {
 	const contents = fs.readFileSync(filepath);
-	const decryptedBuffer = decryptBuffer(contents, suid);
-	const encryptedBuffer = encryptBuffer(decryptedBuffer, suid);
+	const decryptedBuffer = decryptBuffer(contents, ids);
+	const encryptedBuffer = encryptBuffer(decryptedBuffer, ids);
 
 	// Now these should be identical except for the signature, which are all zeros
 	// So replace the signature (+padding?) to zeroes in the original content
