@@ -1,8 +1,10 @@
 import * as ftp from './ftp';
 import * as telnet from './telnet';
-import { modFiles } from './firmware';
+import { modFiles, type SUID } from './firmware';
 import { strict as assert } from 'assert';
-import { MenuOption, displayMenu, getCameraIpAddress, spinner } from './utils';
+import * as menu from './menu';
+import { MainMenuOption } from './menu';
+import { getCameraIpAddress, spinner } from './utils';
 import chalk from 'chalk';
 
 const username = 'flir';
@@ -23,7 +25,7 @@ try {
 		await exit(1);
 	}
 
-	let suid: string | undefined = undefined;
+	let suid: SUID | undefined = undefined;
 
 	// Connect FTP
 	{
@@ -32,7 +34,7 @@ try {
 			await exit(1);
 		}
 
-		suid = await ftp.suid();
+		suid = await ftp.getSUID();
 	}
 
 	// Connect Telnet
@@ -42,7 +44,7 @@ try {
 			await exit(1);
 		}
 
-		const telnetSuid = await telnet.suid();
+		const telnetSuid = await telnet.getSUID();
 
 		// Ensure the suids are identical
 		assert.equal(suid, telnetSuid, `mismatch between retreived suids ftp/telnet: '${suid}/${telnetSuid}'`);
@@ -52,18 +54,20 @@ try {
 
 	let done = false;
 	while (true) {
-		const option = await displayMenu();
+		const option = await menu.main();
 
 		switch (option) {
-			case MenuOption.Backup:
-				await ftp.downloadToDir(backupPath, './');
+			case MainMenuOption.Backup:
+				if (await menu.confirm()) {
+					await ftp.downloadToDir(backupPath, './');
+				}
 				break;
 
 			//case MenuOption.Mod:
 			//	await modFiles(backupPath, moddedFilesPath);
 			//	break;
 
-			case MenuOption.Exit:
+			case MainMenuOption.Exit:
 				done = true;
 				break;
 
@@ -76,8 +80,8 @@ try {
 		}
 	}
 } catch (e: any) {
-	// FIXME: Color error message
-	console.error(e);
+	console.error(chalk.red(`error: ${e.message ?? e}`));
+	console.error(chalk.red(`exiting ...`));
 	await exit(1);
 }
 

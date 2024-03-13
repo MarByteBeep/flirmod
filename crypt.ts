@@ -1,16 +1,18 @@
-//import { expect } from 'bun:test';
+import { strict as assert } from 'assert';
 import * as crypto from 'crypto';
 import * as fs from 'fs';
+import type { SUID } from './firmware';
+import CRC32 from 'crc-32';
 
-const hashTail = '2A00';
 const ver1 = 0x04;
 const ver2 = 0x04;
 const signatureLength = 0x80;
 const tailLength = 0x10;
-const tailMarkerStart = Buffer.from([0x43, 0x46, 0x43, 0x00]); // 'CFC\0'
+const tailMarkerStart = Buffer.from('CFC\0'); // 'CFC\0'
 const tailMarkerEnd = 0x00;
 
-function getKey(suid: string) {
+function getKey(suid: SUID) {
+	const hashTail = '2A00';
 	const hash = crypto.createHash('sha1');
 	hash.update(Buffer.from(suid, 'hex').reverse());
 	hash.update(Buffer.from(hashTail, 'hex'));
@@ -41,32 +43,32 @@ function getPadding(length: number) {
 	return Math.ceil(length / 16.0) * 16 - length;
 }
 
-function decryptBuffer(contents: Buffer, suid: string): Buffer {
+function decryptBuffer(contents: Buffer, suid: SUID): Buffer {
 	const offset = contents.length - tailLength;
 
 	// Verify constants in tail
-	expect(contents.subarray(offset, offset + 4)).toEqual(tailMarkerStart);
-	expect(contents.readInt16LE(offset + 4)).toBe(ver1);
-	expect(contents.readInt16LE(offset + 6)).toBe(signatureLength);
-	expect(contents.readInt16LE(offset + 12)).toBe(ver2);
-	expect(contents.readInt16LE(offset + 14)).toBe(tailMarkerEnd);
+	assert.deepEqual(contents.subarray(offset, offset + 4), tailMarkerStart, `tailmarker mismatch`);
+	assert.equal(contents.readInt16LE(offset + 4), ver1, `ver1 mismatch`);
+	assert.equal(contents.readInt16LE(offset + 6), signatureLength, `signatureLength mismatch`);
+	assert.equal(contents.readInt16LE(offset + 12), ver2, `ver2 mismatch`);
+	assert.equal(contents.readInt16LE(offset + 14), tailMarkerEnd, `tailMarkerEnd mismatch`);
 
 	const cfgSize = contents.readInt32LE(offset + 8);
 
 	return RC4(contents.subarray(0, cfgSize), getKey(suid));
 }
 
-export function decrypt(filepath: string, suid: string): Buffer {
+export function decrypt(filepath: string, suid: SUID): Buffer {
 	const contents = fs.readFileSync(filepath);
 	return decryptBuffer(contents, suid);
 }
 
-export function decryptToFile(filein: string, suid: string, fileout: string) {
+export function decryptToFile(filein: string, suid: SUID, fileout: string) {
 	const contents = decrypt(filein, suid);
 	fs.writeFileSync(fileout, contents);
 }
 
-function encryptBuffer(contents: Buffer, suid: string): Buffer {
+function encryptBuffer(contents: Buffer, suid: SUID): Buffer {
 	const key = getKey(suid);
 
 	const encrypted = RC4(contents, key);
@@ -88,17 +90,17 @@ function encryptBuffer(contents: Buffer, suid: string): Buffer {
 	return Buffer.concat([encrypted, appendix]);
 }
 
-export function encrypt(filepath: string, suid: string): Buffer {
+export function encrypt(filepath: string, suid: SUID): Buffer {
 	const contents = fs.readFileSync(filepath, 'ascii');
 	return encryptBuffer(Buffer.from(contents), suid);
 }
 
-export function encryptToFile(filein: string, suid: string, fileout: string) {
+export function encryptToFile(filein: string, suid: SUID, fileout: string) {
 	const contents = encrypt(filein, suid);
 	fs.writeFileSync(fileout, contents);
 }
 
-export function verifyEncryption(filepath: string, suid: string) {
+export function verifyEncryption(filepath: string, suid: SUID) {
 	const contents = fs.readFileSync(filepath);
 	const decryptedBuffer = decryptBuffer(contents, suid);
 	const encryptedBuffer = encryptBuffer(decryptedBuffer, suid);
@@ -116,5 +118,5 @@ export function verifyEncryption(filepath: string, suid: string) {
 		}
 	}
 
-	expect(encryptedBuffer).toEqual(contents);
+	assert.deepEqual(encryptedBuffer, contents);
 }

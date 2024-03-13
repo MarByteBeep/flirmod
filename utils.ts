@@ -1,7 +1,6 @@
+import { strict as assert } from 'assert';
 import { stat, mkdir } from 'node:fs/promises';
 import ora from 'ora';
-import SelectPrompt from 'enquirer/lib/prompts/select';
-import { strict as assert } from 'assert';
 import ping from 'ping';
 import chalk from 'chalk';
 
@@ -35,19 +34,3 @@ export async function ensureLocalDirectory(path: string) {
 export const spinner = ora({
 	color: 'green',
 });
-
-export enum MenuOption {
-	Backup = 'backup files',
-	//Mod = 'mod',
-	Exit = 'exit',
-}
-
-export async function displayMenu(): Promise<MenuOption> {
-	const prompt = new SelectPrompt({
-		name: 'color',
-		message: 'select option',
-		choices: Object.values(MenuOption),
-	});
-
-	return await prompt.run();
-}

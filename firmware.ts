@@ -2,6 +2,8 @@ import { existsSync, readFileSync } from 'fs';
 import { decryptToFile, encryptToFile, verifyEncryption } from './crypt';
 import { ensureLocalDirectory } from './utils';
 
+export type SUID = string;
+
 export async function modFiles(backupPath: string, moddedFilesPath: string) {
 	await ensureLocalDirectory(moddedFilesPath);
 
@@ -10,6 +12,7 @@ export async function modFiles(backupPath: string, moddedFilesPath: string) {
 	const vitalFiles = [
 		'FlashIFS/version.rsc',
 		'FlashBFS/system/common_dll.dll',
+		'FlashFS/system/calib.rsc',
 		'FlashFS/system/appcore.d/config.d/conf.cfc',
 	];
 
@@ -31,7 +34,7 @@ export async function modFiles(backupPath: string, moddedFilesPath: string) {
 	}
 }
 
-export function getSUID(filepath: string) {
+export function getSUID(filepath: string): SUID {
 	const file = readFileSync(filepath, 'ascii');
 	const regex = /^\.version\.SUID text "([0-9A-F]{16})"$/gm;
 

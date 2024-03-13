@@ -4,6 +4,7 @@ import { ensureLocalDirectory, spinner } from './utils';
 import { strict as assert } from 'assert';
 import MemoryStream from 'memorystream';
 import chalk from 'chalk';
+import type { SUID } from './firmware';
 
 let client: Client | undefined = undefined;
 
@@ -31,7 +32,7 @@ export async function downloadFileInMemory(path: string, encoding?: BufferEncodi
 	return Buffer.concat(chunks);
 }
 
-export async function suid() {
+export async function getSUID(): Promise<SUID> {
 	assert.notEqual(client, undefined);
 
 	const file = (await downloadFileInMemory('/FlashIFS/version.rsc', 'ascii')) as string;

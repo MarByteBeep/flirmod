@@ -2,6 +2,7 @@ import { Telnet } from 'telnet-client';
 import { sleep, spinner } from './utils';
 import { strict as assert } from 'assert';
 import chalk from 'chalk';
+import type { SUID } from './firmware';
 
 let client: Telnet | undefined = undefined;
 
@@ -19,7 +20,7 @@ async function exec(command: string): Promise<string[]> {
 	return lines;
 }
 
-export async function suid() {
+export async function getSUID(): Promise<SUID> {
 	const res = await exec('suid');
 	assert(res.length === 1);
 
