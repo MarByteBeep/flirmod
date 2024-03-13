@@ -35,19 +35,15 @@ export async function downloadFileInMemory(path: string, encoding?: BufferEncodi
 export async function getSUID(): Promise<SUID> {
 	assert.notEqual(client, undefined);
 
-	const file = (await downloadFileInMemory('/FlashIFS/version.rsc', 'ascii')) as string;
+	const file = (await downloadFileInMemory('/FlashIFS/version.rsc', 'ascii')) as string | undefined;
 
 	const regex = /^\.version\.SUID text "([0-9A-F]{16})"$/gm;
 
-	// FIXME: this method to get the first capture group seems too convoluted
-	const matches = [...file.matchAll(regex)];
-	if (matches.length !== 1 || matches[0].length !== 2) {
-		throw new Error('cannot find SUID');
-	}
-	if (matches[0][1].length !== 16) {
-		throw new Error('incorrect SUID length');
-	}
-	return matches[0][1];
+	const suid = regex.exec(file ?? '')?.at(1);
+
+	assert.notEqual(suid, undefined, `couldn't pattern match suid`);
+
+	return suid!;
 }
 
 async function downloadFromWorkingDir(localDirPath: string, stats?: Stats) {
