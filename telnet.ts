@@ -34,7 +34,9 @@ export async function connect(host: string, username: string, password: string):
 	const port = 23;
 	assert.equal(client, undefined);
 
-	spinner.start(`telnet: connect to '${host}:${port}'`);
+	const formatted = chalk.green(`${host}:${port}`);
+
+	spinner.start(`telnet: connect to '${formatted}'`);
 
 	client = new Telnet();
 
@@ -47,10 +49,10 @@ export async function connect(host: string, username: string, password: string):
 
 	try {
 		await client.connect(params);
-		spinner.succeed(`telnet: connected to '${host}:${port}'`);
+		spinner.succeed(`telnet: connected to '${formatted}'`);
 		return true;
 	} catch (err: any) {
-		spinner.fail(`failed to connect to '${host}:${port}', reason: ${chalk.yellow(err.message)}`);
+		spinner.fail(`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}`);
 	}
 	close();
 	return false;

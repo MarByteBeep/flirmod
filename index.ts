@@ -3,6 +3,7 @@ import * as telnet from './telnet';
 import { modFiles } from './firmware';
 import { strict as assert } from 'assert';
 import { MenuOption, displayMenu, getCameraIpAddress, spinner } from './utils';
+import chalk from 'chalk';
 
 const username = 'flir';
 const password = '3vlig';
@@ -47,7 +48,7 @@ try {
 		assert.equal(suid, telnetSuid, `mismatch between retreived suids ftp/telnet: '${suid}/${telnetSuid}'`);
 	}
 
-	spinner.succeed(`retrieved and verified suid: ${suid}`);
+	spinner.succeed(`suid: ${chalk.green(suid)}`);
 
 	let done = false;
 	while (true) {

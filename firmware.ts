@@ -31,9 +31,9 @@ export async function modFiles(backupPath: string, moddedFilesPath: string) {
 	}
 }
 
-function getSUID(filepath: string) {
+export function getSUID(filepath: string) {
 	const file = readFileSync(filepath, 'ascii');
-	const regex = /^\.version\.SUID text "([0-9a-fA-F]{16})"$/gm;
+	const regex = /^\.version\.SUID text "([0-9A-F]{16})"$/gm;
 
 	// FIXME: this method to get the first capture group seems too convoluted
 	const matches = [...file.matchAll(regex)];

@@ -3,18 +3,19 @@ import ora from 'ora';
 import SelectPrompt from 'enquirer/lib/prompts/select';
 import { strict as assert } from 'assert';
 import ping from 'ping';
+import chalk from 'chalk';
 
 export async function getCameraIpAddress(): Promise<string | undefined> {
 	const cameraSerialId = process.env.SERIAL_ID;
 	assert.notEqual(cameraSerialId, undefined, 'Missing SERIAL_ID in .env file');
 
 	const camName = `IRCAM${cameraSerialId!.slice(-4)}`;
-	spinner.start(`pinging '${camName}' on local network`);
+	spinner.start(`pinging '${chalk.green(camName)}' on local network`);
 	const pingResult = await ping.promise.probe(camName);
 	if (pingResult.numeric_host) {
-		spinner.succeed(`camera '${camName}' found at '${pingResult.numeric_host}'`);
+		spinner.succeed(`camera '${chalk.green(camName)}' found at '${chalk.green(pingResult.numeric_host)}'`);
 	} else {
-		spinner.fail(`no camera '${camName}' found with serial '${cameraSerialId}'`);
+		spinner.fail(`no camera '${chalk.green(camName)}' found with serial '${chalk.green(cameraSerialId)}'`);
 	}
 	return pingResult.numeric_host;
 }

@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { ensureLocalDirectory, spinner } from './utils';
 import { strict as assert } from 'assert';
 import MemoryStream from 'memorystream';
+import chalk from 'chalk';
 
 let client: Client | undefined = undefined;
 
@@ -100,7 +101,9 @@ export async function connect(host: string, username: string, password: string):
 	const port = 21;
 	assert.equal(client, undefined);
 
-	spinner.start(`ftp: connect to '${host}:${port}'`);
+	const formatted = chalk.green(`${host}:${port}`);
+
+	spinner.start(`ftp: connect to '${formatted}'`);
 	client = new Client();
 	client.ftp.verbose = false;
 	// Server doesn't support 'LIST -a'
@@ -113,10 +116,10 @@ export async function connect(host: string, username: string, password: string):
 		assert.equal(cwd.message, '257 "/".');
 
 		await client.send('TYPE I'); // Binary mode
-		spinner.succeed(`ftp: connected to '${host}:${port}'`);
+		spinner.succeed(`ftp: connected to '${formatted}'`);
 		return true;
 	} catch (err: any) {
-		spinner.fail(`failed to connect to '${host}:${port}', reason: ${chalk.yellow(err.message)}`);
+		spinner.fail(`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}`);
 	}
 	close();
 	return false;
