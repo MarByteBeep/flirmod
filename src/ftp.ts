@@ -62,6 +62,17 @@ export async function getSUID(): Promise<SUID> {
 
 	assert.notEqual(suid, undefined, `couldn't pattern match suid`);
 
+	// ensure the device version is 'E4 2.0L'
+	{
+		const re = /^\.version\.kits\.confkit\.ver text "([A-Z\s0-9\.]+)"$/gm;
+		const version = re.exec(file ?? '')?.at(1);
+		assert.equal(
+			version,
+			'E4 2.0L',
+			`This patch only works on device version: 'E4 2.0L'. Device version: '${version}'.`
+		);
+	}
+
 	// also ensure the firmware version is '3.16.0'
 	{
 		const re = /^\.version\.swcombination\.ver text "([0-9\.]+)"$/gm;
@@ -143,7 +154,7 @@ export async function connect(host: string, username: string, password: string):
 	const formatted = chalk.green(`${host}:${port}`);
 
 	spinner.start(`ftp: connect to '${formatted}'`);
-	client = new Client();
+	client = new Client(3000);
 	client.ftp.verbose = false;
 	// Server doesn't support 'LIST -a'
 	client.availableListCommands = ['LIST'];
@@ -158,7 +169,9 @@ export async function connect(host: string, username: string, password: string):
 		spinner.succeed(`ftp: connected to '${formatted}'`);
 		return true;
 	} catch (err: any) {
-		spinner.fail(`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}`);
+		spinner.fail(
+			`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your device.`
+		);
 	}
 	close();
 	return false;

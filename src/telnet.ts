@@ -61,7 +61,7 @@ export async function connect(host: string, username: string, password: string):
 		host: host,
 		port: port,
 		shellPrompt: /\\>/,
-		timeout: 4500,
+		timeout: 3000,
 	};
 
 	try {
@@ -69,7 +69,9 @@ export async function connect(host: string, username: string, password: string):
 		spinner.succeed(`telnet: connected to '${formatted}'`);
 		return true;
 	} catch (err: any) {
-		spinner.fail(`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}`);
+		spinner.fail(
+			`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your device.`
+		);
 	}
 	close();
 	return false;
