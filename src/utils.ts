@@ -5,6 +5,11 @@ import ping from 'ping';
 import chalk from 'chalk';
 import type { CamIDs } from './firmware';
 
+/**
+ * Retrieves the IP address of a camera if it is found on the local network.
+ * @param ids - An object containing the camera IDs.
+ * @returns The IP address of the camera if it is found, or undefined if it is not found.
+ */
 export async function getCameraIpAddress(ids: CamIDs): Promise<string | undefined> {
 	const camName = `IRCAM${ids.serial.slice(-4)}`;
 	spinner.start(`pinging '${chalk.green(camName)}' on local network`);
@@ -17,11 +22,20 @@ export async function getCameraIpAddress(ids: CamIDs): Promise<string | undefine
 	return pingResult.numeric_host;
 }
 
-export async function sleep(ms: number) {
+/**
+ * Pauses the execution of the code for a specified amount of time.
+ * @param ms The number of milliseconds to pause the code execution.
+ * @returns A Promise that resolves after the specified number of milliseconds.
+ */
+export async function sleep(ms: number): Promise<void> {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export async function ensureLocalDirectory(path: string) {
+/**
+ * Checks if a directory exists at the given path. If the directory does not exist, it creates it.
+ * @param path - The path of the directory to be checked/created.
+ */
+export async function ensureLocalDirectory(path: string): Promise<void> {
 	try {
 		await stat(path);
 	} catch (err) {

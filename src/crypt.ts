@@ -2,7 +2,6 @@ import { strict as assert } from 'assert';
 import * as crypto from 'crypto';
 import * as fs from 'fs';
 import type { CamIDs, SUID } from './firmware';
-import CRC32 from 'crc-32';
 
 const ver1 = 0x04;
 const ver2 = 0x04;

@@ -14,19 +14,27 @@ type Stats = {
 	failed: string[];
 };
 
+/**
+ * Downloads a file from an FTP server and stores it in memory.
+ * @param path - The path of the file to be downloaded from the FTP server.
+ * @param encoding - The encoding to be used when converting the downloaded file to a string. If not provided, the file will be returned as a Buffer.
+ * @returns The downloaded file as a Buffer or a string, depending on the presence of the encoding.
+ * @throws If the download fails or if the client is not defined.
+ */
 export async function downloadFileInMemory(path: string, encoding?: BufferEncoding): Promise<Buffer | string> {
-	assert.notEqual(client, undefined);
-	const stream = new MemoryStream();
+	assert.notEqual(client, undefined, 'Client is not defined.');
 
+	const stream = new MemoryStream();
 	try {
 		await client!.downloadTo(stream, path);
 	} catch (_) {
 		stream.end();
 		throw new Error(`${path}: download failed`);
 	}
+
 	stream.end();
 
-	const chunks = [];
+	const chunks: Buffer[] = [];
 	for await (const chunk of stream) {
 		chunks.push(Buffer.from(chunk));
 	}
@@ -34,24 +42,36 @@ export async function downloadFileInMemory(path: string, encoding?: BufferEncodi
 	if (encoding) {
 		return Buffer.concat(chunks).toString(encoding);
 	}
+
 	return Buffer.concat(chunks);
 }
 
+/**
+ * Retrieves a unique identifier (SUID) from a file on an FTP server.
+ * The SUID is extracted from the contents of the file using a regular expression pattern match.
+ * @returns The SUID value extracted from the file.
+ */
 export async function getSUID(): Promise<SUID> {
-	assert.notEqual(client, undefined);
+	assert.notEqual(client, undefined, 'client is not defined');
 
 	const file = (await downloadFileInMemory('/FlashIFS/version.rsc', 'ascii')) as string | undefined;
 
 	const regex = /^\.version\.SUID text "([0-9A-F]{16})"$/gm;
 
-	const suid = regex.exec(file)?.at(1);
+	const suid = regex.exec(file ?? '')?.at(1);
 
 	assert.notEqual(suid, undefined, `couldn't pattern match suid`);
 
 	return suid!;
 }
 
-async function downloadFromWorkingDir(localDirPath: string, stats?: Stats) {
+/**
+ * Recursively downloads files from a remote directory to a local directory using an FTP client.
+ * @param localDirPath The path to the local directory where the files will be downloaded.
+ * @param stats The statistics object to track the number of files processed and failed.
+ * @returns A Promise that resolves when all files have been downloaded.
+ */
+async function downloadFromWorkingDir(localDirPath: string, stats?: Stats): Promise<void> {
 	assert.notEqual(client, undefined);
 	assert.equal(client?.closed, false);
 	if (!stats) {
@@ -84,6 +104,11 @@ async function downloadFromWorkingDir(localDirPath: string, stats?: Stats) {
 	}
 }
 
+/**
+ * Downloads files from a remote directory to a local directory.
+ * @param localDirPath The path to the local directory where the files will be downloaded.
+ * @param remoteDirPath The path to the remote directory from where the files will be downloaded.
+ */
 export async function downloadToDir(localDirPath: string, remoteDirPath?: string) {
 	assert.notEqual(client, undefined);
 	assert.equal(client?.closed, false);
@@ -127,6 +152,9 @@ export async function connect(host: string, username: string, password: string):
 	return false;
 }
 
+/**
+ * Closes the FTP client connection.
+ */
 export async function close() {
 	if (client) {
 		client.close();
