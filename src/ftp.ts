@@ -56,11 +56,23 @@ export async function getSUID(): Promise<SUID> {
 
 	const file = (await downloadFileInMemory('/FlashIFS/version.rsc', 'ascii')) as string | undefined;
 
-	const regex = /^\.version\.SUID text "([0-9A-F]{16})"$/gm;
+	const re = /^\.version\.SUID text "([0-9A-F]{16})"$/gm;
 
-	const suid = regex.exec(file ?? '')?.at(1);
+	const suid = re.exec(file ?? '')?.at(1);
 
 	assert.notEqual(suid, undefined, `couldn't pattern match suid`);
+
+	// also ensure the firmware version is '3.16.0'
+	{
+		const re = /^\.version\.swcombination\.ver text "([0-9\.]+)"$/gm;
+		const version = re.exec(file ?? '')?.at(1);
+		assert.equal(
+			version,
+			'3.16.0',
+			`Required firmware version: '3.16.0'. Device firmware version: '${version}'. ` +
+				`Update your device first to firmware version '3.16.0'.`
+		);
+	}
 
 	return suid!;
 }
