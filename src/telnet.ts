@@ -2,6 +2,7 @@ import { Telnet } from 'telnet-client';
 import { spinner } from './utils';
 import { strict as assert } from 'assert';
 import chalk from 'chalk';
+import { getLoginCredentials } from './logincredentials';
 
 let client: Telnet | undefined = undefined;
 
@@ -11,7 +12,7 @@ let client: Telnet | undefined = undefined;
  * @returns An array of strings representing the lines of the command execution result.
  * @throws {AssertionError} If the client is not defined or the result is invalid.
  */
-async function exec(command: string): Promise<string[]> {
+export async function exec(command: string): Promise<string[]> {
 	assert.notEqual(client, undefined, 'Client is not defined.');
 
 	const result = await client!.exec(command);
@@ -41,19 +42,19 @@ export async function getSUID(): Promise<string> {
 }
 
 /**
- * Establishes a Telnet connection to a specified host.
- * @param host - The IP address or hostname of the remote host.
- * @param username - The username to use for authentication.
- * @param password - The password to use for authentication.
+ * Establishes a Telnet connection to the stored host.
+ * @param silent - Whether to display progress spinner or not
  * @returns A boolean value indicating whether the connection was successful or not.
  */
-export async function connect(host: string, username: string, password: string): Promise<boolean> {
+export async function connect(silent: boolean = false): Promise<boolean> {
 	const port = 23;
 	assert.equal(client, undefined);
 
+	const { host } = getLoginCredentials();
+
 	const formatted = chalk.green(`${host}:${port}`);
 
-	spinner.start(`telnet: connect to '${formatted}'`);
+	if (!silent) spinner.start(`telnet: connect to '${formatted}'`);
 
 	client = new Telnet();
 
@@ -66,12 +67,13 @@ export async function connect(host: string, username: string, password: string):
 
 	try {
 		await client.connect(params);
-		spinner.succeed(`telnet: connected to '${formatted}'`);
+		if (!silent) spinner.succeed(`telnet: connected to '${formatted}'`);
 		return true;
 	} catch (err: any) {
-		spinner.fail(
-			`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your camera.`
-		);
+		if (!silent)
+			spinner.fail(
+				`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your camera.`
+			);
 	}
 	close();
 	return false;

@@ -5,6 +5,7 @@ import { strict as assert } from 'assert';
 import MemoryStream from 'memorystream';
 import chalk from 'chalk';
 import type { SUID } from './firmware';
+import { getLoginCredentials } from './logincredentials';
 
 let client: Client | undefined = undefined;
 
@@ -147,13 +148,15 @@ export async function downloadToDir(localDirPath: string, remoteDirPath?: string
 	spinner.succeed();
 }
 
-export async function connect(host: string, username: string, password: string): Promise<boolean> {
+export async function connect(silent: boolean = false): Promise<boolean> {
 	const port = 21;
 	assert.equal(client, undefined);
 
+	const { host, username, password } = getLoginCredentials();
+
 	const formatted = chalk.green(`${host}:${port}`);
 
-	spinner.start(`ftp: connect to '${formatted}'`);
+	if (!silent) spinner.start(`ftp: connect to '${formatted}'`);
 	client = new Client(3000);
 	client.ftp.verbose = false;
 	// Server doesn't support 'LIST -a'
@@ -166,12 +169,13 @@ export async function connect(host: string, username: string, password: string):
 		assert.equal(cwd.message, '257 "/".');
 
 		await client.send('TYPE I'); // Binary mode
-		spinner.succeed(`ftp: connected to '${formatted}'`);
+		if (!silent) spinner.succeed(`ftp: connected to '${formatted}'`);
 		return true;
 	} catch (err: any) {
-		spinner.fail(
-			`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your camera.`
-		);
+		if (!silent)
+			spinner.fail(
+				`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your camera.`
+			);
 	}
 	close();
 	return false;

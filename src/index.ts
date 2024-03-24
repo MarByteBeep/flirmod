@@ -4,8 +4,9 @@ import { modFiles, type CamIDs, type SUID } from './firmware';
 import { strict as assert } from 'assert';
 import * as menu from './menu';
 import { MainMenuOption } from './menu';
-import { getCameraIpAddress, initIds, spinner } from './utils';
+import { getCameraIpAddress, initIds, restartCamera, spinner } from './utils';
 import chalk from 'chalk';
+import { setLoginCredentials } from './logincredentials';
 
 const username = 'flir';
 const password = '3vlig';
@@ -27,11 +28,17 @@ try {
 		await exit(1);
 	}
 
+	setLoginCredentials({
+		username,
+		password,
+		host: camIp!,
+	});
+
 	let suid: SUID | undefined = undefined;
 
 	// Connect FTP
 	{
-		const connected = await ftp.connect(camIp!, username, password);
+		const connected = await ftp.connect();
 		if (!connected) {
 			await exit(1);
 		}
@@ -41,7 +48,7 @@ try {
 
 	// Connect Telnet
 	{
-		const connected = await telnet.connect(camIp!, username, password);
+		const connected = await telnet.connect();
 		if (!connected) {
 			await exit(1);
 		}
@@ -72,6 +79,10 @@ try {
 
 			case MainMenuOption.Exit:
 				done = true;
+				break;
+
+			case MainMenuOption.Restart:
+				await restartCamera();
 				break;
 
 			default:

@@ -4,6 +4,48 @@ import ora from 'ora';
 import ping from 'ping';
 import chalk from 'chalk';
 import type { CamIDs } from './firmware';
+import * as ftp from './ftp';
+import * as telnet from './telnet';
+
+export async function restartCamera(): Promise<void> {
+	const minBootTime = 40000;
+	const maxReconnectionAttempts = 5;
+
+	spinner.start(`restarting camera`);
+
+	spinner.suffixText = '- closing ftp';
+	await ftp.close();
+
+	spinner.suffixText = '- sending restart command';
+	try {
+		await telnet.exec(`restart`);
+	} catch (e: any) {
+		if (e.message !== 'response not received') {
+			spinner.fail(`failed to restart camera`);
+			return;
+		}
+	}
+	await telnet.close();
+
+	spinner.suffixText = '- waiting for camera to restart';
+	await sleep(minBootTime);
+	let tries = 0;
+	while (tries < maxReconnectionAttempts) {
+		spinner.suffixText = `- reconnection attempt ${tries + 1}`;
+		const ftpConnected = await ftp.connect(true);
+		if (ftpConnected) {
+			const telnetConnected = await telnet.connect(true);
+			if (ftpConnected && telnetConnected) {
+				spinner.suffixText = '';
+				spinner.succeed(`camera restarted`);
+				return;
+			}
+		}
+		await sleep(5000);
+		tries++;
+	}
+	spinner.fail('failed to reconnect to camera');
+}
 
 /**
  * Retrieves the IP address of a camera if it is found on the local network.

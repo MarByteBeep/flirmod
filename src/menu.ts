@@ -7,6 +7,7 @@ import { sleep } from './utils';
 export enum MainMenuOption {
 	Backup = 'backup files',
 	//Mod = 'mod',
+	Restart = 'restart camera',
 	Exit = 'exit',
 }
 
