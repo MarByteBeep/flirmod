@@ -70,7 +70,7 @@ export async function connect(host: string, username: string, password: string):
 		return true;
 	} catch (err: any) {
 		spinner.fail(
-			`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your device.`
+			`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your camera.`
 		);
 	}
 	close();

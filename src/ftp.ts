@@ -62,14 +62,14 @@ export async function getSUID(): Promise<SUID> {
 
 	assert.notEqual(suid, undefined, `couldn't pattern match suid`);
 
-	// ensure the device version is 'E4 2.0L'
+	// ensure the camera version is 'E4 2.0L'
 	{
 		const re = /^\.version\.kits\.confkit\.ver text "([A-Z\s0-9\.]+)"$/gm;
 		const version = re.exec(file ?? '')?.at(1);
 		assert.equal(
 			version,
 			'E4 2.0L',
-			`This patch only works on device version: 'E4 2.0L'. Device version: '${version}'.`
+			`this patch only works on camera version: 'E4 2.0L', camera version: '${version}'.`
 		);
 	}
 
@@ -80,8 +80,8 @@ export async function getSUID(): Promise<SUID> {
 		assert.equal(
 			version,
 			'3.16.0',
-			`Required firmware version: '3.16.0'. Device firmware version: '${version}'. ` +
-				`Update your device first to firmware version '3.16.0'.`
+			`required firmware version: '3.16.0', camera firmware version: '${version}'. ` +
+				`Update your camera to firmware version '3.16.0'.`
 		);
 	}
 
@@ -170,7 +170,7 @@ export async function connect(host: string, username: string, password: string):
 		return true;
 	} catch (err: any) {
 		spinner.fail(
-			`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your device.`
+			`failed to connect to '${formatted}', reason: ${chalk.yellow(err.message)}, try rebooting your camera.`
 		);
 	}
 	close();
