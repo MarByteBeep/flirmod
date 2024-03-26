@@ -1,5 +1,5 @@
-import * as fs from 'fs';
 import { strict as assert } from 'assert';
+import * as fs from 'fs';
 import { CRMD160 } from '../crypto/CRMD160';
 
 type CFG = string[];

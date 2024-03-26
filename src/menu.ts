@@ -1,8 +1,5 @@
 import SelectPrompt from 'enquirer/lib/prompts/select';
 import TogglePrompt from 'enquirer/lib/prompts/toggle';
-import SurveyPrompt from 'enquirer/lib/prompts/survey';
-import Prompt from 'enquirer/lib/prompt';
-import { sleep } from './utils';
 
 export enum MainMenuOption {
 	Backup = 'backup files',

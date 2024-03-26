@@ -1,8 +1,8 @@
 import { strict as assert } from 'assert';
 import * as crypto from 'crypto';
 import * as fs from 'fs';
-import type { CamIDs, SUID } from '../types';
 import { RC4 } from '../crypto/RC4';
+import type { CamIDs, SUID } from '../types';
 
 const ver1 = 0x04;
 const ver2 = 0x04;

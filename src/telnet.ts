@@ -1,8 +1,8 @@
-import { Telnet } from 'telnet-client';
-import { spinner } from './utils';
 import { strict as assert } from 'assert';
 import chalk from 'chalk';
+import { Telnet } from 'telnet-client';
 import { getLoginCredentials } from './logincredentials';
+import { spinner } from './utils';
 
 let client: Telnet | undefined = undefined;
 
