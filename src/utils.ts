@@ -3,7 +3,7 @@ import { stat, mkdir } from 'node:fs/promises';
 import ora from 'ora';
 import ping from 'ping';
 import chalk from 'chalk';
-import type { CamIDs } from './firmware';
+import type { CamIDs } from './types';
 import * as ftp from './ftp';
 import * as telnet from './telnet';
 

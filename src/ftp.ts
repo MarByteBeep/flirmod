@@ -4,7 +4,7 @@ import { ensureLocalDirectory, spinner } from './utils';
 import { strict as assert } from 'assert';
 import MemoryStream from 'memorystream';
 import chalk from 'chalk';
-import type { SUID } from './firmware';
+import type { SUID } from './types';
 import { getLoginCredentials } from './logincredentials';
 
 let client: Client | undefined = undefined;

@@ -1,14 +1,7 @@
 import { existsSync, readFileSync } from 'fs';
-import { decryptToFile, encryptToFile, verifyEncryption } from './crypt';
 import { ensureLocalDirectory } from './utils';
-
-export type SUID = string;
-
-// FIXME: Make name CamIds more descriptive
-export type CamIDs = {
-	serial: string;
-	suid: SUID;
-};
+import type { CamIDs, SUID } from './types';
+import * as cfc from './filetypes/cfc';
 
 export async function modFiles(backupPath: string, moddedFilesPath: string, ids: CamIDs) {
 	await ensureLocalDirectory(moddedFilesPath);
@@ -31,9 +24,9 @@ export async function modFiles(backupPath: string, moddedFilesPath: string, ids:
 
 	{
 		const filein = backupPath + 'FlashFS/system/appcore.d/config.d/conf.cfc';
-		verifyEncryption(filein, ids);
+		cfc.verifyEncryption(filein, ids);
 
-		decryptToFile(filein, ids, moddedFilesPath + '/conf.cfg');
+		cfc.decryptToFile(filein, ids, moddedFilesPath + '/conf.cfg');
 	}
 }
 

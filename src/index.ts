@@ -1,12 +1,13 @@
 import * as ftp from './ftp';
 import * as telnet from './telnet';
-import { modFiles, type CamIDs, type SUID } from './firmware';
+import { modFiles } from './firmware';
 import { strict as assert } from 'assert';
 import * as menu from './menu';
 import { MainMenuOption } from './menu';
 import { getCameraIpAddress, initIds, restartCamera, spinner } from './utils';
 import chalk from 'chalk';
 import { setLoginCredentials } from './logincredentials';
+import type { SUID } from './types';
 
 const username = 'flir';
 const password = '3vlig';

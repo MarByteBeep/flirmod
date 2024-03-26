@@ -1,7 +1,8 @@
 import { strict as assert } from 'assert';
 import * as crypto from 'crypto';
 import * as fs from 'fs';
-import type { CamIDs, SUID } from './firmware';
+import type { CamIDs, SUID } from '../types';
+import { RC4 } from '../crypto/RC4';
 
 const ver1 = 0x04;
 const ver2 = 0x04;
@@ -16,26 +17,6 @@ function getKey(suid: SUID) {
 	hash.update(Buffer.from(suid, 'hex').reverse());
 	hash.update(hashTail);
 	return hash.digest().subarray(0, 16);
-}
-
-function RC4(data: Buffer, key: Buffer): Buffer {
-	let x = 0;
-	let box = Array.from({ length: 256 }, (_, i) => i);
-	for (let i = 0; i < 256; i++) {
-		x = (x + box[i] + key[i % key.length]) & 255;
-		[box[i], box[x]] = [box[x], box[i]];
-	}
-	let out: number[] = [];
-	let y = 0;
-	x = 0;
-	data.forEach((char) => {
-		x = (x + 1) & 255;
-		y = (y + box[x]) & 255;
-		[box[x], box[y]] = [box[y], box[x]];
-		out.push(char ^ box[(box[x] + box[y]) & 255]);
-	});
-
-	return Buffer.from(out);
 }
 
 function getPadding(length: number) {
@@ -59,7 +40,7 @@ function decryptBuffer(contents: Buffer, ids: CamIDs): Buffer {
 	return decrypted;
 }
 
-export function decrypt(filepath: string, ids: CamIDs): Buffer {
+function decrypt(filepath: string, ids: CamIDs): Buffer {
 	const contents = fs.readFileSync(filepath);
 	return decryptBuffer(contents, ids);
 }
@@ -91,7 +72,7 @@ function encryptBuffer(contents: Buffer, ids: CamIDs): Buffer {
 	return Buffer.concat([encrypted, appendix]);
 }
 
-export function encrypt(filepath: string, ids: CamIDs): Buffer {
+function encrypt(filepath: string, ids: CamIDs): Buffer {
 	const contents = fs.readFileSync(filepath, 'ascii');
 	return encryptBuffer(Buffer.from(contents), ids);
 }
