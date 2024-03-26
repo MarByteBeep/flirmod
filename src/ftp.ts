@@ -177,7 +177,30 @@ export async function uploadFile(localPath: string, remotePath: string) {
 	} catch (e: any) {
 		throw new Error(`${localPath}: verification failed, error: '${e.message}'`);
 	}
-	return true;
+}
+
+export async function renameFile(srcPath: string, dstPath: string) {
+	assert.notEqual(client, undefined);
+	assert.equal(client?.closed, false);
+
+	try {
+		await client.rename(srcPath, dstPath);
+	} catch (e: any) {
+		throw new Error(`${srcPath} -> ${dstPath}: rename failed, error: '${e.message}'`);
+	}
+}
+
+export async function removeFile(path: string, silent = false) {
+	assert.notEqual(client, undefined);
+	assert.equal(client?.closed, false);
+
+	try {
+		await client.remove(path);
+	} catch (e: any) {
+		if (!silent) {
+			throw new Error(`${path}: remove failed, error: '${e.message}'`);
+		}
+	}
 }
 
 export async function connect(silent: boolean = false): Promise<boolean> {
@@ -189,7 +212,7 @@ export async function connect(silent: boolean = false): Promise<boolean> {
 	const formatted = chalk.green(`${host}:${port}`);
 
 	if (!silent) spinner.start(`ftp: connect to '${formatted}'`);
-	client = new Client(3000);
+	client = new Client(5000);
 	client.ftp.verbose = false;
 	// Server doesn't support 'LIST -a'
 	client.availableListCommands = ['LIST'];
