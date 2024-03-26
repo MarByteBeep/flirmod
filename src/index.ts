@@ -1,21 +1,13 @@
 import { strict as assert } from 'assert';
 import chalk from 'chalk';
-import { getHashFromFile } from './fileutils';
+import { AppSettings } from './AppSettings';
+import { applyBasicPatch, restoreOriginalConfig } from './firmware';
 import * as ftp from './ftp';
-import { setLoginCredentials } from './logincredentials';
 import * as menu from './menu';
 import { MainMenuOption } from './menu';
 import * as telnet from './telnet';
 import type { SUID } from './types';
-import { getCameraIpAddress, initIds, restartCamera, spinner } from './utils';
-
-const username = 'flir';
-const password = '3vlig';
-
-const backupPath = './backup/';
-const moddedFilesPath = './modded/';
-
-const crcModdedDll = getHashFromFile('./data/common_dll_3.16.dll');
+import { getCameraIpAddress, restartCamera, spinner } from './utils';
 
 async function exit(code: number) {
 	await ftp.close();
@@ -24,18 +16,14 @@ async function exit(code: number) {
 }
 
 try {
-	const ids = initIds();
+	AppSettings.init();
 
-	const camIp = await getCameraIpAddress(ids);
+	const camIp = await getCameraIpAddress();
 	if (!camIp) {
 		await exit(1);
 	}
 
-	setLoginCredentials({
-		username,
-		password,
-		host: camIp!,
-	});
+	AppSettings.Camera.IpAddress = camIp!;
 
 	let suid: SUID | undefined = undefined;
 
@@ -63,16 +51,18 @@ try {
 	}
 
 	spinner.succeed(`suid: ${chalk.green(suid)}`);
-	ids.suid = suid!;
+	AppSettings.Camera.Suid = suid;
 
-	// Check if camera contains modded dll
-	{
-		spinner.start('checking for modded dll');
-		const hash = await ftp.getRemoteHash('./FlashBFS/system/common_dll.dll');
-		if (hash === crcModdedDll) {
-			spinner.succeed('camera contains modded dll');
+	// Check if camera contains patched dll
+	if (true) {
+		spinner.start('checking for patched dll');
+		const hash = await ftp.getRemoteHash(AppSettings.CommonDllRemotePath);
+		AppSettings.Camera.HasPatchedDll = hash === AppSettings.PatchedDllHash;
+
+		if (AppSettings.Camera.HasPatchedDll) {
+			spinner.succeed('camera contains patched dll');
 		} else {
-			spinner.fail('camera needs to be modded');
+			spinner.fail('camera needs to be patched');
 		}
 	}
 
@@ -83,13 +73,19 @@ try {
 		switch (option) {
 			case MainMenuOption.Backup:
 				if (await menu.confirm()) {
-					await ftp.downloadToDir(backupPath, './');
+					await ftp.downloadToDir(AppSettings.BackupPath, './');
 				}
 				break;
 
-			//case MenuOption.Mod:
-			//	await modFiles(backupPath, moddedFilesPath, suid);
-			//	break;
+			case MainMenuOption.Basic:
+				await applyBasicPatch();
+				await restartCamera();
+				break;
+
+			case MainMenuOption.Revert:
+				await restoreOriginalConfig();
+				await restartCamera();
+				break;
 
 			case MainMenuOption.Exit:
 				done = true;

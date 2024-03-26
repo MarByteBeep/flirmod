@@ -3,7 +3,8 @@ import TogglePrompt from 'enquirer/lib/prompts/toggle';
 
 export enum MainMenuOption {
 	Backup = 'backup files',
-	//Mod = 'mod',
+	Basic = 'apply basic patch',
+	Revert = 'revert camera to 80x60 resolution',
 	Restart = 'restart camera',
 	Exit = 'exit',
 }

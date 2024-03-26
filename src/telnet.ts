@@ -1,7 +1,7 @@
 import { strict as assert } from 'assert';
 import chalk from 'chalk';
 import { Telnet } from 'telnet-client';
-import { getLoginCredentials } from './logincredentials';
+import { AppSettings } from './AppSettings';
 import { spinner } from './utils';
 
 let client: Telnet | undefined = undefined;
@@ -50,7 +50,7 @@ export async function connect(silent: boolean = false): Promise<boolean> {
 	const port = 23;
 	assert.equal(client, undefined);
 
-	const { host } = getLoginCredentials();
+	const host = AppSettings.Camera.IpAddress;
 
 	const formatted = chalk.green(`${host}:${port}`);
 

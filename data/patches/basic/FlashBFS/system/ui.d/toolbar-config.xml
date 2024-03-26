@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ToolBars>
+	<ToolBar name="archive">
+		<ToolBar name="archive_fullscreen"/>
+		<ToolBar name="archive_text_annotation"/>
+		<ToolBar name="archive_table_annotation">
+			<ToolBar name="archive_text_tables_add_contents" />
+			<ToolBar name="archive_text_tables_select_template" />
+			<ToolBar name="archive_text_tables_edit_contents" />
+			<ToolBar name="archive_text_tables_clear_contents" />
+		</ToolBar>
+
+	 	<ToolBar name="archive_info_pdf"/>
+		<ToolBar name="archive_delete"/>
+    </ToolBar>
+
+  <ToolBar name="archiveReport">
+     <ToolBar name="archive_fullscreen"/>
+    <ToolBar name="archive_info_basic"/>
+    <ToolBar name="archive_delete"/>
+  </ToolBar>
+
+  <ToolBar name="main menu">
+	
+    <ToolBar name="new_settings"/> 
+	<ToolBar name="recordingModeMenu">
+        <ToolBar name="recordingMode_still"/>
+    </ToolBar>
+	
+	<ToolBar name="imageModeMenu">
+      <ToolBar name="imageMode_alignment"/>
+      <ToolBar name="imageMode_msx"/>
+	  <ToolBar name="imageMode_ir"/>
+      <ToolBar name="imageMode_pip_medium"/>
+      <ToolBar name="imageMode_blending"/>
+      <ToolBar name="imageMode_camera"/>
+    </ToolBar>
+	
+    <ToolBar name="measurementsMenu"> 
+      <ToolBar name="measure_spot_hide"/>
+      <ToolBar name="measure_spot_center"/>       
+      <ToolBar name="measure_spot_max_box"/>
+      <ToolBar name="measure_spot_min_box"/>
+      <ToolBar name="measure_spot_cold_spot"/>
+      <ToolBar name="measure_three_spots"/>
+      <ToolBar name="measure_five_spots"/> 
+      <ToolBar name="measure_delta_s"/>
+      <ToolBar name="measure_delta_t"/>
+
+    </ToolBar>
+
+    <ToolBar name="colorMenu"> 
+      <navigation-group>
+        <ToolBar name="color_iron"/>
+        <ToolBar name="color_rainbow"/>
+        <ToolBar name="color_rainbow_hicolor"/>
+        <ToolBar name="color_gray_hot_white"/>
+        <ToolBar name="color_gray_hot_black"/>
+        <ToolBar name="color_arctic"/>
+		<ToolBar name="color_lava"/>
+      </navigation-group>
+      <navigation-group>
+        <ToolBar name="color_iso_above"/>
+        <ToolBar name="color_iso_below"/>
+        <ToolBar name="color_iso_interval"/>
+        <ToolBar name="color_iso_humidity"/>
+        <ToolBar name="color_iso_insulation"/>
+      </navigation-group>
+    </ToolBar>
+	
+    <ToolBar name="scaleMenu">
+       <ToolBar name="scale_auto"/>
+      <ToolBar name="scale_scale_manual"/>
+    </ToolBar>
+
+    <ToolBar name="zoomMenu">
+      <ToolBar name="zoom_1x"/> 
+      <ToolBar name="zoom_2x"/>
+      <ToolBar name="zoom_4x"/>
+      <ToolBar name="zoom_8x"/> 
+    </ToolBar>
+	
+  </ToolBar>  <!--end main menu-->
+
+</ToolBars>
+
+

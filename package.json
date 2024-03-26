@@ -3,7 +3,8 @@
 	"module": "index.ts",
 	"type": "module",
 	"scripts": {
-		"dev": "tsx --env-file=.env ./src/index.ts"
+		"dev": "tsx --env-file=.env ./src/index.ts",
+		"watch": "tsx --watch --env-file=.env ./src/index.ts"
 	},
 	"devDependencies": {
 		"@types/memorystream": "^0.3.4",

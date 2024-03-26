@@ -2,6 +2,7 @@ import { strict as assert } from 'assert';
 import chalk from 'chalk';
 import ora from 'ora';
 import ping from 'ping';
+import { AppSettings } from './AppSettings';
 import * as ftp from './ftp';
 import * as telnet from './telnet';
 import type { CamIDs } from './types';
@@ -51,14 +52,15 @@ export async function restartCamera(): Promise<void> {
  * @param ids - An object containing the camera IDs.
  * @returns The IP address of the camera if it is found, or undefined if it is not found.
  */
-export async function getCameraIpAddress(ids: CamIDs): Promise<string | undefined> {
-	const camName = `IRCAM${ids.serial.slice(-4)}`;
+export async function getCameraIpAddress(): Promise<string | undefined> {
+	const serial = AppSettings.Camera.SerialId;
+	const camName = `IRCAM${serial.slice(-4)}`;
 	spinner.start(`pinging '${chalk.green(camName)}' on local network`);
 	const pingResult = await ping.promise.probe(camName);
 	if (pingResult.numeric_host) {
 		spinner.succeed(`camera '${chalk.green(camName)}' found at '${chalk.green(pingResult.numeric_host)}'`);
 	} else {
-		spinner.fail(`no camera '${chalk.green(camName)}' found with serial '${chalk.green(ids.serial)}'`);
+		spinner.fail(`no camera '${chalk.green(camName)}' found with serial '${chalk.green(serial)}'`);
 	}
 	return pingResult.numeric_host;
 }

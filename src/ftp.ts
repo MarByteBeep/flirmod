@@ -3,8 +3,8 @@ import { Client } from 'basic-ftp/dist';
 import chalk from 'chalk';
 import MemoryStream from 'memorystream';
 import { join } from 'node:path';
+import { AppSettings } from './AppSettings';
 import { ensureLocalDirectory, getHashFromBuffer, getHashFromFile } from './fileutils';
-import { getLoginCredentials } from './logincredentials';
 import type { SUID } from './types';
 import { spinner } from './utils';
 
@@ -156,7 +156,8 @@ export async function getRemoteHash(path: string): Promise<string> {
 
 	try {
 		const uploadedFile = (await downloadFileInMemory(path)) as Buffer;
-		return getHashFromBuffer(uploadedFile);
+		const hash = getHashFromBuffer(uploadedFile);
+		return hash;
 	} catch (e: any) {
 		throw new Error(`${path}: download failed, error: '${e.message}'`);
 	}
@@ -218,9 +219,7 @@ export async function connect(silent: boolean = false): Promise<boolean> {
 	const port = 21;
 	assert.equal(client, undefined);
 
-	const { host, username, password } = getLoginCredentials();
-
-	const formatted = chalk.green(`${host}:${port}`);
+	const formatted = chalk.green(`${AppSettings.Camera.IpAddress}:${port}`);
 
 	if (!silent) spinner.start(`ftp: connect to '${formatted}'`);
 	client = new Client(5000);
@@ -228,8 +227,8 @@ export async function connect(silent: boolean = false): Promise<boolean> {
 	// Server doesn't support 'LIST -a'
 	client.availableListCommands = ['LIST'];
 	try {
-		await client.connect(host, 21);
-		await client.login(username, password);
+		await client.connect(AppSettings.Camera.IpAddress, 21);
+		await client.login(AppSettings.Username, AppSettings.Password);
 		const cwd = await client.send('PWD'); // Current working directory should be /
 		assert.equal(cwd.code, 257);
 		assert.equal(cwd.message, '257 "/".');
