@@ -1,4 +1,4 @@
-import CRC32 from 'crc-32';
+import * as crypto from 'crypto';
 import * as fs from 'node:fs';
 
 export function ensureLocalDirectory(path: string) {
@@ -9,7 +9,13 @@ export function ensureLocalDirectory(path: string) {
 	}
 }
 
-export function getCRC(path: string): number | undefined {
+export function getHashFromBuffer(buffer: Buffer): string {
+	const hash = crypto.createHash('sha256');
+	hash.update(buffer);
+	return hash.digest('hex');
+}
+
+export function getHashFromFile(path: string): string | undefined {
 	if (fs.existsSync(path) === false) {
 		return undefined;
 	}
@@ -18,5 +24,5 @@ export function getCRC(path: string): number | undefined {
 		return undefined;
 	}
 	const file: Buffer = fs.readFileSync(path);
-	return CRC32.buf(file);
+	return getHashFromBuffer(file);
 }

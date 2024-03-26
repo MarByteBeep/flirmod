@@ -1,10 +1,9 @@
 import { strict as assert } from 'assert';
 import { Client } from 'basic-ftp/dist';
 import chalk from 'chalk';
-import CRC32 from 'crc-32';
 import MemoryStream from 'memorystream';
 import { join } from 'node:path';
-import { ensureLocalDirectory, getCRC } from './fileutils';
+import { ensureLocalDirectory, getHashFromBuffer, getHashFromFile } from './fileutils';
 import { getLoginCredentials } from './logincredentials';
 import type { SUID } from './types';
 import { spinner } from './utils';
@@ -30,9 +29,9 @@ export async function downloadFileInMemory(path: string, encoding?: BufferEncodi
 	const stream = new MemoryStream();
 	try {
 		await client!.downloadTo(stream, path);
-	} catch (_) {
+	} catch (e: any) {
 		stream.end();
-		throw new Error(`${path}: download failed`);
+		throw new Error(`${path}: download failed, error ${e.message}`);
 	}
 
 	stream.end();
@@ -151,12 +150,24 @@ export async function downloadToDir(localDirPath: string, remoteDirPath?: string
 	spinner.succeed();
 }
 
-export async function uploadFile(localPath: string, remotePath: string) {
+export async function getRemoteHash(path: string): Promise<string> {
 	assert.notEqual(client, undefined);
 	assert.equal(client?.closed, false);
 
-	const crcSrc = getCRC(localPath);
-	if (crcSrc === undefined) {
+	try {
+		const uploadedFile = (await downloadFileInMemory(path)) as Buffer;
+		return getHashFromBuffer(uploadedFile);
+	} catch (e: any) {
+		throw new Error(`${path}: download failed, error: '${e.message}'`);
+	}
+}
+
+export async function uploadFile(localPath: string, remotePath: string): Promise<string> {
+	assert.notEqual(client, undefined);
+	assert.equal(client?.closed, false);
+
+	const hashSrc = getHashFromFile(localPath);
+	if (hashSrc === undefined) {
 		throw new Error(`${localPath}: source file missing or empty`);
 	}
 
@@ -168,12 +179,12 @@ export async function uploadFile(localPath: string, remotePath: string) {
 
 	// now verify
 	try {
-		const uploadedFile = (await downloadFileInMemory(remotePath)) as Buffer;
-		const crcDst = CRC32.buf(uploadedFile);
-
-		if (crcSrc !== crcDst) {
-			throw new Error(`mismatching crcs`);
+		const hashDst = await getRemoteHash(remotePath);
+		if (hashSrc !== hashDst) {
+			throw new Error(`mismatching file hashes`);
 		}
+
+		return hashSrc;
 	} catch (e: any) {
 		throw new Error(`${localPath}: verification failed, error: '${e.message}'`);
 	}
