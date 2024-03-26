@@ -1,11 +1,10 @@
 import { strict as assert } from 'assert';
-import { stat, mkdir } from 'node:fs/promises';
+import chalk from 'chalk';
 import ora from 'ora';
 import ping from 'ping';
-import chalk from 'chalk';
-import type { CamIDs } from './types';
 import * as ftp from './ftp';
 import * as telnet from './telnet';
+import type { CamIDs } from './types';
 
 export async function restartCamera(): Promise<void> {
 	const minBootTime = 40000;
@@ -71,18 +70,6 @@ export async function getCameraIpAddress(ids: CamIDs): Promise<string | undefine
  */
 export async function sleep(ms: number): Promise<void> {
 	return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-/**
- * Checks if a directory exists at the given path. If the directory does not exist, it creates it.
- * @param path - The path of the directory to be checked/created.
- */
-export async function ensureLocalDirectory(path: string): Promise<void> {
-	try {
-		await stat(path);
-	} catch (err) {
-		await mkdir(path, { recursive: true });
-	}
 }
 
 export function initIds(): CamIDs {

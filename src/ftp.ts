@@ -1,11 +1,13 @@
-import { Client } from 'basic-ftp/dist';
-import { join } from 'node:path';
-import { ensureLocalDirectory, spinner } from './utils';
 import { strict as assert } from 'assert';
-import MemoryStream from 'memorystream';
+import { Client } from 'basic-ftp/dist';
 import chalk from 'chalk';
-import type { SUID } from './types';
+import CRC32 from 'crc-32';
+import MemoryStream from 'memorystream';
+import { join } from 'node:path';
+import { ensureLocalDirectory, getCRC } from './fileutils';
 import { getLoginCredentials } from './logincredentials';
+import type { SUID } from './types';
+import { spinner } from './utils';
 
 let client: Client | undefined = undefined;
 
@@ -108,7 +110,8 @@ async function downloadFromWorkingDir(localDirPath: string, stats?: Stats): Prom
 
 	const list = await client!.list();
 
-	await ensureLocalDirectory(localDirPath);
+	ensureLocalDirectory(localDirPath);
+
 	for (const file of list) {
 		const localPath = join(localDirPath, file.name);
 		if (file.isDirectory) {
@@ -146,6 +149,35 @@ export async function downloadToDir(localDirPath: string, remoteDirPath?: string
 	await downloadFromWorkingDir(localDirPath);
 
 	spinner.succeed();
+}
+
+export async function uploadFile(localPath: string, remotePath: string) {
+	assert.notEqual(client, undefined);
+	assert.equal(client?.closed, false);
+
+	const crcSrc = getCRC(localPath);
+	if (crcSrc === undefined) {
+		throw new Error(`${localPath}: source file missing or empty`);
+	}
+
+	try {
+		await client.uploadFrom(localPath, remotePath);
+	} catch (e: any) {
+		throw new Error(`${localPath}: upload failed, error: '${e.message}'`);
+	}
+
+	// now verify
+	try {
+		const uploadedFile = (await downloadFileInMemory(remotePath)) as Buffer;
+		const crcDst = CRC32.buf(uploadedFile);
+
+		if (crcSrc !== crcDst) {
+			throw new Error(`mismatching crcs`);
+		}
+	} catch (e: any) {
+		throw new Error(`${localPath}: verification failed, error: '${e.message}'`);
+	}
+	return true;
 }
 
 export async function connect(silent: boolean = false): Promise<boolean> {
