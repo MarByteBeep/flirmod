@@ -72,6 +72,5 @@ export function replaceSerial(cfg: CFG, oldSerial: string, newSerial: string) {
 export function write(cfg: CFG, filepath: string) {
 	const crc = calculateCRC(cfg);
 	cfg.push(`# CRC03 ${crc}`);
-	// This file requires to end with \r\n
 	fs.writeFileSync(filepath, toBuffer(cfg), 'ascii');
 }
