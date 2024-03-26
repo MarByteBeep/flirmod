@@ -6,7 +6,7 @@
 	],
 	"settings": {
 		"editor.codeActionsOnSave": {
-			"source.organizeImports": "always"
+			"source.sortImports": "always"
 		}
 	}
 }
