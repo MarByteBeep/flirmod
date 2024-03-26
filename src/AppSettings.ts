@@ -16,8 +16,9 @@ export class AppSettings {
 	static readonly OriginalCfgLocalPath = './data/original/conf.cfg';
 	static readonly BasicPatchCfgLocalPath = './data/patches/basic/conf.cfg';
 
-	// Common hashes
+	// common_dll.dll hashes
 	static readonly PatchedDllHash = 'c61f71946829476082d84a28350ce101efd865a609303bf9e2741218fa64bcbe';
+	static readonly UnpatchedDllHash = '81509856a567c1dc4848263ac7d9c58cdf2baf026f3b9a603df646be47e84b02';
 
 	// Will be set at runtime
 	static readonly Camera = {

@@ -62,7 +62,14 @@ try {
 		if (AppSettings.Camera.HasPatchedDll) {
 			spinner.succeed('camera contains patched dll');
 		} else {
-			spinner.fail('camera needs to be patched');
+			if (hash === AppSettings.UnpatchedDllHash) {
+				spinner.fail(`camera doesn't contain patched common_dll.dll, but camera can be patched`);
+			} else {
+				spinner.fail(
+					`camera has incorrect common_dll.dll, firmware '3.16.0' required. Upgrade firmware and retry.`
+				);
+				await exit(1);
+			}
 		}
 	}
 
