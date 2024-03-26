@@ -74,27 +74,6 @@ export async function sleep(ms: number): Promise<void> {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export function initIds(): CamIDs {
-	const ids: CamIDs = {
-		serial: process.env.SERIAL_ID ?? '',
-		suid: 'XXXXXXXXXXXXXXXX', // Will be fetched later through ftp and telnet
-	};
-
-	assert.notEqual(ids.serial, '', 'Missing SERIAL_ID in .env file');
-
-	assert.equal(
-		ids.serial.length,
-		9,
-		`Incorrect SERIAL_ID in .env file, '${ids.serial}' should be a string of 9 digits, ` +
-			`but has length ${ids.serial.length}`
-	);
-
-	const regex = /^\d{9}$/;
-	assert.ok(regex.test(ids.serial), `Incorrect SERIAL_ID in .env file, '${ids.serial}' should only contain digits`);
-
-	return ids;
-}
-
 export const spinner = ora({
 	color: 'green',
 });
