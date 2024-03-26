@@ -26,3 +26,10 @@ export function getHashFromFile(path: string): string | undefined {
 	const file: Buffer = fs.readFileSync(path);
 	return getHashFromBuffer(file);
 }
+
+export function getDirectories(path: string) {
+	return fs
+		.readdirSync(path, { withFileTypes: true })
+		.filter((dirent) => dirent.isDirectory())
+		.map((dirent) => dirent.name);
+}

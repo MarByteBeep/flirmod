@@ -44,7 +44,7 @@ export async function applyBasicPatch() {
 }
 
 export async function changeConfig(cfgPath: string) {
-	ensureLocalDirectory(AppSettings.PatchedFilesPath);
+	ensureLocalDirectory(AppSettings.TempPath);
 
 	spinner.start(`change config to '${cfgPath}'`);
 
@@ -57,8 +57,8 @@ export async function changeConfig(cfgPath: string) {
 
 	try {
 		const config = cfg.read(cfgPath);
-		const filein = AppSettings.PatchedFilesPath + 'conf.cfg';
-		const fileout = AppSettings.PatchedFilesPath + 'conf.cfc';
+		const filein = AppSettings.TempPath + 'conf.cfg';
+		const fileout = AppSettings.TempPath + 'conf.cfc';
 		cfg.replaceSerial(config, '123456789', AppSettings.Camera.SerialId);
 		cfg.write(config, filein);
 		cfc.encryptToFile(filein, fileout);

@@ -10,7 +10,7 @@ function toBuffer(cfg: CFG): Buffer {
 	return Buffer.from(cfg.join(delimiter) + delimiter);
 }
 
-function calculateCRC(cfg: CFG) {
+export function calculateCRC(cfg: CFG) {
 	const hash = new CRMD160(3);
 	const input = toBuffer(cfg);
 	hash.update(input);

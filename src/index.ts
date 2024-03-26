@@ -15,6 +15,9 @@ async function exit(code: number) {
 	process.exit(code);
 }
 
+console.info(chalk.bold(chalk.yellow('\nFlir E4 firmware patcher')));
+console.info('Requirements:\n- Flir E4 WiFi\n- camera version: 2.0L\n- firmware version: 3.16.0\n');
+
 try {
 	AppSettings.init();
 

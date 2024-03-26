@@ -1,5 +1,15 @@
 import { strict as assert } from 'assert';
-import { getHashFromFile } from './fileutils';
+import chalk from 'chalk';
+import { join } from 'node:path';
+import * as cfg from './filetypes/cfg';
+import { getDirectories, getHashFromFile } from './fileutils';
+import { spinner } from './utils';
+
+export type Patch = {
+	name: string;
+	crc: string;
+	path: string;
+};
 
 export class AppSettings {
 	// Flir login credentials
@@ -8,7 +18,8 @@ export class AppSettings {
 
 	// Paths
 	static readonly BackupPath = './backup/';
-	static readonly PatchedFilesPath = './patched/';
+	static readonly PatchesPath = './data/patches/';
+	static readonly TempPath = './.temp/';
 	static readonly CommonDllLocalPath = './data/patches/common_dll_3.16.dll';
 	static readonly CommonDllRemotePath = './FlashBFS/system/common_dll.dll';
 	static readonly CfcRemotePath = './FlashFS/system/appcore.d/config.d/conf.cfc';
@@ -28,9 +39,15 @@ export class AppSettings {
 		HasPatchedDll: false,
 	};
 
+	static readonly Patches: Patch[] = [];
+
 	static init() {
-		const crcPatchedDll = getHashFromFile(AppSettings.CommonDllLocalPath);
-		assert.equal(AppSettings.PatchedDllHash, crcPatchedDll, `patched dll hash mismatch`);
+		{
+			// Check if hardcoded hash matches the hash of the dll in AppSettings.CommonDllLocalPath
+			// If not, it's been modified and app should exit
+			const hashPatchedDll = getHashFromFile(AppSettings.CommonDllLocalPath);
+			assert.equal(AppSettings.PatchedDllHash, hashPatchedDll, `patched dll hash mismatch`);
+		}
 
 		AppSettings.Camera.SerialId = process.env.SERIAL_ID ?? '';
 
@@ -48,5 +65,30 @@ export class AppSettings {
 			regex.test(AppSettings.Camera.SerialId),
 			`Incorrect SERIAL_ID in .env file, '${AppSettings.Camera.SerialId}' should only contain digits`
 		);
+
+		spinner.succeed('valid serial id');
+
+		// Read the available patches
+		const patches = getDirectories(AppSettings.PatchesPath);
+		try {
+			for (const patch of patches) {
+				const path = join(AppSettings.PatchesPath, patch, 'conf.cfg');
+				const config = cfg.read(path);
+				const crc = cfg.calculateCRC(config);
+				AppSettings.Patches.push({
+					name: patch,
+					crc: crc,
+					path: path,
+				});
+			}
+		} catch (e: any) {
+			throw new Error(`failed to load patches, error: ${e.message}`);
+		}
+
+		console.info(chalk.green('\nAvailable patches:'));
+		for (const patch of AppSettings.Patches) {
+			console.log(`- ${patch.name}`);
+		}
+		console.log();
 	}
 }
