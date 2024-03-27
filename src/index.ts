@@ -5,6 +5,7 @@ import { applyBasicPatch, restoreOriginalConfig } from './firmware';
 import * as ftp from './ftp';
 import * as menu from './menu';
 import { MainMenuOption } from './menu';
+import { applyPatch } from './patch';
 import * as telnet from './telnet';
 import type { SUID } from './types';
 import { getCameraIpAddress, restartCamera, spinner } from './utils';
@@ -88,8 +89,21 @@ try {
 				break;
 
 			case MainMenuOption.Basic:
-				await applyBasicPatch();
-				await restartCamera();
+				if (await applyPatch('basic')) {
+					await restartCamera();
+				}
+				break;
+
+			case MainMenuOption.Advanced:
+				if (await applyPatch('advanced')) {
+					await restartCamera();
+				}
+				break;
+
+			case MainMenuOption.Christmas:
+				if (await applyPatch('christmas')) {
+					await restartCamera();
+				}
 				break;
 
 			case MainMenuOption.Revert:

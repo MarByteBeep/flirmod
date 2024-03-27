@@ -3,7 +3,11 @@ import TogglePrompt from 'enquirer/lib/prompts/toggle';
 
 export enum MainMenuOption {
 	Backup = 'backup files',
+	// FIXME: These shouldn't be hardcoded, but taken from 'patches'
 	Basic = 'apply basic patch',
+	Advanced = 'apply advanced patch',
+	Christmas = `apply bud's christmas patch`,
+
 	Revert = 'revert camera to 80x60 resolution',
 	Restart = 'restart camera',
 	Exit = 'exit',

@@ -1,5 +1,7 @@
 import * as crypto from 'crypto';
 import * as fs from 'node:fs';
+import { join } from 'node:path';
+import { relative } from 'path';
 
 export function ensureLocalDirectory(path: string) {
 	try {
@@ -27,9 +29,16 @@ export function getHashFromFile(path: string): string | undefined {
 	return getHashFromBuffer(file);
 }
 
-export function getDirectories(path: string) {
+export function getDirectories(path: string, recursive = false) {
 	return fs
-		.readdirSync(path, { withFileTypes: true })
+		.readdirSync(path, { withFileTypes: true, recursive })
 		.filter((dirent) => dirent.isDirectory())
 		.map((dirent) => dirent.name);
+}
+
+export function getFiles(path: string, recursive = false) {
+	return fs
+		.readdirSync(path, { withFileTypes: true, recursive })
+		.filter((dirent) => dirent.isDirectory() === false)
+		.map((dirent) => relative(path, join(dirent.path, dirent.name)));
 }

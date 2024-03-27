@@ -9,7 +9,7 @@ import * as ftp from './ftp';
 import type { SUID } from './types';
 import { spinner } from './utils';
 
-function verifyBackup() {
+export function verifyBackup() {
 	const files = [
 		'FlashIFS/version.rsc',
 		'FlashBFS/system/common_dll.dll',

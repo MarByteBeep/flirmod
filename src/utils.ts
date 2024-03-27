@@ -12,6 +12,7 @@ export async function restartCamera(): Promise<void> {
 	const maxReconnectionAttempts = 5;
 
 	spinner.start(`restarting camera`);
+	await sleep(1000);
 
 	spinner.suffixText = '- closing ftp';
 	await ftp.close();

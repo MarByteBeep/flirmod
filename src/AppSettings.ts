@@ -8,7 +8,6 @@ import { spinner } from './utils';
 
 export type Patch = {
 	name: string;
-	crc: string;
 	path: string;
 	dependencies: string[];
 };
@@ -21,6 +20,7 @@ export class AppSettings {
 	// Paths
 	static readonly BackupPath = './backup/';
 	static readonly PatchesPath = './data/patches/';
+	static readonly OriginalFilesPath = './data/original/';
 	static readonly TempPath = './.temp/';
 	static readonly CommonDllLocalPath = './data/patches/common_dll_3.16.dll';
 	static readonly CommonDllRemotePath = './FlashBFS/system/common_dll.dll';
@@ -84,15 +84,16 @@ export class AppSettings {
 
 		try {
 			for (const patch of patches) {
-				const configPath = join(AppSettings.PatchesPath, patch, 'conf.cfg');
+				const path = AppSettings.PatchesPath + patch;
+				const configPath = join(AppSettings.PatchesPath, patch);
 				const dependenciesPath = join(AppSettings.PatchesPath, patch, 'dependencies.json');
-				const config = cfg.read(configPath);
-				const crc = cfg.calculateCRC(config);
+
+				// read (and validate) config
+				cfg.read(join(path, 'conf.cfg'));
 
 				AppSettings.Patches.push({
 					name: patch.toLowerCase(),
-					crc: crc,
-					path: configPath,
+					path: path,
 					dependencies: parseDependencies(dependenciesPath),
 				});
 			}
@@ -117,5 +118,6 @@ export class AppSettings {
 				console.log(`- ${patch.name}`);
 			}
 		}
+		console.log();
 	}
 }
