@@ -1,5 +1,6 @@
 import { strict as assert } from 'assert';
 import chalk from 'chalk';
+import * as fs from 'node:fs';
 import { join } from 'node:path';
 import * as cfg from './filetypes/cfg';
 import { getDirectories, getHashFromFile } from './fileutils';
@@ -9,6 +10,7 @@ export type Patch = {
 	name: string;
 	crc: string;
 	path: string;
+	dependencies: string[];
 };
 
 export class AppSettings {
@@ -68,27 +70,52 @@ export class AppSettings {
 
 		spinner.succeed('valid serial id');
 
+		function parseDependencies(path: string) {
+			try {
+				const json = fs.existsSync(path) ? JSON.parse(fs.readFileSync(path, 'utf-8')) : [];
+				return json.map((e: string) => e.toLowerCase());
+			} catch (_) {
+				return [];
+			}
+		}
+
 		// Read the available patches
 		const patches = getDirectories(AppSettings.PatchesPath);
+
 		try {
 			for (const patch of patches) {
-				const path = join(AppSettings.PatchesPath, patch, 'conf.cfg');
-				const config = cfg.read(path);
+				const configPath = join(AppSettings.PatchesPath, patch, 'conf.cfg');
+				const dependenciesPath = join(AppSettings.PatchesPath, patch, 'dependencies.json');
+				const config = cfg.read(configPath);
 				const crc = cfg.calculateCRC(config);
+
 				AppSettings.Patches.push({
-					name: patch,
+					name: patch.toLowerCase(),
 					crc: crc,
-					path: path,
+					path: configPath,
+					dependencies: parseDependencies(dependenciesPath),
 				});
 			}
 		} catch (e: any) {
 			throw new Error(`failed to load patches, error: ${e.message}`);
 		}
 
+		// Verify if dependencies exist
+		const dependencies = AppSettings.Patches.map((e) => e.name);
+		for (const patch of AppSettings.Patches) {
+			patch.dependencies.forEach((e) => {
+				assert(e !== patch.name, `patch '${patch.name}' depends on itself`);
+				assert(dependencies.includes(e), `patch '${patch.name}' depends on missing patch: '${e}'`);
+			});
+		}
+
 		console.info(chalk.green('\nAvailable patches:'));
 		for (const patch of AppSettings.Patches) {
-			console.log(`- ${patch.name}`);
+			if (patch.dependencies.length > 0) {
+				console.log(`- ${patch.name} ` + chalk.green('[depends on: ' + patch.dependencies.join(', ') + ']'));
+			} else {
+				console.log(`- ${patch.name}`);
+			}
 		}
-		console.log();
 	}
 }
