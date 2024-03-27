@@ -1,6 +1,6 @@
 #
 # Generated at 2012-12-18 14:21:06
-# ID 
+# ID
 #
 .image entry
 .image.sysimgInstances entry
@@ -28,4 +28,4 @@
 .image.sysimgInstances.main.measureFuncs.spot.5.active bool true
 .image.sysimgInstances.main.measureFuncs.spot.5.x int32 160
 .image.sysimgInstances.main.measureFuncs.spot.5.y int32 180
-# CRC01 723419d9
+# CRC32 b6db1526

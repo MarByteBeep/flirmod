@@ -1,6 +1,6 @@
 #
 # Generated at 2011-11-09 12:45:46
-# ID 
+# ID
 #
 .ui entry
 .ui.setup entry
@@ -10,4 +10,4 @@
 .ui.setup.control.fonts text "\FlashBFS\system\ui.d\fonts\"
 .ui.setup.control.languages text "\FlashBFS\system\ui.d\languages\"
 .ui.setup.control.qml_rcc text "\FlashBFS\system\ui.d\facet.rcc"
-# CRC32 51d92eb5
+# CRC32 ef963bd1
