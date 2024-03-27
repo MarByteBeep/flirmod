@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ToolBars>
+	<ToolBar name="archive">
+		<ToolBar name="archive_fullscreen"/>
+		<ToolBar name="archive_edit"/>
+		<ToolBar name="archive_text_annotation"/>
+		<ToolBar name="archive_table_annotation">
+			<ToolBar name="archive_text_tables_add_contents" />
+			<ToolBar name="archive_text_tables_select_template" />
+			<ToolBar name="archive_text_tables_edit_contents" />
+			<ToolBar name="archive_text_tables_clear_contents" />
+		</ToolBar>
+
+		<ToolBar name="archive_sketching"/>
+	 	<ToolBar name="archive_info_pdf"/>
+		<ToolBar name="archive_delete"/>
+    </ToolBar>
+
+  <ToolBar name="archiveReport">
+     <ToolBar name="archive_fullscreen"/>
+    <ToolBar name="archive_info_basic"/>
+    <ToolBar name="archive_delete"/>
+  </ToolBar>
+
+  <ToolBar name="main menu">
+	
+    <ToolBar name="new_settings"/> 
+	<ToolBar name="recordingModeMenu">
+        <ToolBar name="recordingMode_still"/>
+        <ToolBar name="recordingMode_timeLapse"/>
+		<ToolBar name="recordingMode_sport"/>
+        <ToolBar name="recordingMode_screening"/>
+    </ToolBar>
+	
+	<ToolBar name="imageModeMenu">
+      <ToolBar name="imageMode_alignment"/>
+      <ToolBar name="measure_global_params_distance"/>
+      <ToolBar name="imageMode_msx"/>
+	  <ToolBar name="imageMode_ir"/>
+      <ToolBar name="imageMode_pip_medium"/>
+      <ToolBar name="imageMode_blending"/>
+      <ToolBar name="imageMode_camera"/>
+    </ToolBar>
+	
+    <ToolBar name="measurementsMenu"> 
+      <ToolBar name="measure_spot_hide"/>
+      <ToolBar name="measure_spot_center"/>       
+      <ToolBar name="measure_spot_max_box"/>
+      <ToolBar name="measure_spot_min_box"/>
+      <ToolBar name="measure_spot_cold_spot"/>
+      <ToolBar name="measure_three_spots"/>
+      <ToolBar name="measure_five_spots"/> 
+      <ToolBar name="measure_delta_s"/>
+      <ToolBar name="measure_delta_t"/>
+	  
+	  <ToolBar name="measure_add_spot"/>
+	  <ToolBar name="measure_add_box"/>
+	  <ToolBar name="measure_add_circle"/>
+	  <ToolBar name="measure_add_line"/>
+	  <ToolBar name="measure_add_delta"/>
+	  <ToolBar name="measure_add_diff"/>
+	  <ToolBar name="measure_select_tool"/>
+	  <ToolBar name="measure_remove_all"/>
+
+    </ToolBar>
+
+    <ToolBar name="colorMenu"> 
+      <navigation-group>
+        <ToolBar name="color_iron"/>
+        <ToolBar name="color_rainbow"/>
+        <ToolBar name="color_rainbow_hicolor"/>
+		<ToolBar name="color_medical"/>  
+        <ToolBar name="color_gray_hot_white"/>
+        <ToolBar name="color_gray_hot_black"/>
+        <ToolBar name="color_arctic"/>
+		<ToolBar name="color_lava"/>
+      </navigation-group>
+      <navigation-group>
+        <ToolBar name="color_iso_above"/>
+        <ToolBar name="color_iso_below"/>
+        <ToolBar name="color_iso_interval"/>
+        <ToolBar name="color_iso_humidity"/>
+        <ToolBar name="color_iso_insulation"/>
+      </navigation-group>
+    </ToolBar>
+	
+    <ToolBar name="scaleMenu">
+      <ToolBar name="scale_auto"/>
+      <ToolBar name="scale_scale_manual"/>
+    </ToolBar>
+
+    <ToolBar name="zoomMenu">
+      <ToolBar name="zoom_1x"/> 
+      <ToolBar name="zoom_2x"/>
+      <ToolBar name="zoom_4x"/>
+      <ToolBar name="zoom_8x"/> 
+    </ToolBar>
+	
+  </ToolBar>  <!--end main menu-->
+	
+    <ToolBar name="editMenu">
+    <ToolBar name="edit_cancel"/>
+    <ToolBar name="measure_global_params_menu">
+        <ToolBar name="imageMode_alignment"/>
+		<ToolBar name="measure_global_params_distance"/>
+		<ToolBar name="measure_global_params_emiss"/>
+		<ToolBar name="measure_global_params_refl"/>
+        <ToolBar name="measure_global_params_atm_temp"/>
+        <ToolBar name="measure_global_params_rel_hum"/>
+    </ToolBar>
+    <ToolBar name="imageModeMenu"/>
+    <ToolBar name="measurementsMenu"/>
+    <ToolBar name="colorMenu"/>
+    <ToolBar name="scaleMenu">
+      <ToolBar name="scale_auto"/>
+      <ToolBar name="scale_scale_manual"/>
+    </ToolBar>
+    <ToolBar name="edit_save"/>
+    </ToolBar>
+
+   <ToolBar name="previewMenu">
+	<ToolBar name="preview_cancel"/>
+    <ToolBar name="measure_global_params_menu">
+ 	  <ToolBar name="measure_global_params_distance"/>
+	  <ToolBar name="measure_global_params_emiss"/>
+	  <ToolBar name="measure_global_params_refl"/>
+      <ToolBar name="measure_global_params_atm_temp"/>
+      <ToolBar name="measure_global_params_rel_hum"/>
+      <ToolBar name="measure_global_params_ext_optics"/>
+    </ToolBar>
+    <ToolBar name="imageModeMenu"/>
+    <ToolBar name="measurementsMenu"/>
+    <ToolBar name="colorMenu"/>
+    <ToolBar name="scaleMenu">
+      <ToolBar name="scale_auto"/>
+      <ToolBar name="scale_scale_manual"/>
+    </ToolBar>
+
+    <ToolBar name="preview_save"/>
+   </ToolBar> 
+  
+   <ToolBar name="zoomPopup">
+    <ToolBar name="measure_global_params_menu">
+      <ToolBar name="imageMode_alignment"/>
+ 	  <ToolBar name="measure_global_params_distance"/>
+	  <ToolBar name="measure_global_params_emiss"/>
+	  <ToolBar name="measure_global_params_refl"/>
+      <ToolBar name="measure_global_params_atm_temp"/>
+      <ToolBar name="measure_global_params_rel_hum"/>
+      <ToolBar name="measure_global_params_ext_optics"/>
+    </ToolBar>
+   <ToolBar name="zoomMenu">
+      <ToolBar name="zoom_1x"/>
+      <ToolBar name="zoom_2x"/>
+      <ToolBar name="zoom_4x"/>
+      <ToolBar name="zoom_8x"/>
+    </ToolBar>
+   </ToolBar>
+
+  <ToolBar name="promptMenu">
+    <ToolBar name="prompt_cancel"/>
+    <ToolBar name="prompt_note_annotation"/>
+    <ToolBar name="prompt_table_annotation"/>
+    <ToolBar name="prompt_sketch_annotation"/>
+    <ToolBar name="prompt_info"/>
+    <ToolBar name="prompt_save"/>
+  </ToolBar>
+
+  <ToolBar name="measurementPopup">
+    <ToolBar name="measure_remove_selected"/>
+    <ToolBar name="measure_resize_box"/>
+    <ToolBar name="measure_move_selected"/>
+    <ToolBar name="measure_center_selected"/>
+    <ToolBar name="measure_rotate_center_selected"/>
+    <ToolBar name="measure_spot_alarm"/>
+    <ToolBar name="measure_edit_diff"/>
+    <ToolBar name="measure_min_max_avg_menu">
+      <ToolBar name="measure_local_graph"/>
+      <ToolBar name="measure_local_max"/>
+      <ToolBar name="measure_local_min"/>
+      <ToolBar name="measure_local_average"/>
+      <ToolBar name="measure_local_markers"/>
+      <ToolBar name="measure_area_alarm"/>
+    </ToolBar>
+    <ToolBar name="measure_local_params_menu">
+      <ToolBar name="measure_local_params_emiss"/>
+      <ToolBar name="measure_local_params_refl"/>
+      <ToolBar name="measure_local_params_distance"/>
+      <ToolBar name="measure_local_params_toggle"/>
+    </ToolBar>
+    <ToolBar name="measure_unselect_all"/>
+  </ToolBar>
+  
+    <ToolBar name="presetsMenu">
+    <ToolBar name="preset_cancel"/>
+    <ToolBar name="preset_add_tools">
+      <ToolBar name="measure_add_spot"/>
+      <ToolBar name="measure_add_box"/>
+      <ToolBar name="measure_add_circle"/>
+      <ToolBar name="measure_add_line"/>
+      <ToolBar name="measure_add_delta"/>
+      <ToolBar name="measure_select_tool"/>
+    </ToolBar>
+    <ToolBar name="preset_remove_all"/>
+    <ToolBar name="preset_save"/>
+  </ToolBar>
+  
+  <ToolBar name="sketchingMenu">
+    <ToolBar name="sketch_cancel"/>
+    <ToolBar name="sketch_draw_mode">
+      <ToolBar name="sketch_color_black"/>
+      <ToolBar name="sketch_color_white"/>
+      <ToolBar name="sketch_color_red"/>
+      <ToolBar name="sketch_color_blue"/>
+      <ToolBar name="sketch_color_green"/>
+      <ToolBar name="sketch_color_yellow"/>
+    </ToolBar>
+    <ToolBar name="sketch_stamp_mode">
+      <ToolBar name="sketch_stamp_larrow"/>
+      <ToolBar name="sketch_stamp_rarrow"/>
+      <ToolBar name="sketch_stamp_circle"/>
+      <ToolBar name="sketch_stamp_cross"/>
+    </ToolBar>
+    <ToolBar name="sketch_clear_all"/>
+    <ToolBar name="sketch_save"/>
+  </ToolBar>
+
+</ToolBars>
+
+
