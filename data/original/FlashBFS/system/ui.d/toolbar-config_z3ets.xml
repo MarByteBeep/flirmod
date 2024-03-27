@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ToolBars>
+  <ToolBar name="archive">
+    <ToolBar name="archive_fullscreen"/>
+    <ToolBar name="archive_info_pdf"/>
+    <ToolBar name="archive_delete"/>
+  </ToolBar>
+  
+  <ToolBar name="main menu">
+    <ToolBar name="new_settings"/>
+    <ToolBar name="measurementsMenu">
+      <ToolBar name="measure_spot_center"/>
+      <ToolBar name="measure_spot_max_box"/>
+      <ToolBar name="measure_spot_min_box"/>
+      <ToolBar name="measure_spot_hide"/>
+    </ToolBar>
+    <ToolBar name="colorMenu">
+      <ToolBar name="color_iron"/>
+      <ToolBar name="color_rainbow"/>
+      <ToolBar name="color_gray"/>
+      <ToolBar name="color_iso_below"/>
+      <ToolBar name="color_iso_above"/>
+    </ToolBar>
+    <ToolBar name="scaleMenu">
+      <ToolBar name="scale_auto"/>
+      <ToolBar name="scale_lock_scale"/>
+      <ToolBar name="scale_scale_manual"/>
+    </ToolBar>
+  </ToolBar>
+</ToolBars>
