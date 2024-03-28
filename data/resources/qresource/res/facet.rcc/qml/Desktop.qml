@@ -181,17 +181,6 @@ FocusScope {
     }
 
 	Timer {
-        id: warningTimer
-        interval: 8000
-		running:true
-		repeat:false
-        onTriggered: {
-			myBackgroundImage.visible=false
-			event.accepted = true
-        }
-	}
-
-	Timer {
         id: creditsTimer
         interval: 5000
         onTriggered: {
@@ -673,26 +662,6 @@ FocusScope {
             font.family: fonts.family
             visible: greenbox.system.serviceMode && !greenbox.hideGuiLayer
         }
-
-		BorderImage {
-        id: myBackgroundImage
-		anchors.centerIn: parent
-		source: "../images/Bg_DialoguePopUp_SmallBg_Def.png"
-		visible: true
-
-
-        Text {
-            anchors.centerIn: parent
-            anchors.verticalCenter: parent.verticalCenter
-			id: myText
-			text: "This device has unsupported \nsoftware for personal learning.\n\n    Not for commercial use.\n           Not for resell.\n\n    Restore original software\n    before selling this device."
-			horizontalAlignment: Text.AlignLeft
-            color: colors.textFocused
-			font.pixelSize: fonts.mediumSize
-            font.family: fonts.family
-			wrapMode: Text.WordWrap
-             }
-		}
 
 		BorderImage {
         id: myCredits
