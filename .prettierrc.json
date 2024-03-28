@@ -6,5 +6,6 @@
 	"useTabs": true,
 	"singleQuote": true,
 	"endOfLine": "crlf",
+	"xmlWhitespaceSensitivity": "ignore",
 	"plugins": ["@prettier/plugin-xml"]
 }
