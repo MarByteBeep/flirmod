@@ -1,0 +1,2519 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="fresh.qrc">./../res/facet.rcc/fresh.qrc</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewPreview_ImgNotFound_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewPreview_ImgNotFound_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewPreview_ImgNotFoundCenter_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewPreview_ImgNotFoundCenter_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewPreview_ImgNotLoaded_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewPreview_ImgNotLoaded_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewPreview_ImgNotLoadedCenter_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewPreview_ImgNotLoadedCenter_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewPreview_ImgOutline_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewPreview_ImgOutline_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_Group02_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_Group02_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_Group02_Sel.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_Group02_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_Group03_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_Group03_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_Group03_Sel.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_Group03_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_ImgNotFound_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_ImgNotFound_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_ImgNotFoundCenter_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_ImgNotFoundCenter_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_ImgNotLoaded_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_ImgNotLoaded_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_ImgNotLoadedCenter_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_ImgNotLoadedCenter_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_ImgOutline_Def.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_ImgOutline_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ArchiveViewThumb_ImgOutline_Sel.png">./../res/facet.rcc/images/Bg_ArchiveViewThumb_ImgOutline_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUp_BigBg_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUp_BigBg_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUp_BigBgCu_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUp_BigBgCu_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUp_General_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUp_General_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUp_GeneralHardEdges_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUp_GeneralHardEdges_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUp_Line_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUp_Line_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUp_MedBg_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUp_MedBg_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUp_MiniBg_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUp_MiniBg_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUp_SmallBg_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUp_SmallBg_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_DialoguePopUpBorder_Def.png">./../res/facet.rcc/images/Bg_DialoguePopUpBorder_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_FullScreen_Marker_Foc.png">./../res/facet.rcc/images/Bg_FullScreen_Marker_Foc.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_FullScreen_MarkerStretch_Foc.png">./../res/facet.rcc/images/Bg_FullScreen_MarkerStretch_Foc.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MeasureToolPlaced_Id_Act.png">./../res/facet.rcc/images/Bg_MeasureToolPlaced_Id_Act.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MeasureToolPlaced_Id_Def.png">./../res/facet.rcc/images/Bg_MeasureToolPlaced_Id_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_Bar_01_Def.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_Bar_01_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_Bar_01_Edit_Def.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_Bar_01_Edit_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_Bar_14_Def.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_Bar_14_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_Bar_Def.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_Bar_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_Marker_Foc.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_Marker_Foc.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_Marker_Sel.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_Marker_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_MarkerRadioButtonOff_Def.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_MarkerRadioButtonOff_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_MarkerRadioButtonOn_Def.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_MarkerRadioButtonOn_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_RadioButtonOff_Def.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_RadioButtonOff_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuHorizontalMain_RadioButtonOn_Def.png">./../res/facet.rcc/images/Bg_MenuHorizontalMain_RadioButtonOn_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuMiniWidget_Def.png">./../res/facet.rcc/images/Bg_MenuMiniWidget_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuMiniWidgetExpand_Def.png">./../res/facet.rcc/images/Bg_MenuMiniWidgetExpand_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_MenuMiniWidgetMinimize_Def.png">./../res/facet.rcc/images/Bg_MenuMiniWidgetMinimize_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Notification_Bar_Def.png">./../res/facet.rcc/images/Bg_Notification_Bar_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Options_LineGray_Def.png">./../res/facet.rcc/images/Bg_Options_LineGray_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Options_ScrollBarBg_Def.png">./../res/facet.rcc/images/Bg_Options_ScrollBarBg_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Options_ScrollBarMarker_Def.png">./../res/facet.rcc/images/Bg_Options_ScrollBarMarker_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Options_ScrollCoverBottom.png">./../res/facet.rcc/images/Bg_Options_ScrollCoverBottom.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Options_ScrollCoverTop.png">./../res/facet.rcc/images/Bg_Options_ScrollCoverTop.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Scale_Bar_Act.png">./../res/facet.rcc/images/Bg_Scale_Bar_Act.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Scale_Bar_Def.png">./../res/facet.rcc/images/Bg_Scale_Bar_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Scale_Bar_Dis.png">./../res/facet.rcc/images/Bg_Scale_Bar_Dis.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Scale_BarLock_Act.png">./../res/facet.rcc/images/Bg_Scale_BarLock_Act.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Scale_BarLock_Def.png">./../res/facet.rcc/images/Bg_Scale_BarLock_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Scale_BarLock_Dis.png">./../res/facet.rcc/images/Bg_Scale_BarLock_Dis.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Scale_Outline_Def.png">./../res/facet.rcc/images/Bg_Scale_Outline_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Scale_OutlineLocked_Def.png">./../res/facet.rcc/images/Bg_Scale_OutlineLocked_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Status_Bar_Alarm.png">./../res/facet.rcc/images/Bg_Status_Bar_Alarm.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Status_Bar_Def.png">./../res/facet.rcc/images/Bg_Status_Bar_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_Status_Divider_Def.png">./../res/facet.rcc/images/Bg_Status_Divider_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Bg_ToolTip_Bar_Def.png">./../res/facet.rcc/images/Bg_ToolTip_Bar_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Btn_PopUp_Def.png">./../res/facet.rcc/images/Btn_PopUp_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Btn_PopUp_Down.png">./../res/facet.rcc/images/Btn_PopUp_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Btn_PopUp_Sel.png">./../res/facet.rcc/images/Btn_PopUp_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/fcc_Def.png">./../res/facet.rcc/images/fcc_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/fcc_Sel.png">./../res/facet.rcc/images/fcc_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTable_Def.png">./../res/facet.rcc/images/Ic_Annotation_TextTable_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTable_Down.png">./../res/facet.rcc/images/Ic_Annotation_TextTable_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTable_Sel.png">./../res/facet.rcc/images/Ic_Annotation_TextTable_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableClear_Def.png">./../res/facet.rcc/images/Ic_Annotation_TextTableClear_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableClear_Down.png">./../res/facet.rcc/images/Ic_Annotation_TextTableClear_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableClear_Sel.png">./../res/facet.rcc/images/Ic_Annotation_TextTableClear_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableKb_Def.png">./../res/facet.rcc/images/Ic_Annotation_TextTableKb_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableKb_Down.png">./../res/facet.rcc/images/Ic_Annotation_TextTableKb_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableKb_Sel.png">./../res/facet.rcc/images/Ic_Annotation_TextTableKb_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableTemplateDefault_Def.png">./../res/facet.rcc/images/Ic_Annotation_TextTableTemplateDefault_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableTemplateDefault_Down.png">./../res/facet.rcc/images/Ic_Annotation_TextTableTemplateDefault_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Annotation_TextTableTemplateDefault_Sel.png">./../res/facet.rcc/images/Ic_Annotation_TextTableTemplateDefault_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_ArchiveToCamera_Def.png">./../res/facet.rcc/images/Ic_Camera_ArchiveToCamera_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_ArchiveToCamera_Down.png">./../res/facet.rcc/images/Ic_Camera_ArchiveToCamera_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_ArchiveToCamera_Sel.png">./../res/facet.rcc/images/Ic_Camera_ArchiveToCamera_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Info_Def.png">./../res/facet.rcc/images/Ic_Camera_Info_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Info_Down.png">./../res/facet.rcc/images/Ic_Camera_Info_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Info_Sel.png">./../res/facet.rcc/images/Ic_Camera_Info_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom1x_Def.png">./../res/facet.rcc/images/Ic_Camera_Zoom1x_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom1x_Down.png">./../res/facet.rcc/images/Ic_Camera_Zoom1x_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom1x_Sel.png">./../res/facet.rcc/images/Ic_Camera_Zoom1x_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom2x_Def.png">./../res/facet.rcc/images/Ic_Camera_Zoom2x_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom2x_Down.png">./../res/facet.rcc/images/Ic_Camera_Zoom2x_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom2x_Sel.png">./../res/facet.rcc/images/Ic_Camera_Zoom2x_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom4x_Def.png">./../res/facet.rcc/images/Ic_Camera_Zoom4x_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom4x_Down.png">./../res/facet.rcc/images/Ic_Camera_Zoom4x_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom4x_Sel.png">./../res/facet.rcc/images/Ic_Camera_Zoom4x_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom8x_Def.png">./../res/facet.rcc/images/Ic_Camera_Zoom8x_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom8x_Down.png">./../res/facet.rcc/images/Ic_Camera_Zoom8x_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Camera_Zoom8x_Sel.png">./../res/facet.rcc/images/Ic_Camera_Zoom8x_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermAbove_Def.png">./../res/facet.rcc/images/Ic_Colorize_IsothermAbove_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermAbove_Down.png">./../res/facet.rcc/images/Ic_Colorize_IsothermAbove_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermAbove_Sel.png">./../res/facet.rcc/images/Ic_Colorize_IsothermAbove_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermBelow_Def.png">./../res/facet.rcc/images/Ic_Colorize_IsothermBelow_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermBelow_Down.png">./../res/facet.rcc/images/Ic_Colorize_IsothermBelow_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermBelow_Sel.png">./../res/facet.rcc/images/Ic_Colorize_IsothermBelow_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermHumidity_Def.png">./../res/facet.rcc/images/Ic_Colorize_IsothermHumidity_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermHumidity_Down.png">./../res/facet.rcc/images/Ic_Colorize_IsothermHumidity_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermHumidity_Sel.png">./../res/facet.rcc/images/Ic_Colorize_IsothermHumidity_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermInsulation_Def.png">./../res/facet.rcc/images/Ic_Colorize_IsothermInsulation_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermInsulation_Down.png">./../res/facet.rcc/images/Ic_Colorize_IsothermInsulation_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermInsulation_Sel.png">./../res/facet.rcc/images/Ic_Colorize_IsothermInsulation_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermInterval_Def.png">./../res/facet.rcc/images/Ic_Colorize_IsothermInterval_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermInterval_Down.png">./../res/facet.rcc/images/Ic_Colorize_IsothermInterval_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_IsothermInterval_Sel.png">./../res/facet.rcc/images/Ic_Colorize_IsothermInterval_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_Palette_Def.png">./../res/facet.rcc/images/Ic_Colorize_Palette_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_Palette_Down.png">./../res/facet.rcc/images/Ic_Colorize_Palette_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_Palette_Sel.png">./../res/facet.rcc/images/Ic_Colorize_Palette_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteArtic_Def.png">./../res/facet.rcc/images/Ic_Colorize_PaletteArtic_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteArtic_Down.png">./../res/facet.rcc/images/Ic_Colorize_PaletteArtic_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteArtic_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PaletteArtic_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteGrayHotBlack_Def.png">./../res/facet.rcc/images/Ic_Colorize_PaletteGrayHotBlack_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteGrayHotBlack_Down.png">./../res/facet.rcc/images/Ic_Colorize_PaletteGrayHotBlack_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteGrayHotBlack_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PaletteGrayHotBlack_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteGrayHotWhite_Def.png">./../res/facet.rcc/images/Ic_Colorize_PaletteGrayHotWhite_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteGrayHotWhite_Down.png">./../res/facet.rcc/images/Ic_Colorize_PaletteGrayHotWhite_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteGrayHotWhite_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PaletteGrayHotWhite_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteHotColdRedBlue_Def.png">./../res/facet.rcc/images/Ic_Colorize_PaletteHotColdRedBlue_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteHotColdRedBlue_Down.png">./../res/facet.rcc/images/Ic_Colorize_PaletteHotColdRedBlue_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteHotColdRedBlue_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PaletteHotColdRedBlue_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteIron_Def.png">./../res/facet.rcc/images/Ic_Colorize_PaletteIron_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteIron_Down.png">./../res/facet.rcc/images/Ic_Colorize_PaletteIron_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteIron_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PaletteIron_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteLava_Def.png">./../res/facet.rcc/images/Ic_Colorize_PaletteLava_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteLava_Down.png">./../res/facet.rcc/images/Ic_Colorize_PaletteLava_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteLava_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PaletteLava_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PalettePredator_Def.png">./../res/facet.rcc/images/Ic_Colorize_PalettePredator_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PalettePredator_Down.png">./../res/facet.rcc/images/Ic_Colorize_PalettePredator_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PalettePredator_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PalettePredator_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteRainbow_Def.png">./../res/facet.rcc/images/Ic_Colorize_PaletteRainbow_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteRainbow_Down.png">./../res/facet.rcc/images/Ic_Colorize_PaletteRainbow_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteRainbow_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PaletteRainbow_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteRainbowHighColor_Def.png">./../res/facet.rcc/images/Ic_Colorize_PaletteRainbowHighColor_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteRainbowHighColor_Down.png">./../res/facet.rcc/images/Ic_Colorize_PaletteRainbowHighColor_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Colorize_PaletteRainbowHighColor_Sel.png">./../res/facet.rcc/images/Ic_Colorize_PaletteRainbowHighColor_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Export_ShareDeviceTablet_Def.png">./../res/facet.rcc/images/Ic_Export_ShareDeviceTablet_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Export_ShareDeviceTablet_Down.png">./../res/facet.rcc/images/Ic_Export_ShareDeviceTablet_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Export_ShareDeviceTablet_Sel.png">./../res/facet.rcc/images/Ic_Export_ShareDeviceTablet_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Accept_Def.png">./../res/facet.rcc/images/Ic_Global_Accept_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Accept_Down.png">./../res/facet.rcc/images/Ic_Global_Accept_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Accept_Sel.png">./../res/facet.rcc/images/Ic_Global_Accept_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Back_Def.png">./../res/facet.rcc/images/Ic_Global_Back_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Back_Down.png">./../res/facet.rcc/images/Ic_Global_Back_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Back_Sel.png">./../res/facet.rcc/images/Ic_Global_Back_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Cancel_Def.png">./../res/facet.rcc/images/Ic_Global_Cancel_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Cancel_Down.png">./../res/facet.rcc/images/Ic_Global_Cancel_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Cancel_Sel.png">./../res/facet.rcc/images/Ic_Global_Cancel_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Delete_Def.png">./../res/facet.rcc/images/Ic_Global_Delete_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Delete_Down.png">./../res/facet.rcc/images/Ic_Global_Delete_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Delete_Sel.png">./../res/facet.rcc/images/Ic_Global_Delete_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Error_Def.png">./../res/facet.rcc/images/Ic_Global_Error_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Error_Down.png">./../res/facet.rcc/images/Ic_Global_Error_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Error_Sel.png">./../res/facet.rcc/images/Ic_Global_Error_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Redo_Def.png">./../res/facet.rcc/images/Ic_Global_Redo_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Redo_Down.png">./../res/facet.rcc/images/Ic_Global_Redo_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Redo_Sel.png">./../res/facet.rcc/images/Ic_Global_Redo_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Refresh_Def.png">./../res/facet.rcc/images/Ic_Global_Refresh_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Refresh_Down.png">./../res/facet.rcc/images/Ic_Global_Refresh_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Refresh_Sel.png">./../res/facet.rcc/images/Ic_Global_Refresh_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Remove_Def.png">./../res/facet.rcc/images/Ic_Global_Remove_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Remove_Down.png">./../res/facet.rcc/images/Ic_Global_Remove_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Remove_Sel.png">./../res/facet.rcc/images/Ic_Global_Remove_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Save_Def.png">./../res/facet.rcc/images/Ic_Global_Save_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Save_Down.png">./../res/facet.rcc/images/Ic_Global_Save_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Save_Sel.png">./../res/facet.rcc/images/Ic_Global_Save_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Undo_Def.png">./../res/facet.rcc/images/Ic_Global_Undo_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Undo_Down.png">./../res/facet.rcc/images/Ic_Global_Undo_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Undo_Sel.png">./../res/facet.rcc/images/Ic_Global_Undo_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Up_Def.png">./../res/facet.rcc/images/Ic_Global_Up_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Up_Down.png">./../res/facet.rcc/images/Ic_Global_Up_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Global_Up_Sel.png">./../res/facet.rcc/images/Ic_Global_Up_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Accept_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Accept_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Accept_Down.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Accept_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Accept_Sel.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Accept_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Cancel_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Cancel_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Cancel_Down.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Cancel_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Cancel_Sel.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Cancel_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Error_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Error_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Error_Down.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Error_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Error_Sel.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Error_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_ErrorCu_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_ErrorCu_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Info_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Info_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Info_Down.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Info_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Info_Sel.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Info_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_InfoCu_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_InfoCu_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Questionmark_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Questionmark_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Questionmark_Down.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Questionmark_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Questionmark_Sel.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Questionmark_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_QuestionmarkMirror_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_QuestionmarkMirror_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_QuestionmarkMirror_Down.png">./../res/facet.rcc/images/Ic_GlobalDialogue_QuestionmarkMirror_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_QuestionmarkMirror_Sel.png">./../res/facet.rcc/images/Ic_GlobalDialogue_QuestionmarkMirror_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Warning_Def.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Warning_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Warning_Down.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Warning_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_GlobalDialogue_Warning_Sel.png">./../res/facet.rcc/images/Ic_GlobalDialogue_Warning_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_Ms_Def.png">./../res/facet.rcc/images/Ic_ImageMode_Ms_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_Ms_Down.png">./../res/facet.rcc/images/Ic_ImageMode_Ms_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_Ms_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_Ms_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsBlending_Def.png">./../res/facet.rcc/images/Ic_ImageMode_MsBlending_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsBlending_Down.png">./../res/facet.rcc/images/Ic_ImageMode_MsBlending_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsBlending_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_MsBlending_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsDc_Def.png">./../res/facet.rcc/images/Ic_ImageMode_MsDc_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsDc_Down.png">./../res/facet.rcc/images/Ic_ImageMode_MsDc_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsDc_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_MsDc_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsIr_Def.png">./../res/facet.rcc/images/Ic_ImageMode_MsIr_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsIr_Down.png">./../res/facet.rcc/images/Ic_ImageMode_MsIr_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsIr_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_MsIr_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsMsx_Def.png">./../res/facet.rcc/images/Ic_ImageMode_MsMsx_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsMsx_Down.png">./../res/facet.rcc/images/Ic_ImageMode_MsMsx_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsMsx_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_MsMsx_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsPipMedium_Def.png">./../res/facet.rcc/images/Ic_ImageMode_MsPipMedium_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsPipMedium_Down.png">./../res/facet.rcc/images/Ic_ImageMode_MsPipMedium_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsPipMedium_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_MsPipMedium_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsPipSmall_Def.png">./../res/facet.rcc/images/Ic_ImageMode_MsPipSmall_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsPipSmall_Down.png">./../res/facet.rcc/images/Ic_ImageMode_MsPipSmall_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsPipSmall_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_MsPipSmall_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsThermal_Def.png">./../res/facet.rcc/images/Ic_ImageMode_MsThermal_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsThermal_Down.png">./../res/facet.rcc/images/Ic_ImageMode_MsThermal_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_MsThermal_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_MsThermal_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_SketchCanvas_Def.png">./../res/facet.rcc/images/Ic_ImageMode_SketchCanvas_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_SketchCanvas_Down.png">./../res/facet.rcc/images/Ic_ImageMode_SketchCanvas_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_SketchCanvas_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_SketchCanvas_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_StaticImage_Def.png">./../res/facet.rcc/images/Ic_ImageMode_StaticImage_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_StaticImage_Down.png">./../res/facet.rcc/images/Ic_ImageMode_StaticImage_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageMode_StaticImage_Sel.png">./../res/facet.rcc/images/Ic_ImageMode_StaticImage_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_Sketch_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_Sketch_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_Sketch_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_Sketch_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_Sketch_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_Sketch_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorBlack_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorBlack_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorBlack_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorBlack_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorBlack_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorBlack_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorBlue_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorBlue_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorBlue_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorBlue_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorBlue_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorBlue_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorGreen_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorGreen_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorGreen_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorGreen_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorGreen_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorGreen_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorRed_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorRed_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorRed_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorRed_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorRed_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorRed_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorWhite_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorWhite_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorWhite_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorWhite_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorWhite_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorWhite_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorYellow_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorYellow_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorYellow_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorYellow_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchColorYellow_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchColorYellow_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchEraseAll_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchEraseAll_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchEraseAll_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchEraseAll_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchEraseAll_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchEraseAll_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchEraser_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchEraser_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchEraser_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchEraser_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_SketchEraser_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_SketchEraser_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_Stamp_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_Stamp_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_Stamp_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_Stamp_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_Stamp_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_Stamp_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowLeft_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowLeft_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowLeft_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowLeft_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowLeft_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowLeft_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowRight_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowRight_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowRight_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowRight_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowRight_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowRight_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowX_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowX_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowX_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowX_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampArrowX_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_StampArrowX_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampCircle_Def.png">./../res/facet.rcc/images/Ic_ImageSketch_StampCircle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampCircle_Down.png">./../res/facet.rcc/images/Ic_ImageSketch_StampCircle_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageSketch_StampCircle_Sel.png">./../res/facet.rcc/images/Ic_ImageSketch_StampCircle_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ExportNonRadiometric_Def.png">./../res/facet.rcc/images/Ic_ImageTool_ExportNonRadiometric_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ExportNonRadiometric_Down.png">./../res/facet.rcc/images/Ic_ImageTool_ExportNonRadiometric_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ExportNonRadiometric_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_ExportNonRadiometric_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_GroupImageAdd_Def.png">./../res/facet.rcc/images/Ic_ImageTool_GroupImageAdd_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_GroupImageAdd_Down.png">./../res/facet.rcc/images/Ic_ImageTool_GroupImageAdd_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_GroupImageAdd_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_GroupImageAdd_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_GroupImageRemove_Def.png">./../res/facet.rcc/images/Ic_ImageTool_GroupImageRemove_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_GroupImageRemove_Down.png">./../res/facet.rcc/images/Ic_ImageTool_GroupImageRemove_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_GroupImageRemove_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_GroupImageRemove_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Rotate090CCw_Def.png">./../res/facet.rcc/images/Ic_ImageTool_Rotate090CCw_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Rotate090CCw_Down.png">./../res/facet.rcc/images/Ic_ImageTool_Rotate090CCw_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Rotate090CCw_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_Rotate090CCw_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Rotate090Cw_Def.png">./../res/facet.rcc/images/Ic_ImageTool_Rotate090Cw_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Rotate090Cw_Down.png">./../res/facet.rcc/images/Ic_ImageTool_Rotate090Cw_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Rotate090Cw_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_Rotate090Cw_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_SketchHide_Def.png">./../res/facet.rcc/images/Ic_ImageTool_SketchHide_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_SketchHide_Down.png">./../res/facet.rcc/images/Ic_ImageTool_SketchHide_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_SketchHide_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_SketchHide_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Zoom_Def.png">./../res/facet.rcc/images/Ic_ImageTool_Zoom_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Zoom_Down.png">./../res/facet.rcc/images/Ic_ImageTool_Zoom_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_Zoom_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_Zoom_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoActualSize_Def.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoActualSize_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoActualSize_Down.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoActualSize_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoActualSize_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoActualSize_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoFitScreen_Def.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoFitScreen_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoFitScreen_Down.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoFitScreen_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoFitScreen_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoFitScreen_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoMaximize_Def.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoMaximize_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoMaximize_Down.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoMaximize_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoMaximize_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoMaximize_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoMinimize_Def.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoMinimize_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoMinimize_Down.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoMinimize_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomAutoMinimize_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomAutoMinimize_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomMinus_Def.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomMinus_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomMinus_Down.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomMinus_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomMinus_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomMinus_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomPlus_Def.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomPlus_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomPlus_Down.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomPlus_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ImageTool_ZoomPlus_Sel.png">./../res/facet.rcc/images/Ic_ImageTool_ZoomPlus_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowDown_Def.png">./../res/facet.rcc/images/Ic_List_ArrowDown_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowDown_Down.png">./../res/facet.rcc/images/Ic_List_ArrowDown_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowDown_Sel.png">./../res/facet.rcc/images/Ic_List_ArrowDown_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowLeft_Def.png">./../res/facet.rcc/images/Ic_List_ArrowLeft_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowLeft_Down.png">./../res/facet.rcc/images/Ic_List_ArrowLeft_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowLeft_Sel.png">./../res/facet.rcc/images/Ic_List_ArrowLeft_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowLeftRight_Def.png">./../res/facet.rcc/images/Ic_List_ArrowLeftRight_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowLeftRight_Down.png">./../res/facet.rcc/images/Ic_List_ArrowLeftRight_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowLeftRight_Sel.png">./../res/facet.rcc/images/Ic_List_ArrowLeftRight_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowRight_Def.png">./../res/facet.rcc/images/Ic_List_ArrowRight_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowRight_Down.png">./../res/facet.rcc/images/Ic_List_ArrowRight_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowRight_Sel.png">./../res/facet.rcc/images/Ic_List_ArrowRight_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowUp_Def.png">./../res/facet.rcc/images/Ic_List_ArrowUp_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowUp_Down.png">./../res/facet.rcc/images/Ic_List_ArrowUp_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowUp_Sel.png">./../res/facet.rcc/images/Ic_List_ArrowUp_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowUpDown_Def.png">./../res/facet.rcc/images/Ic_List_ArrowUpDown_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowUpDown_Down.png">./../res/facet.rcc/images/Ic_List_ArrowUpDown_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_List_ArrowUpDown_Sel.png">./../res/facet.rcc/images/Ic_List_ArrowUpDown_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_CheckBox_Def.png">./../res/facet.rcc/images/Ic_ListChoice_CheckBox_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_CheckBox_Down.png">./../res/facet.rcc/images/Ic_ListChoice_CheckBox_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_CheckBox_Sel.png">./../res/facet.rcc/images/Ic_ListChoice_CheckBox_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_CheckBoxChecked_Def.png">./../res/facet.rcc/images/Ic_ListChoice_CheckBoxChecked_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_CheckBoxChecked_Down.png">./../res/facet.rcc/images/Ic_ListChoice_CheckBoxChecked_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_CheckBoxChecked_Sel.png">./../res/facet.rcc/images/Ic_ListChoice_CheckBoxChecked_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_RadioButton_Def.png">./../res/facet.rcc/images/Ic_ListChoice_RadioButton_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_RadioButton_Down.png">./../res/facet.rcc/images/Ic_ListChoice_RadioButton_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_RadioButton_Sel.png">./../res/facet.rcc/images/Ic_ListChoice_RadioButton_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_RadioButtonChecked_Def.png">./../res/facet.rcc/images/Ic_ListChoice_RadioButtonChecked_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_RadioButtonChecked_Down.png">./../res/facet.rcc/images/Ic_ListChoice_RadioButtonChecked_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_ListChoice_RadioButtonChecked_Sel.png">./../res/facet.rcc/images/Ic_ListChoice_RadioButtonChecked_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Alarm_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Alarm_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Alarm_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Alarm_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Alarm_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Alarm_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Box2_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Box2_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Box2_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Box2_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Box2_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Box2_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Box_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Box_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Box_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Box_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Box_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Box_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Circle_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Circle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Circle_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Circle_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Circle_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Circle_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Delta_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Delta_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Delta_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Delta_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Delta_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Delta_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Markers_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Markers_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Markers_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Markers_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Markers_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Markers_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Profile_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Profile_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Profile_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Profile_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Profile_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Profile_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_ProfileGraphLine_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_ProfileGraphLine_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_ProfileGraphLine_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_ProfileGraphLine_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_ProfileGraphLine_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_ProfileGraphLine_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Spot3_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Spot3_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Spot3_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Spot3_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Spot3_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Spot3_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Spot_Def.png">./../res/facet.rcc/images/Ic_MeasureTool_Spot_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Spot_Down.png">./../res/facet.rcc/images/Ic_MeasureTool_Spot_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureTool_Spot_Sel.png">./../res/facet.rcc/images/Ic_MeasureTool_Spot_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Center_Def.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Center_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Center_Down.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Center_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Center_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Center_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_CenterRotate_Def.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_CenterRotate_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_CenterRotate_Down.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_CenterRotate_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_CenterRotate_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_CenterRotate_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Move_Def.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Move_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Move_Down.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Move_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Move_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Move_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Resize_Def.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Resize_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Resize_Down.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Resize_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_Resize_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_Resize_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_SelectHand_Def.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_SelectHand_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_SelectHand_Down.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_SelectHand_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_SelectHand_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_SelectHand_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_SelectPointer_Def.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_SelectPointer_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_SelectPointer_Down.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_SelectPointer_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolAdjust_SelectPointer_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolAdjust_SelectPointer_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolGroup_SpotBox_Def.png">./../res/facet.rcc/images/Ic_MeasureToolGroup_SpotBox_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolGroup_SpotBox_Down.png">./../res/facet.rcc/images/Ic_MeasureToolGroup_SpotBox_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolGroup_SpotBox_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolGroup_SpotBox_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolGroup_SpotCircle_Def.png">./../res/facet.rcc/images/Ic_MeasureToolGroup_SpotCircle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolGroup_SpotCircle_Down.png">./../res/facet.rcc/images/Ic_MeasureToolGroup_SpotCircle_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolGroup_SpotCircle_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolGroup_SpotCircle_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaS_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaS_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaS_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaS_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaS_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaS_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaT_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaT_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaT_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaT_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaT_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaT_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaX_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaX_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaX_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaX_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_DeltaX_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_DeltaX_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_MaxMinCenter_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_MaxMinCenter_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_MaxMinCenter_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_MaxMinCenter_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_MaxMinCenter_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_MaxMinCenter_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotBoxMax_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotBoxMax_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotBoxMax_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotBoxMax_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotBoxMax_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotBoxMax_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenter_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenter_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenter_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenter_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenter_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenter_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenterBox_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenterBox_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenterBox_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenterBox_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenterBox_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenterBox_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenterCircle_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenterCircle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenterCircle_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenterCircle_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotCenterCircle_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotCenterCircle_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotHide_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotHide_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotHide_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotHide_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotHide_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotHide_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMax_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMax_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMax_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMax_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMax_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMax_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMaxBox_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMaxBox_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMaxBox_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMaxBox_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMaxBox_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMaxBox_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMaxCircle_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMaxCircle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMaxCircle_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMaxCircle_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMaxCircle_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMaxCircle_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMin_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMin_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMin_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMin_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMin_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMin_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMinBox_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMinBox_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMinBox_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMinBox_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMinBox_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMinBox_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMinCircle_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMinCircle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMinCircle_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMinCircle_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_SpotMinCircle_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_SpotMinCircle_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefined1_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefined1_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefined1_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefined1_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefined1_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefined1_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefined2_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefined2_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefined2_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefined2_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefined2_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefined2_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefinedSettings_Def.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefinedSettings_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefinedSettings_Down.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefinedSettings_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_MeasureToolPreset_UserDefinedSettings_Sel.png">./../res/facet.rcc/images/Ic_MeasureToolPreset_UserDefinedSettings_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Menu_More_Def.png">./../res/facet.rcc/images/Ic_Menu_More_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Menu_More_Down.png">./../res/facet.rcc/images/Ic_Menu_More_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Menu_More_Sel.png">./../res/facet.rcc/images/Ic_Menu_More_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Menu_Options_Def.png">./../res/facet.rcc/images/Ic_Menu_Options_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Menu_Options_Down.png">./../res/facet.rcc/images/Ic_Menu_Options_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Menu_Options_Sel.png">./../res/facet.rcc/images/Ic_Menu_Options_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_AddOnLens_Def.png">./../res/facet.rcc/images/Ic_Options_AddOnLens_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_AddOnLens_Down.png">./../res/facet.rcc/images/Ic_Options_AddOnLens_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_AddOnLens_Sel.png">./../res/facet.rcc/images/Ic_Options_AddOnLens_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_DeviceSettings_Def.png">./../res/facet.rcc/images/Ic_Options_DeviceSettings_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_DeviceSettings_Down.png">./../res/facet.rcc/images/Ic_Options_DeviceSettings_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_DeviceSettings_Sel.png">./../res/facet.rcc/images/Ic_Options_DeviceSettings_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_MeasurementMenu_Def.png">./../res/facet.rcc/images/Ic_Options_MeasurementMenu_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_MeasurementMenu_Down.png">./../res/facet.rcc/images/Ic_Options_MeasurementMenu_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_MeasurementMenu_Sel.png">./../res/facet.rcc/images/Ic_Options_MeasurementMenu_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_Parameters_Def.png">./../res/facet.rcc/images/Ic_Options_Parameters_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_Parameters_Down.png">./../res/facet.rcc/images/Ic_Options_Parameters_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_Parameters_Sel.png">./../res/facet.rcc/images/Ic_Options_Parameters_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistance_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersDistance_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistance_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersDistance_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistance_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersDistance_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistanceAlign1_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersDistanceAlign1_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistanceAlign1_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersDistanceAlign1_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistanceAlign1_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersDistanceAlign1_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistanceAlign_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersDistanceAlign_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistanceAlign_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersDistanceAlign_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersDistanceAlign_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersDistanceAlign_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivity_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivity_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivity_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivity_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivity_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivity_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivityEBig_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivityEBig_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivityEBig_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivityEBig_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivityEBig_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivityEBig_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivityESmall_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivityESmall_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivityESmall_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivityESmall_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersEmissivityESmall_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersEmissivityESmall_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersHumidityRelative_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersHumidityRelative_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersHumidityRelative_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersHumidityRelative_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersHumidityRelative_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersHumidityRelative_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersHumidityRelativeA_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersHumidityRelativeA_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersHumidityRelativeA_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersHumidityRelativeA_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersHumidityRelativeA_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersHumidityRelativeA_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersTemperatureAtmospheric_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersTemperatureAtmospheric_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersTemperatureAtmospheric_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersTemperatureAtmospheric_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersTemperatureAtmospheric_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersTemperatureAtmospheric_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersTemperatureReflected_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersTemperatureReflected_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersTemperatureReflected_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersTemperatureReflected_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersTemperatureReflected_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersTemperatureReflected_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersWindowCompensation_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersWindowCompensation_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersWindowCompensation_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersWindowCompensation_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersWindowCompensation_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersWindowCompensation_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersXtech_Def.png">./../res/facet.rcc/images/Ic_Options_ParametersXtech_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersXtech_Down.png">./../res/facet.rcc/images/Ic_Options_ParametersXtech_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ParametersXtech_Sel.png">./../res/facet.rcc/images/Ic_Options_ParametersXtech_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ProgrammableButton_Def.png">./../res/facet.rcc/images/Ic_Options_ProgrammableButton_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ProgrammableButton_Down.png">./../res/facet.rcc/images/Ic_Options_ProgrammableButton_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_ProgrammableButton_Sel.png">./../res/facet.rcc/images/Ic_Options_ProgrammableButton_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingMode_Def.png">./../res/facet.rcc/images/Ic_Options_RecordingMode_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingMode_Down.png">./../res/facet.rcc/images/Ic_Options_RecordingMode_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingMode_Sel.png">./../res/facet.rcc/images/Ic_Options_RecordingMode_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModePanorama_Def.png">./../res/facet.rcc/images/Ic_Options_RecordingModePanorama_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModePanorama_Down.png">./../res/facet.rcc/images/Ic_Options_RecordingModePanorama_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModePanorama_Sel.png">./../res/facet.rcc/images/Ic_Options_RecordingModePanorama_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeStillImage_Def.png">./../res/facet.rcc/images/Ic_Options_RecordingModeStillImage_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeStillImage_Down.png">./../res/facet.rcc/images/Ic_Options_RecordingModeStillImage_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeStillImage_Sel.png">./../res/facet.rcc/images/Ic_Options_RecordingModeStillImage_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeTimeLapse_Def.png">./../res/facet.rcc/images/Ic_Options_RecordingModeTimeLapse_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeTimeLapse_Down.png">./../res/facet.rcc/images/Ic_Options_RecordingModeTimeLapse_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeTimeLapse_Sel.png">./../res/facet.rcc/images/Ic_Options_RecordingModeTimeLapse_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeVideoMpeg_Def.png">./../res/facet.rcc/images/Ic_Options_RecordingModeVideoMpeg_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeVideoMpeg_Down.png">./../res/facet.rcc/images/Ic_Options_RecordingModeVideoMpeg_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeVideoMpeg_Sel.png">./../res/facet.rcc/images/Ic_Options_RecordingModeVideoMpeg_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeVideoRadiometric_Def.png">./../res/facet.rcc/images/Ic_Options_RecordingModeVideoRadiometric_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeVideoRadiometric_Down.png">./../res/facet.rcc/images/Ic_Options_RecordingModeVideoRadiometric_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Options_RecordingModeVideoRadiometric_Sel.png">./../res/facet.rcc/images/Ic_Options_RecordingModeVideoRadiometric_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_AnnotationAdd_Def.png">./../res/facet.rcc/images/Ic_SaveOptions_AnnotationAdd_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_AnnotationAdd_Down.png">./../res/facet.rcc/images/Ic_SaveOptions_AnnotationAdd_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_AnnotationAdd_Sel.png">./../res/facet.rcc/images/Ic_SaveOptions_AnnotationAdd_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_ImageResolution_Def.png">./../res/facet.rcc/images/Ic_SaveOptions_ImageResolution_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_ImageResolution_Down.png">./../res/facet.rcc/images/Ic_SaveOptions_ImageResolution_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_ImageResolution_Sel.png">./../res/facet.rcc/images/Ic_SaveOptions_ImageResolution_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_Preview_Def.png">./../res/facet.rcc/images/Ic_SaveOptions_Preview_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_Preview_Down.png">./../res/facet.rcc/images/Ic_SaveOptions_Preview_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_Preview_Sel.png">./../res/facet.rcc/images/Ic_SaveOptions_Preview_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_VideoCompression_Def.png">./../res/facet.rcc/images/Ic_SaveOptions_VideoCompression_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_VideoCompression_Down.png">./../res/facet.rcc/images/Ic_SaveOptions_VideoCompression_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_SaveOptions_VideoCompression_Sel.png">./../res/facet.rcc/images/Ic_SaveOptions_VideoCompression_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_Lock_Def.png">./../res/facet.rcc/images/Ic_Scale_Lock_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_Lock_Down.png">./../res/facet.rcc/images/Ic_Scale_Lock_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_Lock_Sel.png">./../res/facet.rcc/images/Ic_Scale_Lock_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_LockNo_Def.png">./../res/facet.rcc/images/Ic_Scale_LockNo_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_LockNo_Down.png">./../res/facet.rcc/images/Ic_Scale_LockNo_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_LockNo_Sel.png">./../res/facet.rcc/images/Ic_Scale_LockNo_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_Scale_Def.png">./../res/facet.rcc/images/Ic_Scale_Scale_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_Scale_Down.png">./../res/facet.rcc/images/Ic_Scale_Scale_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_Scale_Sel.png">./../res/facet.rcc/images/Ic_Scale_Scale_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleAuto_Def.png">./../res/facet.rcc/images/Ic_Scale_ScaleAuto_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleAuto_Down.png">./../res/facet.rcc/images/Ic_Scale_ScaleAuto_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleAuto_Sel.png">./../res/facet.rcc/images/Ic_Scale_ScaleAuto_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleLock_Def.png">./../res/facet.rcc/images/Ic_Scale_ScaleLock_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleLock_Down.png">./../res/facet.rcc/images/Ic_Scale_ScaleLock_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleLock_Sel.png">./../res/facet.rcc/images/Ic_Scale_ScaleLock_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleManual_Def.png">./../res/facet.rcc/images/Ic_Scale_ScaleManual_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleManual_Down.png">./../res/facet.rcc/images/Ic_Scale_ScaleManual_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleManual_Sel.png">./../res/facet.rcc/images/Ic_Scale_ScaleManual_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleToggle_Def.png">./../res/facet.rcc/images/Ic_Scale_ScaleToggle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleToggle_Down.png">./../res/facet.rcc/images/Ic_Scale_ScaleToggle_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_ScaleToggle_Sel.png">./../res/facet.rcc/images/Ic_Scale_ScaleToggle_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_TextAuto_Def.png">./../res/facet.rcc/images/Ic_Scale_TextAuto_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_TextAuto_Down.png">./../res/facet.rcc/images/Ic_Scale_TextAuto_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_TextAuto_Sel.png">./../res/facet.rcc/images/Ic_Scale_TextAuto_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_TextManual_Def.png">./../res/facet.rcc/images/Ic_Scale_TextManual_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_TextManual_Down.png">./../res/facet.rcc/images/Ic_Scale_TextManual_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Scale_TextManual_Sel.png">./../res/facet.rcc/images/Ic_Scale_TextManual_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Screening_PeopleGroup_Def.png">./../res/facet.rcc/images/Ic_Screening_PeopleGroup_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Screening_PeopleGroup_Down.png">./../res/facet.rcc/images/Ic_Screening_PeopleGroup_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Screening_PeopleGroup_Sel.png">./../res/facet.rcc/images/Ic_Screening_PeopleGroup_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Status_Working08.png">./../res/facet.rcc/images/Ic_Status_Working08.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Video_Playback_Def.png">./../res/facet.rcc/images/Ic_Video_Playback_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Video_Playback_Down.png">./../res/facet.rcc/images/Ic_Video_Playback_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Video_Playback_Sel.png">./../res/facet.rcc/images/Ic_Video_Playback_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Video_Snapshot_Def.png">./../res/facet.rcc/images/Ic_Video_Snapshot_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Video_Snapshot_Down.png">./../res/facet.rcc/images/Ic_Video_Snapshot_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Ic_Video_Snapshot_Sel.png">./../res/facet.rcc/images/Ic_Video_Snapshot_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Bg_TextBox_Clear_Def.png">./../res/facet.rcc/images/Kb_Bg_TextBox_Clear_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Bg_TextBox_Def.png">./../res/facet.rcc/images/Kb_Bg_TextBox_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_ActionBg_Def.png">./../res/facet.rcc/images/Kb_Btn_ActionBg_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_ActionBg_Down.png">./../res/facet.rcc/images/Kb_Btn_ActionBg_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_ActionBg_Sel.png">./../res/facet.rcc/images/Kb_Btn_ActionBg_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_LetterBg_Def.png">./../res/facet.rcc/images/Kb_Btn_LetterBg_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_LetterBg_Down.png">./../res/facet.rcc/images/Kb_Btn_LetterBg_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_LetterPopUpDark_Def.png">./../res/facet.rcc/images/Kb_Btn_LetterPopUpDark_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_LetterPopUpLight_Def.png">./../res/facet.rcc/images/Kb_Btn_LetterPopUpLight_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_ShiftIndicator_Def.png">./../res/facet.rcc/images/Kb_Btn_ShiftIndicator_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Btn_ShiftIndicator_Sel.png">./../res/facet.rcc/images/Kb_Btn_ShiftIndicator_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Ic_Backspace_Def.png">./../res/facet.rcc/images/Kb_Ic_Backspace_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Ic_Enter_Def.png">./../res/facet.rcc/images/Kb_Ic_Enter_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Ic_Shift_Def.png">./../res/facet.rcc/images/Kb_Ic_Shift_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Kb_Ic_Space_Def.png">./../res/facet.rcc/images/Kb_Ic_Space_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/RegistrationWizard_CorrectCode_Def.png">./../res/facet.rcc/images/RegistrationWizard_CorrectCode_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/RegistrationWizard_Spinwheel_arrow.png">./../res/facet.rcc/images/RegistrationWizard_Spinwheel_arrow.png</file>
+</qresource>
+<qresource>
+    <file alias="images/RegistrationWizard_WrongCode_Def.png">./../res/facet.rcc/images/RegistrationWizard_WrongCode_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Regulatory_MIC_Astra_Def.png">./../res/facet.rcc/images/Regulatory_MIC_Astra_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Regulatory_MIC_Astra_Sel.png">./../res/facet.rcc/images/Regulatory_MIC_Astra_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Regulatory_MIC_Castor_Def.png">./../res/facet.rcc/images/Regulatory_MIC_Castor_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Regulatory_MIC_Castor_Sel.png">./../res/facet.rcc/images/Regulatory_MIC_Castor_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Arrow_AboveValue_Act.png">./../res/facet.rcc/images/Sc_Arrow_AboveValue_Act.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Arrow_AboveValue_Def.png">./../res/facet.rcc/images/Sc_Arrow_AboveValue_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Arrow_AboveValue_Down.png">./../res/facet.rcc/images/Sc_Arrow_AboveValue_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Arrow_AboveValue_Sel.png">./../res/facet.rcc/images/Sc_Arrow_AboveValue_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Arrow_BelowValue_Act.png">./../res/facet.rcc/images/Sc_Arrow_BelowValue_Act.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Arrow_BelowValue_Def.png">./../res/facet.rcc/images/Sc_Arrow_BelowValue_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Arrow_BelowValue_Down.png">./../res/facet.rcc/images/Sc_Arrow_BelowValue_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Arrow_BelowValue_Sel.png">./../res/facet.rcc/images/Sc_Arrow_BelowValue_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Cursor_Sketch_Def.png">./../res/facet.rcc/images/Sc_Cursor_Sketch_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Live_Connect_Def.png">./../res/facet.rcc/images/Sc_Live_Connect_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Logo_FlirHardEdges.png">./../res/facet.rcc/images/Sc_Logo_FlirHardEdges.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Logo_Report.png">./../res/facet.rcc/images/Sc_Logo_Report.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_BoxBottomLeft_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_BoxBottomLeft_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_BoxBottomRight_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_BoxBottomRight_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_BoxSpotCold_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_BoxSpotCold_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_BoxSpotHot_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_BoxSpotHot_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_BoxTopLeft_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_BoxTopLeft_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_BoxTopRight_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_BoxTopRight_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_MarkerBox_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_MarkerBox_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_MarkerBoxSemi_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_MarkerBoxSemi_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_MarkerCircle_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_MarkerCircle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_MarkerCircleSemi_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_MarkerCircleSemi_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_MarkerSpot_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_MarkerSpot_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_MarkerSpotSemi_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_MarkerSpotSemi_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlaced_Spot_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlaced_Spot_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlacedSelected_Box_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlacedSelected_Box_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlacedSelected_Marker_Def.png">./../res/facet.rcc/images/Sc_MeasureToolPlacedSelected_Marker_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_MeasureToolPlacedSelected_Marker_Sel.png">./../res/facet.rcc/images/Sc_MeasureToolPlacedSelected_Marker_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Menu_More_Def.png">./../res/facet.rcc/images/Sc_Menu_More_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Screening_AlarmLimit_Def.png">./../res/facet.rcc/images/Sc_Screening_AlarmLimit_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Screening_PeopleSingle_Def.png">./../res/facet.rcc/images/Sc_Screening_PeopleSingle_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Screening_PeopleSingle_Sel.png">./../res/facet.rcc/images/Sc_Screening_PeopleSingle_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_StackContent_AnnotationTextNote_Def.png">./../res/facet.rcc/images/Sc_StackContent_AnnotationTextNote_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_StackContent_AnnotationTextTable_Def.png">./../res/facet.rcc/images/Sc_StackContent_AnnotationTextTable_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_StackContent_AnnotationVoice_Def.png">./../res/facet.rcc/images/Sc_StackContent_AnnotationVoice_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Alarm_Def.png">./../res/facet.rcc/images/Sc_Status_Alarm_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_AlarmAbove_Def.png">./../res/facet.rcc/images/Sc_Status_AlarmAbove_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_AlarmBelow_Def.png">./../res/facet.rcc/images/Sc_Status_AlarmBelow_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Battery00_Def.png">./../res/facet.rcc/images/Sc_Status_Battery00_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Battery01_Def.png">./../res/facet.rcc/images/Sc_Status_Battery01_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Battery02_Def.png">./../res/facet.rcc/images/Sc_Status_Battery02_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Battery03_Def.png">./../res/facet.rcc/images/Sc_Status_Battery03_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Battery04_Def.png">./../res/facet.rcc/images/Sc_Status_Battery04_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Bluetooth_Def.png">./../res/facet.rcc/images/Sc_Status_Bluetooth_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_BluetoothHeadset_Def.png">./../res/facet.rcc/images/Sc_Status_BluetoothHeadset_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_BluetoothMeterlink_Def.png">./../res/facet.rcc/images/Sc_Status_BluetoothMeterlink_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Calibrating_Def.png">./../res/facet.rcc/images/Sc_Status_Calibrating_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Compass_Def.png">./../res/facet.rcc/images/Sc_Status_Compass_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Delta_Def.png">./../res/facet.rcc/images/Sc_Status_Delta_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_DeltaS_Def.png">./../res/facet.rcc/images/Sc_Status_DeltaS_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_DeltaT_Def.png">./../res/facet.rcc/images/Sc_Status_DeltaT_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Emissivity_Def.png">./../res/facet.rcc/images/Sc_Status_Emissivity_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Ethernet_Def.png">./../res/facet.rcc/images/Sc_Status_Ethernet_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Gps_Def.png">./../res/facet.rcc/images/Sc_Status_Gps_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Info_Def.png">./../res/facet.rcc/images/Sc_Status_Info_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_LampOn_Def.png">./../res/facet.rcc/images/Sc_Status_LampOn_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Laser.png">./../res/facet.rcc/images/Sc_Status_Laser.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_LaserIndicator_Def.png">./../res/facet.rcc/images/Sc_Status_LaserIndicator_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Locked_Def.png">./../res/facet.rcc/images/Sc_Status_Locked_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Locked_Down.png">./../res/facet.rcc/images/Sc_Status_Locked_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Locked_Sel.png">./../res/facet.rcc/images/Sc_Status_Locked_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Memcard00_Def.png">./../res/facet.rcc/images/Sc_Status_Memcard00_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Memcard01_Def.png">./../res/facet.rcc/images/Sc_Status_Memcard01_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Memcard02_Def.png">./../res/facet.rcc/images/Sc_Status_Memcard02_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Memcard03_Def.png">./../res/facet.rcc/images/Sc_Status_Memcard03_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Memcard04_Def.png">./../res/facet.rcc/images/Sc_Status_Memcard04_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Questionmark_Def.png">./../res/facet.rcc/images/Sc_Status_Questionmark_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowDown_Act.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowDown_Act.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowDown_Def.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowDown_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowDown_Down.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowDown_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowDown_Sel.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowDown_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUp_Act.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUp_Act.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUp_Def.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUp_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUp_Down.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUp_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUp_Sel.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUp_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUpDown_Def.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUpDown_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUpDown_Down.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUpDown_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUpDown_Sel.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUpDown_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUpDownInvert_Def.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUpDownInvert_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUpDownInvert_Down.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUpDownInvert_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_ScaleArrowUpDownInvert_Sel.png">./../res/facet.rcc/images/Sc_Status_ScaleArrowUpDownInvert_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Tempscale_Def.png">./../res/facet.rcc/images/Sc_Status_Tempscale_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Timelapse_Def.png">./../res/facet.rcc/images/Sc_Status_Timelapse_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_TimelapseRecording_Def.png">./../res/facet.rcc/images/Sc_Status_TimelapseRecording_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Usb_Def.png">./../res/facet.rcc/images/Sc_Status_Usb_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Video_Def.png">./../res/facet.rcc/images/Sc_Status_Video_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_VideoFrameNext_Def.png">./../res/facet.rcc/images/Sc_Status_VideoFrameNext_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_VideoFramePrevious_Def.png">./../res/facet.rcc/images/Sc_Status_VideoFramePrevious_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_VideoPause_Def.png">./../res/facet.rcc/images/Sc_Status_VideoPause_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_VideoPlay_Def.png">./../res/facet.rcc/images/Sc_Status_VideoPlay_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_VideoRecording_Def.png">./../res/facet.rcc/images/Sc_Status_VideoRecording_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Warning_Def.png">./../res/facet.rcc/images/Sc_Status_Warning_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi01_Def.png">./../res/facet.rcc/images/Sc_Status_Wifi01_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi01_Sel.png">./../res/facet.rcc/images/Sc_Status_Wifi01_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi02_Def.png">./../res/facet.rcc/images/Sc_Status_Wifi02_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi02_Sel.png">./../res/facet.rcc/images/Sc_Status_Wifi02_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi03_Def.png">./../res/facet.rcc/images/Sc_Status_Wifi03_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi03_Sel.png">./../res/facet.rcc/images/Sc_Status_Wifi03_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi04_Def.png">./../res/facet.rcc/images/Sc_Status_Wifi04_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi04_Sel.png">./../res/facet.rcc/images/Sc_Status_Wifi04_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_01_Def.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_01_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_01_Down.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_01_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_01_Sel.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_01_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_02_Def.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_02_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_02_Down.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_02_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_02_Sel.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_02_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_03_Def.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_03_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_03_Down.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_03_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_03_Sel.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_03_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_04_Def.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_04_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_04_Down.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_04_Down.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Wifi_Locked_04_Sel.png">./../res/facet.rcc/images/Sc_Status_Wifi_Locked_04_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiLocked01_Def.png">./../res/facet.rcc/images/Sc_Status_WifiLocked01_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiLocked01_Sel.png">./../res/facet.rcc/images/Sc_Status_WifiLocked01_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiLocked02_Def.png">./../res/facet.rcc/images/Sc_Status_WifiLocked02_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiLocked02_Sel.png">./../res/facet.rcc/images/Sc_Status_WifiLocked02_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiLocked03_Def.png">./../res/facet.rcc/images/Sc_Status_WifiLocked03_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiLocked03_Sel.png">./../res/facet.rcc/images/Sc_Status_WifiLocked03_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiLocked04_Def.png">./../res/facet.rcc/images/Sc_Status_WifiLocked04_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiLocked04_Sel.png">./../res/facet.rcc/images/Sc_Status_WifiLocked04_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_WifiTethering_Def.png">./../res/facet.rcc/images/Sc_Status_WifiTethering_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Working08_Def.png">./../res/facet.rcc/images/Sc_Status_Working08_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Zoom1x_Def.png">./../res/facet.rcc/images/Sc_Status_Zoom1x_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Zoom2x_Def.png">./../res/facet.rcc/images/Sc_Status_Zoom2x_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Zoom4x_Def.png">./../res/facet.rcc/images/Sc_Status_Zoom4x_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Status_Zoom8x_Def.png">./../res/facet.rcc/images/Sc_Status_Zoom8x_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Temporary_Keyboard_Def.png">./../res/facet.rcc/images/Sc_Temporary_Keyboard_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Temporary_Keyboard_Sel.png">./../res/facet.rcc/images/Sc_Temporary_Keyboard_Sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Video_Directplay_Def.png">./../res/facet.rcc/images/Sc_Video_Directplay_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/Sc_Video_DirectplayThumb_Def.png">./../res/facet.rcc/images/Sc_Video_DirectplayThumb_Def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/screening_button_def.png">./../res/facet.rcc/images/screening_button_def.png</file>
+</qresource>
+<qresource>
+    <file alias="images/screening_button_sel.png">./../res/facet.rcc/images/screening_button_sel.png</file>
+</qresource>
+<qresource>
+    <file alias="images/we.gif">./../res/facet.rcc/images/we.gif</file>
+</qresource>
+<qresource>
+    <file alias="qml/BasicButton.qml">./../res/facet.rcc/qml/BasicButton.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Button.qml">./../res/facet.rcc/qml/Button.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/CameraUpdatePage.qml">./../res/facet.rcc/qml/CameraUpdatePage.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/DaGrid.qml">./../res/facet.rcc/qml/DaGrid.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Desktop.qml">./../res/facet.rcc/qml/Desktop.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/DurationStatusBar.qml">./../res/facet.rcc/qml/DurationStatusBar.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/GlobalMessageBox.qml">./../res/facet.rcc/qml/GlobalMessageBox.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/HorizontalSeparatorLine.qml">./../res/facet.rcc/qml/HorizontalSeparatorLine.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Inclinometer.qml">./../res/facet.rcc/qml/Inclinometer.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/LastImageControl.qml">./../res/facet.rcc/qml/LastImageControl.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/LeftSide.qml">./../res/facet.rcc/qml/LeftSide.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ListShadow.qml">./../res/facet.rcc/qml/ListShadow.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MessageBox.qml">./../res/facet.rcc/qml/MessageBox.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MessageSpinner.qml">./../res/facet.rcc/qml/MessageSpinner.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/NavigationArrow.qml">./../res/facet.rcc/qml/NavigationArrow.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/NiceLoader.qml">./../res/facet.rcc/qml/NiceLoader.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/NotificationArea.qml">./../res/facet.rcc/qml/NotificationArea.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/OverlayInfoDisplay.qml">./../res/facet.rcc/qml/OverlayInfoDisplay.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/PanoramaRecording.qml">./../res/facet.rcc/qml/PanoramaRecording.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Pip.qml">./../res/facet.rcc/qml/Pip.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/PipToolGrabBoxDelegate.qml">./../res/facet.rcc/qml/PipToolGrabBoxDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/PlaybackTempScale.qml">./../res/facet.rcc/qml/PlaybackTempScale.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/RetailDemoView.qml">./../res/facet.rcc/qml/RetailDemoView.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/RootElement.qml">./../res/facet.rcc/qml/RootElement.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/RoundedRect.qml">./../res/facet.rcc/qml/RoundedRect.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SavePreview.qml">./../res/facet.rcc/qml/SavePreview.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ScaleLabelBackPlate.qml">./../res/facet.rcc/qml/ScaleLabelBackPlate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ScreeningTouchArea.qml">./../res/facet.rcc/qml/ScreeningTouchArea.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ScrollBar.qml">./../res/facet.rcc/qml/ScrollBar.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsDefaultDelegate.qml">./../res/facet.rcc/qml/SettingsDefaultDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsExtendedDelegate.qml">./../res/facet.rcc/qml/SettingsExtendedDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsIconDelegate.qml">./../res/facet.rcc/qml/SettingsIconDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsMixedDelegate.qml">./../res/facet.rcc/qml/SettingsMixedDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsNameValueDelegate.qml">./../res/facet.rcc/qml/SettingsNameValueDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsNameValueSelectorDelegate.qml">./../res/facet.rcc/qml/SettingsNameValueSelectorDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsPage.qml">./../res/facet.rcc/qml/SettingsPage.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsPageFooter.qml">./../res/facet.rcc/qml/SettingsPageFooter.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsPageHeader.qml">./../res/facet.rcc/qml/SettingsPageHeader.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsRadioGroupDelegate.qml">./../res/facet.rcc/qml/SettingsRadioGroupDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsRadioLanguageDelegate.qml">./../res/facet.rcc/qml/SettingsRadioLanguageDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsRadioValuesDelegate.qml">./../res/facet.rcc/qml/SettingsRadioValuesDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsSpreadSheetDelegate.qml">./../res/facet.rcc/qml/SettingsSpreadSheetDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsValueSelectorDelegate.qml">./../res/facet.rcc/qml/SettingsValueSelectorDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SettingsView.qml">./../res/facet.rcc/qml/SettingsView.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ShadedRectangle.qml">./../res/facet.rcc/qml/ShadedRectangle.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Sketch.qml">./../res/facet.rcc/qml/Sketch.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SoftKeyboardPage.qml">./../res/facet.rcc/qml/SoftKeyboardPage.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Spinner.qml">./../res/facet.rcc/qml/Spinner.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/StatusBar.qml">./../res/facet.rcc/qml/StatusBar.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/StatusBarNew.qml">./../res/facet.rcc/qml/StatusBarNew.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/StatusBarZoomPanIndicator.qml">./../res/facet.rcc/qml/StatusBarZoomPanIndicator.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/StatusRow.qml">./../res/facet.rcc/qml/StatusRow.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/TempScale.qml">./../res/facet.rcc/qml/TempScale.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/TextTablesLabelValueArea.qml">./../res/facet.rcc/qml/TextTablesLabelValueArea.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/TextTablesTemplatesArea.qml">./../res/facet.rcc/qml/TextTablesTemplatesArea.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/TouchCalibrationPage.qml">./../res/facet.rcc/qml/TouchCalibrationPage.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/VideoPlaybackOverlay.qml">./../res/facet.rcc/qml/VideoPlaybackOverlay.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/VideoPlaybackRecallOverlay.qml">./../res/facet.rcc/qml/VideoPlaybackRecallOverlay.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/VideoRecordStatus.qml">./../res/facet.rcc/qml/VideoRecordStatus.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ZoomControl.qml">./../res/facet.rcc/qml/ZoomControl.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Archive/Archive.qml">./../res/facet.rcc/qml/Archive/Archive.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Archive/PreviewArchive.qml">./../res/facet.rcc/qml/Archive/PreviewArchive.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Archive/PreviewArchiveFullView.qml">./../res/facet.rcc/qml/Archive/PreviewArchiveFullView.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Archive/PreviewArchiveGroupView.qml">./../res/facet.rcc/qml/Archive/PreviewArchiveGroupView.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Archive/PreviewArchiveGroupViewDelegate.qml">./../res/facet.rcc/qml/Archive/PreviewArchiveGroupViewDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Archive/PreviewArchiveMouseArea.qml">./../res/facet.rcc/qml/Archive/PreviewArchiveMouseArea.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Archive/ThumbnailArchive.qml">./../res/facet.rcc/qml/Archive/ThumbnailArchive.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Archive/ThumbnailDelegate.qml">./../res/facet.rcc/qml/Archive/ThumbnailDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/Box.qml">./../res/facet.rcc/qml/MeasureTools/Box.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/BoxToolGrabBoxDelegate.qml">./../res/facet.rcc/qml/MeasureTools/BoxToolGrabBoxDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/Circle.qml">./../res/facet.rcc/qml/MeasureTools/Circle.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/CircleToolGrabBoxDelegate.qml">./../res/facet.rcc/qml/MeasureTools/CircleToolGrabBoxDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/Diff.qml">./../res/facet.rcc/qml/MeasureTools/Diff.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/Line.qml">./../res/facet.rcc/qml/MeasureTools/Line.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/LineToolGrabBoxDelegate.qml">./../res/facet.rcc/qml/MeasureTools/LineToolGrabBoxDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/MeasureTools.qml">./../res/facet.rcc/qml/MeasureTools/MeasureTools.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/RoundedMRect.qml">./../res/facet.rcc/qml/MeasureTools/RoundedMRect.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/MeasureTools/Spot.qml">./../res/facet.rcc/qml/MeasureTools/Spot.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultBoxDelegate.qml">./../res/facet.rcc/qml/ResultTable/ResultBoxDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultCircleDelegate.qml">./../res/facet.rcc/qml/ResultTable/ResultCircleDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultDiffDelegate.qml">./../res/facet.rcc/qml/ResultTable/ResultDiffDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultLineDelegate.qml">./../res/facet.rcc/qml/ResultTable/ResultLineDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultMeterlinkDelegate.qml">./../res/facet.rcc/qml/ResultTable/ResultMeterlinkDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultRefTempDelegate.qml">./../res/facet.rcc/qml/ResultTable/ResultRefTempDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultSpotDelegate.qml">./../res/facet.rcc/qml/ResultTable/ResultSpotDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultTable.qml">./../res/facet.rcc/qml/ResultTable/ResultTable.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultTableDelegateAlarmRow.qml">./../res/facet.rcc/qml/ResultTable/ResultTableDelegateAlarmRow.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultTableDelegateIconRow.qml">./../res/facet.rcc/qml/ResultTable/ResultTableDelegateIconRow.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/ResultTable/ResultTableDelegateRow.qml">./../res/facet.rcc/qml/ResultTable/ResultTableDelegateRow.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SoftKeyboard/KeyBackground.qml">./../res/facet.rcc/qml/SoftKeyboard/KeyBackground.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SoftKeyboard/Keyboard.qml">./../res/facet.rcc/qml/SoftKeyboard/Keyboard.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/SoftKeyboard/KeyDelegate.qml">./../res/facet.rcc/qml/SoftKeyboard/KeyDelegate.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Toolbar/BimodalListMenu.qml">./../res/facet.rcc/qml/Toolbar/BimodalListMenu.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Toolbar/MultiListMenu.qml">./../res/facet.rcc/qml/Toolbar/MultiListMenu.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Toolbar/NewValueSelectorList.qml">./../res/facet.rcc/qml/Toolbar/NewValueSelectorList.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Toolbar/StringListMenu.qml">./../res/facet.rcc/qml/Toolbar/StringListMenu.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Toolbar/ToolBar.qml">./../res/facet.rcc/qml/Toolbar/ToolBar.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Toolbar/ToolBars.qml">./../res/facet.rcc/qml/Toolbar/ToolBars.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Toolbar/TripleListMenu.qml">./../res/facet.rcc/qml/Toolbar/TripleListMenu.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Toolbar/ValueSelectorListColumn.qml">./../res/facet.rcc/qml/Toolbar/ValueSelectorListColumn.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/Wizard.qml">./../res/facet.rcc/qml/Wizard/Wizard.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/WizardFooter.qml">./../res/facet.rcc/qml/Wizard/WizardFooter.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/WizardHeader.qml">./../res/facet.rcc/qml/Wizard/WizardHeader.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/WizardListView.qml">./../res/facet.rcc/qml/Wizard/WizardListView.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/CameraRegistration/Information.qml">./../res/facet.rcc/qml/Wizard/CameraRegistration/Information.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/CameraRegistration/SerialNumber.qml">./../res/facet.rcc/qml/Wizard/CameraRegistration/SerialNumber.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/CameraRegistration/Spinner.qml">./../res/facet.rcc/qml/Wizard/CameraRegistration/Spinner.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/CameraRegistration/Thankyou.qml">./../res/facet.rcc/qml/Wizard/CameraRegistration/Thankyou.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/CameraRegistration/VerificationCode.qml">./../res/facet.rcc/qml/Wizard/CameraRegistration/VerificationCode.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/CameraRegistration/VerificationCodeInfo.qml">./../res/facet.rcc/qml/Wizard/CameraRegistration/VerificationCodeInfo.qml</file>
+</qresource>
+<qresource>
+    <file alias="qml/Wizard/CameraRegistration/VerticalSpinner.qml">./../res/facet.rcc/qml/Wizard/CameraRegistration/VerticalSpinner.qml</file>
+</qresource>
+<qresource>
+    <file alias="reports/side_by_side_templ.html">./../res/facet.rcc/reports/side_by_side_templ.html</file>
+</qresource>
+</RCC>
