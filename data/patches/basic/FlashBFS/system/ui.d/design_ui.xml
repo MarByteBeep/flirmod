@@ -1,528 +1,1132 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ui_config>
 
   <!-- Views -->
-  <qml_view name="retailDemoView"/>
+  <qml_view name="retailDemoView" />
 
   <!-- Context properties -->
 
-  <qml_context_property type="bool" name="pogo" value="false"/>
-  <qml_context_property type="bool" name="manualInteraction" value="true"/>
-  <qml_context_property type="bool" name="cameraHasStaticFocus" value="true"/>
-  <qml_context_property type="bool" name="cameraHasProgramButton" value="true"/>
-  <qml_context_property type="bool" name="touchBased" value="false"/>
-  <qml_context_property type="bool" name="has180Tilt" value="false"/>
-  <qml_context_property type="bool" name="closeToolbarOnSelection" value="true"/>
-  <qml_context_property type="bool" name="toolbarSeparators" value="false"/>
-  <qml_context_property type="bool" name="archiveEnterThumbnails" value="true"/>
-  <qml_context_property type="bool" name="cancelInSettings" value="true"/>
-  <qml_context_property type="bool" name="hideAll" value="false"/>
-  <qml_context_property type="bool" name="keyboardHasJoystickFocus" value="true"/>
-  <qml_context_property type="string" name="registrationNag" value="N/A"/>
+  <qml_context_property type="bool" name="pogo" value="false" />
+  <qml_context_property type="bool" name="manualInteraction" value="true" />
+  <qml_context_property type="bool" name="cameraHasStaticFocus" value="true" />
+  <qml_context_property type="bool" name="cameraHasProgramButton" value="true" />
+  <qml_context_property type="bool" name="touchBased" value="false" />
+  <qml_context_property type="bool" name="has180Tilt" value="false" />
+  <qml_context_property type="bool" name="closeToolbarOnSelection" value="true" />
+  <qml_context_property type="bool" name="toolbarSeparators" value="false" />
+  <qml_context_property type="bool" name="archiveEnterThumbnails" value="true" />
+  <qml_context_property type="bool" name="cancelInSettings" value="true" />
+  <qml_context_property type="bool" name="hideAll" value="false" />
+  <qml_context_property type="bool" name="keyboardHasJoystickFocus" value="true" />
+  <qml_context_property type="string" name="registrationNag" value="N/A" />
 
   <qml_context_property name="grid">
-    <qml_context_property type="int" name="width" value="320"/>
-    <qml_context_property type="int" name="height" value="240"/>
-    <qml_context_property type="int" name="unit" value="3"/>
-    <qml_context_property type="int" name="irLeftMargin" value="0"/>
-    <qml_context_property type="int" name="irRightMargin" value="0"/>
-    <qml_context_property type="int" name="leftMargin" value="1"/>
-    <qml_context_property type="int" name="rightMargin" value="1"/>
-    <qml_context_property type="int" name="topMargin" value="1"/>
-    <qml_context_property type="int" name="bottomMargin" value="2"/>
-    <qml_context_property type="int" name="leftBorder" value="4"/>
-    <qml_context_property type="int" name="rightBorder" value="4"/>
-    <qml_context_property type="int" name="topBorder" value="4"/>
-    <qml_context_property type="int" name="bottomBorder" value="5"/>
-    <qml_context_property type="int" name="horizontalSpacing" value="3"/>
-    <qml_context_property type="int" name="verticalSpacing" value="3"/>
-    <qml_context_property type="int" name="horizontalCellCount" value="7"/>
-    <qml_context_property type="int" name="verticalCellCount" value="6"/>
-    <qml_context_property type="int" name="cellWidth" value="42"/>
-    <qml_context_property type="int" name="cellHeight" value="36"/>
-    <qml_context_property type="int" name="iconWidth" value="30"/>
-    <qml_context_property type="int" name="iconHeight" value="30"/>
-    <qml_context_property type="int" name="spotSize" value="36"/>
-    <qml_context_property type="int" name="listItemHeight" value="30"/>
-    <qml_context_property type="int" name="lineGraphOffset" value="28"/>
-    <qml_context_property type="int" name="archiveCellWidth" value="102"/>
-    <qml_context_property type="int" name="archiveCellHeight" value="102"/>
-    <qml_context_property type="int" name="thumbnailWidth" value="96"/>
-    <qml_context_property type="int" name="thumbnailHeight" value="72"/>
-    <qml_context_property type="int" name="previewWidth" value="270"/>
-    <qml_context_property type="int" name="previewHeight" value="203"/>
-    <qml_context_property type="int" name="messageBoxWidth" value="222"/>
-    <qml_context_property type="int" name="messageBoxHeight" value="153"/>
-    <qml_context_property type="int" name="messageBoxBigWidth" value="264"/>
-    <qml_context_property type="int" name="messageBoxBigHeight" value="192"/>
-    <qml_context_property type="int" name="messageBoxHeader" value="0"/>
-    <qml_context_property type="int" name="spinnerBoxWidth" value="232"/>
-    <qml_context_property type="int" name="spinnerBoxHeight" value="46"/>
-    <qml_context_property type="int" name="spinnerBoxBigHeight" value="70"/>
-    <qml_context_property type="int" name="progressBarHeight" value="16"/>
-    <qml_context_property type="int" name="resultTableRowHeight" value="21"/>
-    <qml_context_property type="int" name="resultTableAlign" value="1"/>
-    <qml_context_property type="int" name="resultTableAlignBold" value="2"/>
-    <qml_context_property type="int" name="savePreviewWidth" value="156"/>
-    <qml_context_property type="int" name="savePreviewHeight" value="81"/>
-    <qml_context_property type="int" name="savePreviewThumbWidth" value="64"/>
-    <qml_context_property type="int" name="savePreviewThumbHeight" value="48"/>
-    <qml_context_property type="int" name="pdfThumbWidth" value="53"/>
-    <qml_context_property type="int" name="pdfThumbHeight" value="76"/>
-    <qml_context_property type="int" name="pdfPreviewWidth" value="145"/>
-    <qml_context_property type="int" name="pdfPreviewHeight" value="203"/>
-    <qml_context_property type="int" name="pdfScrollStep" value="10"/>
-    <qml_context_property type="int" name="archiveTopMargin" value="4"/>
-    <qml_context_property type="int" name="archiveVerticalSpace" value="3"/>
-    <qml_context_property type="int" name="archiveHorizontalSpace" value="2"/>
-    <qml_context_property type="int" name="archiveThumb2Height" value="4"/>
-    <qml_context_property type="int" name="archiveThumb2Width" value="88"/>
-    <qml_context_property type="int" name="archiveLeftMargin" value="1"/>
-    <qml_context_property type="int" name="archiveImg2OffsetY" value="14"/>
-    <qml_context_property type="int" name="archivePreviewRowOffsetY" value="4"/>
-    <qml_context_property type="float" name="archiveImgScale" value="0.92"/>
-    <qml_context_property type="int" name="sketchPenSize" value="3"/>
-    <qml_context_property type="int" name="separatorThickness" value="1"/>
-    <qml_context_property type="int" name="grabSize" value="36"/>
-    <qml_context_property type="int" name="toolbarItemVOffset" value="-1"/>
-    <qml_context_property type="int" name="tooltipVOffset" value="1"/>
-    <qml_context_property type="int" name="spinlistHeight" value="144"/>
-    <qml_context_property type="int" name="settingsRowHeight" value="32"/>
-    <qml_context_property type="int" name="settingsRowSpacing" value="3"/>
-    <qml_context_property type="int" name="settingsSpinRowHeight" value="36"/>
-    <qml_context_property type="int" name="settingsSpinArrowHeight" value="30"/>
-    <qml_context_property type="int" name="settingsIconSpacing" value="1"/>
-    <qml_context_property type="int" name="settingsLeftMargin" value="15"/>
-    <qml_context_property type="int" name="settingsIconMargin" value="10"/>
-    <qml_context_property type="int" name="msgButtonHeight" value="30"/>
-    <qml_context_property type="int" name="swipeLimit" value="30"/>
+    <qml_context_property type="int" name="width" value="320" />
+    <qml_context_property type="int" name="height" value="240" />
+    <qml_context_property type="int" name="unit" value="3" />
+    <qml_context_property type="int" name="irLeftMargin" value="0" />
+    <qml_context_property type="int" name="irRightMargin" value="0" />
+    <qml_context_property type="int" name="leftMargin" value="1" />
+    <qml_context_property type="int" name="rightMargin" value="1" />
+    <qml_context_property type="int" name="topMargin" value="1" />
+    <qml_context_property type="int" name="bottomMargin" value="2" />
+    <qml_context_property type="int" name="leftBorder" value="4" />
+    <qml_context_property type="int" name="rightBorder" value="4" />
+    <qml_context_property type="int" name="topBorder" value="4" />
+    <qml_context_property type="int" name="bottomBorder" value="5" />
+    <qml_context_property type="int" name="horizontalSpacing" value="3" />
+    <qml_context_property type="int" name="verticalSpacing" value="3" />
+    <qml_context_property type="int" name="horizontalCellCount" value="7" />
+    <qml_context_property type="int" name="verticalCellCount" value="6" />
+    <qml_context_property type="int" name="cellWidth" value="42" />
+    <qml_context_property type="int" name="cellHeight" value="36" />
+    <qml_context_property type="int" name="iconWidth" value="30" />
+    <qml_context_property type="int" name="iconHeight" value="30" />
+    <qml_context_property type="int" name="spotSize" value="36" />
+    <qml_context_property type="int" name="listItemHeight" value="30" />
+    <qml_context_property type="int" name="lineGraphOffset" value="28" />
+    <qml_context_property type="int" name="archiveCellWidth" value="102" />
+    <qml_context_property type="int" name="archiveCellHeight" value="102" />
+    <qml_context_property type="int" name="thumbnailWidth" value="96" />
+    <qml_context_property type="int" name="thumbnailHeight" value="72" />
+    <qml_context_property type="int" name="previewWidth" value="270" />
+    <qml_context_property type="int" name="previewHeight" value="203" />
+    <qml_context_property type="int" name="messageBoxWidth" value="222" />
+    <qml_context_property type="int" name="messageBoxHeight" value="153" />
+    <qml_context_property type="int" name="messageBoxBigWidth" value="264" />
+    <qml_context_property type="int" name="messageBoxBigHeight" value="192" />
+    <qml_context_property type="int" name="messageBoxHeader" value="0" />
+    <qml_context_property type="int" name="spinnerBoxWidth" value="232" />
+    <qml_context_property type="int" name="spinnerBoxHeight" value="46" />
+    <qml_context_property type="int" name="spinnerBoxBigHeight" value="70" />
+    <qml_context_property type="int" name="progressBarHeight" value="16" />
+    <qml_context_property type="int" name="resultTableRowHeight" value="21" />
+    <qml_context_property type="int" name="resultTableAlign" value="1" />
+    <qml_context_property type="int" name="resultTableAlignBold" value="2" />
+    <qml_context_property type="int" name="savePreviewWidth" value="156" />
+    <qml_context_property type="int" name="savePreviewHeight" value="81" />
+    <qml_context_property type="int" name="savePreviewThumbWidth" value="64" />
+    <qml_context_property type="int" name="savePreviewThumbHeight" value="48" />
+    <qml_context_property type="int" name="pdfThumbWidth" value="53" />
+    <qml_context_property type="int" name="pdfThumbHeight" value="76" />
+    <qml_context_property type="int" name="pdfPreviewWidth" value="145" />
+    <qml_context_property type="int" name="pdfPreviewHeight" value="203" />
+    <qml_context_property type="int" name="pdfScrollStep" value="10" />
+    <qml_context_property type="int" name="archiveTopMargin" value="4" />
+    <qml_context_property type="int" name="archiveVerticalSpace" value="3" />
+    <qml_context_property type="int" name="archiveHorizontalSpace" value="2" />
+    <qml_context_property type="int" name="archiveThumb2Height" value="4" />
+    <qml_context_property type="int" name="archiveThumb2Width" value="88" />
+    <qml_context_property type="int" name="archiveLeftMargin" value="1" />
+    <qml_context_property type="int" name="archiveImg2OffsetY" value="14" />
+    <qml_context_property type="int" name="archivePreviewRowOffsetY" value="4" />
+    <qml_context_property type="float" name="archiveImgScale" value="0.92" />
+    <qml_context_property type="int" name="sketchPenSize" value="3" />
+    <qml_context_property type="int" name="separatorThickness" value="1" />
+    <qml_context_property type="int" name="grabSize" value="36" />
+    <qml_context_property type="int" name="toolbarItemVOffset" value="-1" />
+    <qml_context_property type="int" name="tooltipVOffset" value="1" />
+    <qml_context_property type="int" name="spinlistHeight" value="144" />
+    <qml_context_property type="int" name="settingsRowHeight" value="32" />
+    <qml_context_property type="int" name="settingsRowSpacing" value="3" />
+    <qml_context_property type="int" name="settingsSpinRowHeight" value="36" />
+    <qml_context_property type="int" name="settingsSpinArrowHeight" value="30" />
+    <qml_context_property type="int" name="settingsIconSpacing" value="1" />
+    <qml_context_property type="int" name="settingsLeftMargin" value="15" />
+    <qml_context_property type="int" name="settingsIconMargin" value="10" />
+    <qml_context_property type="int" name="msgButtonHeight" value="30" />
+    <qml_context_property type="int" name="swipeLimit" value="30" />
   </qml_context_property>
 
   <qml_context_property name="keys">
-    <qml_context_property type="int" name="up" value="16777235"/>
-    <qml_context_property type="int" name="down" value="16777237"/>
-    <qml_context_property type="int" name="left" value="16777234"/>
-    <qml_context_property type="int" name="right" value="16777236"/>
-    <qml_context_property type="int" name="select" value="16777220"/>     <!--return-->
-    <qml_context_property type="int" name="archive" value="16777270"/>    <!--F7-->
-    <qml_context_property type="int" name="back" value="16777264"/>       <!--F1-->
-    <qml_context_property type="int" name="onOff" value="16777271"/>      <!--F8-->
-    <qml_context_property type="int" name="trigger" value="16777269"/>    <!--F6-->
-    <qml_context_property type="int" name="trigger_half" value="0"/>      <!--NUM2-->
-    <qml_context_property type="int" name="program" value="16777264"/>    <!--HACK,  Back button-->
-    <qml_context_property type="int" name="adjust" value="2"/>            <!--Invalid-->
-    <qml_context_property type="int" name="zoom" value="3"/>              <!--Invalid-->
-    <qml_context_property type="int" name="zoomOut" value="3"/>           <!--Invalid-->
-    <qml_context_property type="int" name="camera" value="4"/>            <!--Invalid-->
-    <qml_context_property type="int" name="focusIn" value="5"/>           <!--Invalid-->
-    <qml_context_property type="int" name="focusOut" value="6"/>          <!--Invalid-->
-    <qml_context_property type="int" name="viewFinder" value="7"/>        <!--Invalid-->
+    <qml_context_property type="int" name="up" value="16777235" />
+    <qml_context_property type="int" name="down" value="16777237" />
+    <qml_context_property type="int" name="left" value="16777234" />
+    <qml_context_property type="int" name="right" value="16777236" />
+    <qml_context_property type="int" name="select" value="16777220" />     <!--return-->
+    <qml_context_property type="int" name="archive" value="16777270" />    <!--F7-->
+    <qml_context_property type="int" name="back" value="16777264" />       <!--F1-->
+    <qml_context_property type="int" name="onOff" value="16777271" />      <!--F8-->
+    <qml_context_property type="int" name="trigger" value="16777269" />    <!--F6-->
+    <qml_context_property type="int" name="trigger_half" value="0" />      <!--NUM2-->
+    <qml_context_property type="int" name="program" value="16777264" />    <!--HACK,  Back button-->
+    <qml_context_property type="int" name="adjust" value="2" />            <!--Invalid-->
+    <qml_context_property type="int" name="zoom" value="3" />              <!--Invalid-->
+    <qml_context_property type="int" name="zoomOut" value="3" />           <!--Invalid-->
+    <qml_context_property type="int" name="camera" value="4" />            <!--Invalid-->
+    <qml_context_property type="int" name="focusIn" value="5" />           <!--Invalid-->
+    <qml_context_property type="int" name="focusOut" value="6" />          <!--Invalid-->
+    <qml_context_property type="int" name="viewFinder" value="7" />        <!--Invalid-->
   </qml_context_property>
 
   <qml_context_property name="colors">
-    <qml_context_property type="string" name="background" value="#000000"/>
-    <qml_context_property type="string" name="textNormal" value="#999999"/>
-    <qml_context_property type="string" name="textFocused" value="#ffffff"/>
-    <qml_context_property type="string" name="textDisabled" value="#444444"/>
-    <qml_context_property type="string" name="black" value="#000000"/>
-    <qml_context_property type="string" name="darkGrey" value="#333333"/>
-    <qml_context_property type="string" name="mediumGrey" value="#666666"/>
-    <qml_context_property type="string" name="grey" value="#999999"/>
-    <qml_context_property type="string" name="lightGrey" value="#f2f2f2"/>
-    <qml_context_property type="string" name="white" value="#ffffff"/>
-    <qml_context_property type="string" name="blue" value="#0066cc"/>
-    <qml_context_property type="string" name="alarmRed" value="#FF0000"/>
-    <qml_context_property type="string" name="alarmBlue" value="#0080FF"/>
+    <qml_context_property type="string" name="background" value="#000000" />
+    <qml_context_property type="string" name="textNormal" value="#999999" />
+    <qml_context_property type="string" name="textFocused" value="#ffffff" />
+    <qml_context_property type="string" name="textDisabled" value="#444444" />
+    <qml_context_property type="string" name="black" value="#000000" />
+    <qml_context_property type="string" name="darkGrey" value="#333333" />
+    <qml_context_property type="string" name="mediumGrey" value="#666666" />
+    <qml_context_property type="string" name="grey" value="#999999" />
+    <qml_context_property type="string" name="lightGrey" value="#f2f2f2" />
+    <qml_context_property type="string" name="white" value="#ffffff" />
+    <qml_context_property type="string" name="blue" value="#0066cc" />
+    <qml_context_property type="string" name="alarmRed" value="#FF0000" />
+    <qml_context_property type="string" name="alarmBlue" value="#0080FF" />
   </qml_context_property>
 
   <qml_context_property name="timing">
-    <qml_context_property type="int" name="savePreviewShowTime" value="2000"/>
-    <qml_context_property type="int" name="menuDelay" value="2000"/>
+    <qml_context_property type="int" name="savePreviewShowTime" value="2000" />
+    <qml_context_property type="int" name="menuDelay" value="2000" />
   </qml_context_property>
 
   <qml_context_property name="archiveInfo">
-    <qml_context_property type="bool" name="distance" value="false"/>
-    <qml_context_property type="bool" name="relHum" value="false"/>
-    <qml_context_property type="bool" name="atmTemp" value="false"/>
-    <qml_context_property type="bool" name="extOptics" value="false"/>
+    <qml_context_property type="bool" name="distance" value="false" />
+    <qml_context_property type="bool" name="relHum" value="false" />
+    <qml_context_property type="bool" name="atmTemp" value="false" />
+    <qml_context_property type="bool" name="extOptics" value="false" />
   </qml_context_property>
 
   <!-- Objects -->
 
-  <ui_object type="Fonts" name="fonts" family="Tahoma" miniSize="12" smallSize="14" mediumSize="16" largeSize="20" archiveSize="14">
-    <ui_model_item type="FontItem" languageFile="strings_ja.qm" replace="MS Gothic" fontName="MS Gothic" defFontFile="msgothic.ttf" extFontFile="msgothic_1_70.ttc"/>
-    <ui_model_item type="FontItem" languageFile="strings_ko.qm" replace="Gulim" fontName="Gulim" defFontFile="gulim.ttf" extFontFile="gulim_1_30.ttc"/>
-    <ui_model_item type="FontItem" languageFile="strings_zh-chs.qm" replace="SimSun" fontName="SimSun" defFontFile="simsun.ttf" extFontFile="simsun_2_50.ttc"/>
-    <ui_model_item type="FontItem" languageFile="strings_zh-cht.qm" replace="MingLiU" fontName="MingLiU" defFontFile="mingliu.ttf" extFontFile="mingliu_2_70.ttc"/>
-    <ui_model_item type="FontItem" languageFile="strings_ar.qm" replace="Tahoma" fontName="Arial" defFontFile="" extFontFile=""/>
+  <ui_object
+		type="Fonts"
+		name="fonts"
+		family="Tahoma"
+		miniSize="12"
+		smallSize="14"
+		mediumSize="16"
+		largeSize="20"
+		archiveSize="14"
+	>
+    <ui_model_item
+			type="FontItem"
+			languageFile="strings_ja.qm"
+			replace="MS Gothic"
+			fontName="MS Gothic"
+			defFontFile="msgothic.ttf"
+			extFontFile="msgothic_1_70.ttc"
+		/>
+    <ui_model_item
+			type="FontItem"
+			languageFile="strings_ko.qm"
+			replace="Gulim"
+			fontName="Gulim"
+			defFontFile="gulim.ttf"
+			extFontFile="gulim_1_30.ttc"
+		/>
+    <ui_model_item
+			type="FontItem"
+			languageFile="strings_zh-chs.qm"
+			replace="SimSun"
+			fontName="SimSun"
+			defFontFile="simsun.ttf"
+			extFontFile="simsun_2_50.ttc"
+		/>
+    <ui_model_item
+			type="FontItem"
+			languageFile="strings_zh-cht.qm"
+			replace="MingLiU"
+			fontName="MingLiU"
+			defFontFile="mingliu.ttf"
+			extFontFile="mingliu_2_70.ttc"
+		/>
+    <ui_model_item
+			type="FontItem"
+			languageFile="strings_ar.qm"
+			replace="Tahoma"
+			fontName="Arial"
+			defFontFile=""
+			extFontFile=""
+		/>
   </ui_object>
 
-  <ui_object type="Save" name="saveObject"/>
-  <ui_object type="MediaControl" name="mediaControlObject"/>
-  <ui_object type="Scale" name="scaleObject"/>
-  <ui_object type="Isotherm" name="isothermObject"/>
-  <ui_object type="RetailModeModel" name="retailModeModel"/>
-  <ui_object type="PromptHandler"    name="promptHandler"/>
+  <ui_object type="Save" name="saveObject" />
+  <ui_object type="MediaControl" name="mediaControlObject" />
+  <ui_object type="Scale" name="scaleObject" />
+  <ui_object type="Isotherm" name="isothermObject" />
+  <ui_object type="RetailModeModel" name="retailModeModel" />
+  <ui_object type="PromptHandler" name="promptHandler" />
 
   <!-- Models -->
 
-  <ui_model type="SoftKeyboardModel" name="softKeyboardModel"/>
+  <ui_model type="SoftKeyboardModel" name="softKeyboardModel" />
   
   <!-- Options models -->
 
-  <ui_model type="SettingsHorizontalModel" name="emissivityValueModel" footerEnabled="true" footerIcon="Ic_GlobalDialogue_Info" backOnTrigger="2" delegateType="valueSelector" header="ID_EMISS_CUSTOM_EMISSIVITY" translations="header, footer, labels">
-    <ui_model type="SettingsValueModel" qml="" valueType="emissivity" min="0.01" max="1.0" step="0.01" sort="down" stepAcceleration="false" resource=".image.sysimg.basicImgData.objectParams.emissivity"/>
+  <ui_model
+		type="SettingsHorizontalModel"
+		name="emissivityValueModel"
+		footerEnabled="true"
+		footerIcon="Ic_GlobalDialogue_Info"
+		backOnTrigger="2"
+		delegateType="valueSelector"
+		header="ID_EMISS_CUSTOM_EMISSIVITY"
+		translations="header, footer, labels"
+	>
+    <ui_model
+			type="SettingsValueModel"
+			qml=""
+			valueType="emissivity"
+			min="0.01"
+			max="1.0"
+			step="0.01"
+			sort="down"
+			stepAcceleration="false"
+			resource=".image.sysimg.basicImgData.objectParams.emissivity"
+		/>
   </ui_model>
 
-  <ui_model type="EmissivityMaterialSettingsModel" name="emissivityMaterialColumnModel" qml="" translations="labels, footer">
-    <ui_model_item type="SettingItem" label="ID_EMISS_ALUMINIUM_ROUGH"     value="0.07"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_ALUMINIUM_WEATHERED" value="0.83"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_BRICK"               value="0.81"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_CARBON"              value="0.95"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_CONCRETE"            value="0.95"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_COPPER_OXIDIZED"     value="0.78"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_COPPER_POLISHED"     value="0.05"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_GLASS"               value="0.70"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_CAST_OXIDIZED_IRON"  value="0.64"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_SHEET_RUSTED_IRON"   value="0.69"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_OAK_WOOD"            value="0.90"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_OIL_FILM_03"         value="0.27"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_OIL_FILM_13"         value="0.72"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_OIL_THICK"           value="0.82"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_OIL_PAINT"           value="0.94"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_PAPER_WHITE"         value="0.90"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_PLASTER"             value="0.86"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_BLACK_RUBBER"        value="0.95"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_HUMAN_SKIN"          value="0.98"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_SOIL_DRY"            value="0.92"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_SOIL_SAT_WATER"      value="0.95"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_STAINLESS_STEEL_OX"  value="0.85"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_STAINLESS_STEEL_POL" value="0.16"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_STEEL_OXIDIZED"      value="0.79"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_STEEL_POLISHED"      value="0.07"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_WATER_DISTILLED"     value="0.96"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_WATER_FROST"         value="0.98"/>
-    <ui_model_item type="SettingItem" label="ID_EMISS_WATER_SNOW"          value="0.85"/>
+  <ui_model
+		type="EmissivityMaterialSettingsModel"
+		name="emissivityMaterialColumnModel"
+		qml=""
+		translations="labels, footer"
+	>
+    <ui_model_item type="SettingItem" label="ID_EMISS_ALUMINIUM_ROUGH" value="0.07" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_ALUMINIUM_WEATHERED" value="0.83" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_BRICK" value="0.81" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_CARBON" value="0.95" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_CONCRETE" value="0.95" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_COPPER_OXIDIZED" value="0.78" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_COPPER_POLISHED" value="0.05" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_GLASS" value="0.70" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_CAST_OXIDIZED_IRON" value="0.64" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_SHEET_RUSTED_IRON" value="0.69" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_OAK_WOOD" value="0.90" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_OIL_FILM_03" value="0.27" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_OIL_FILM_13" value="0.72" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_OIL_THICK" value="0.82" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_OIL_PAINT" value="0.94" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_PAPER_WHITE" value="0.90" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_PLASTER" value="0.86" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_BLACK_RUBBER" value="0.95" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_HUMAN_SKIN" value="0.98" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_SOIL_DRY" value="0.92" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_SOIL_SAT_WATER" value="0.95" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_STAINLESS_STEEL_OX" value="0.85" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_STAINLESS_STEEL_POL" value="0.16" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_STEEL_OXIDIZED" value="0.79" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_STEEL_POLISHED" value="0.07" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_WATER_DISTILLED" value="0.96" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_WATER_FROST" value="0.98" />
+    <ui_model_item type="SettingItem" label="ID_EMISS_WATER_SNOW" value="0.85" />
   </ui_model>
 
-  <ui_model type="SettingsHorizontalModel" name="emissivityMaterialModel" footerEnabled="true" footerIcon="Ic_GlobalDialogue_Info" backOnTrigger="2" delegateType="nameValueSelector" header="ID_EMISS_CUSTOM_EMISSIVITY" translations="header">
-    <ui_model_item type="SettingItem" nestedModel="emissivityMaterialColumnModel"/>
+  <ui_model
+		type="SettingsHorizontalModel"
+		name="emissivityMaterialModel"
+		footerEnabled="true"
+		footerIcon="Ic_GlobalDialogue_Info"
+		backOnTrigger="2"
+		delegateType="nameValueSelector"
+		header="ID_EMISS_CUSTOM_EMISSIVITY"
+		translations="header"
+	>
+    <ui_model_item type="SettingItem" nestedModel="emissivityMaterialColumnModel" />
   </ui_model>
 
-  <ui_model type="EmissivitySettingsModel" name="emissivitySettingsModel" backOnTrigger="1" translations="header, labels">
-    <ui_model_item type="SettingItem"      ID="MATT"                       label="ID_EMISS_MATT"        value="0.95" radio="true" rightIndent="true"/>
-    <ui_model_item type="SettingItem"      ID="SEMI_MATT"                  label="ID_EMISS_SEMI_MATT"   value="0.80" radio="true" rightIndent="true"/>
-    <ui_model_item type="SettingItem"      ID="SEMI_GLOSSY"                label="ID_EMISS_SEMI_GLOSSY" value="0.60" radio="true" rightIndent="true"/>
-    <ui_model_item type="SettingItemMulti" ID="CUSTOM_EMISSIVITY"          label="ID_SETUP_CUSTOM_EMISSIVITY_VALUE"    nextModel="emissivityValueModel"   radio="true"/>
-    <ui_model_item type="SettingItemMulti" ID="CUSTOM_EMISSIVITY_MATERIAL" label="ID_SETUP_CUSTOM_EMISSIVITY_MATERIAL" nextModel="emissivityMaterialModel" radio="true"/>
+  <ui_model
+		type="EmissivitySettingsModel"
+		name="emissivitySettingsModel"
+		backOnTrigger="1"
+		translations="header, labels"
+	>
+    <ui_model_item type="SettingItem" ID="MATT" label="ID_EMISS_MATT" value="0.95" radio="true" rightIndent="true" />
+    <ui_model_item
+			type="SettingItem"
+			ID="SEMI_MATT"
+			label="ID_EMISS_SEMI_MATT"
+			value="0.80"
+			radio="true"
+			rightIndent="true"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="SEMI_GLOSSY"
+			label="ID_EMISS_SEMI_GLOSSY"
+			value="0.60"
+			radio="true"
+			rightIndent="true"
+		/>
+    <ui_model_item
+			type="SettingItemMulti"
+			ID="CUSTOM_EMISSIVITY"
+			label="ID_SETUP_CUSTOM_EMISSIVITY_VALUE"
+			nextModel="emissivityValueModel"
+			radio="true"
+		/>
+    <ui_model_item
+			type="SettingItemMulti"
+			ID="CUSTOM_EMISSIVITY_MATERIAL"
+			label="ID_SETUP_CUSTOM_EMISSIVITY_MATERIAL"
+			nextModel="emissivityMaterialModel"
+			radio="true"
+		/>
   </ui_model>
 
-  <ui_model type="SettingsHorizontalModel" name="reflectedTempValueModel" footerEnabled="true" backOnTrigger="1" delegateType="valueSelector">
-    <ui_model type="SettingsValueModel" qml="" valueType="temperature" min="233" max="2273" step="1" sort="down" stepAcceleration="true" resource=".image.sysimg.basicImgData.objectParams.ambTemp"/>
+  <ui_model
+		type="SettingsHorizontalModel"
+		name="reflectedTempValueModel"
+		footerEnabled="true"
+		backOnTrigger="1"
+		delegateType="valueSelector"
+	>
+    <ui_model
+			type="SettingsValueModel"
+			qml=""
+			valueType="temperature"
+			min="233"
+			max="2273"
+			step="1"
+			sort="down"
+			stepAcceleration="true"
+			resource=".image.sysimg.basicImgData.objectParams.ambTemp"
+		/>
   </ui_model>
 
-  <ui_model type="SettingsHorizontalModel" name="objectDistanceValueModel" footerEnabled="true" backOnTrigger="1" delegateType="valueSelector">
-    <ui_model type="SettingsValueModel" qml="" valueType="distance" min="-1" max="2000" step="1" sort="down" stepAcceleration="true" resource=".image.sysimg.basicImgData.objectParams.objectDistance"/>
+  <ui_model
+		type="SettingsHorizontalModel"
+		name="objectDistanceValueModel"
+		footerEnabled="true"
+		backOnTrigger="1"
+		delegateType="valueSelector"
+	>
+    <ui_model
+			type="SettingsValueModel"
+			qml=""
+			valueType="distance"
+			min="-1"
+			max="2000"
+			step="1"
+			sort="down"
+			stepAcceleration="true"
+			resource=".image.sysimg.basicImgData.objectParams.objectDistance"
+		/>
   </ui_model>
 
 	<ui_model type="EmissivityChoiceSettingsModel" name="emissivityChoiceSettingsModel">
-		<ui_model_item type="SettingItem" ID="EMISSIVITY_VALUE"    label="ID_SETUP_EMISSIVITY_VALUE"    radio="true"/>
-		<ui_model_item type="SettingItem" ID="EMISSIVITY_MATERIAL" label="ID_SETUP_EMISSIVITY_MATERIAL" radio="true"/>
+		<ui_model_item type="SettingItem" ID="EMISSIVITY_VALUE" label="ID_SETUP_EMISSIVITY_VALUE" radio="true" />
+		<ui_model_item type="SettingItem" ID="EMISSIVITY_MATERIAL" label="ID_SETUP_EMISSIVITY_MATERIAL" radio="true" />
 	</ui_model>
 	
    <ui_model type="TemperatureRangeSettingsModel" name="temperatureRangeSettingsModel">
-	 <ui_model_item type="SettingItem" ID="TEMP_RANGE" label="ID_SETUP_PROGRAMMABLE_TEMP_RANGE_BRIEF" radio="true"/>
+	 <ui_model_item type="SettingItem" ID="TEMP_RANGE" label="ID_SETUP_PROGRAMMABLE_TEMP_RANGE_BRIEF" radio="true" />
    </ui_model>
 
   <ui_model type="LevelSpanModeSettingsModel" name="levelSpanModeSettingsModel">
-    <ui_model_item type="SettingItem" ID="LEVEL_MAX_MIN" label="ID_SETUP_LEVEL_MAX_MIN" radio="true"/>
-    <ui_model_item type="SettingItem" ID="LEVEL_SPAN" label="ID_SETUP_LEVEL_SPAN" radio="true"/>
+    <ui_model_item type="SettingItem" ID="LEVEL_MAX_MIN" label="ID_SETUP_LEVEL_MAX_MIN" radio="true" />
+    <ui_model_item type="SettingItem" ID="LEVEL_SPAN" label="ID_SETUP_LEVEL_SPAN" radio="true" />
   </ui_model>  
   
   <ui_model type="CameraSettingsModel" name="cameraSettingsModel">
-    <ui_model_item type="SettingItem" ID="EMISSIVITY_CHOICE"    label="ID_SETUP_EMISSIVITY_CHOICE"  nextModel="emissivityChoiceSettingsModel"  nextQML="SettingsPage.qml" settingType="entry"/>
-    <ui_model_item type="SettingItem" ID="TEMP_RANGE" label="ID_SETUP_TEMPERATURE_RANGE" nextModel="temperatureRangeSettingsModel" nextQML="SettingsPage.qml" settingType="entry"/>
-    <ui_model_item type="SettingItem" ID="LEVEL_SPAN_MODE" label="ID_SETUP_LEVEL_SPAN_MODE" nextModel="levelSpanModeSettingsModel" nextQML="SettingsPage.qml" settingType="entry"/>
+    <ui_model_item
+			type="SettingItem"
+			ID="EMISSIVITY_CHOICE"
+			label="ID_SETUP_EMISSIVITY_CHOICE"
+			nextModel="emissivityChoiceSettingsModel"
+			nextQML="SettingsPage.qml"
+			settingType="entry"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="TEMP_RANGE"
+			label="ID_SETUP_TEMPERATURE_RANGE"
+			nextModel="temperatureRangeSettingsModel"
+			nextQML="SettingsPage.qml"
+			settingType="entry"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="LEVEL_SPAN_MODE"
+			label="ID_SETUP_LEVEL_SPAN_MODE"
+			nextModel="levelSpanModeSettingsModel"
+			nextQML="SettingsPage.qml"
+			settingType="entry"
+		/>
   </ui_model>  
  
   <ui_model type="MeasureParametersSettingsModel" name="measureParamsModel" translations="header, labels">
-    <ui_model_item type="SettingItem"      ID="EMISSIVITY"            label="ID_SETUP_EMISSIVITY"         	 nextModel="emissivitySettingsModel"  leftIcon="Ic_Options_ParametersEmissivity"/>
-    <ui_model_item type="SettingItemMulti" ID="REFLECTED_TEMPERATURE" label="ID_SETUP_REFLECTED_TEMPERATURE" nextModel="reflectedTempValueModel"  leftIcon="Ic_Options_ParametersTemperatureReflected"/>
-    <ui_model_item type="SettingItemMulti" ID="OBJECT_DISTANCE"       label="ID_SETUP_OBJECT_DISTANCE"       nextModel="objectDistanceValueModel" leftIcon="Ic_Options_ParametersDistance"/>
+    <ui_model_item
+			type="SettingItem"
+			ID="EMISSIVITY"
+			label="ID_SETUP_EMISSIVITY"
+			nextModel="emissivitySettingsModel"
+			leftIcon="Ic_Options_ParametersEmissivity"
+		/>
+    <ui_model_item
+			type="SettingItemMulti"
+			ID="REFLECTED_TEMPERATURE"
+			label="ID_SETUP_REFLECTED_TEMPERATURE"
+			nextModel="reflectedTempValueModel"
+			leftIcon="Ic_Options_ParametersTemperatureReflected"
+		/>
+    <ui_model_item
+			type="SettingItemMulti"
+			ID="OBJECT_DISTANCE"
+			label="ID_SETUP_OBJECT_DISTANCE"
+			nextModel="objectDistanceValueModel"
+			leftIcon="Ic_Options_ParametersDistance"
+		/>
   </ui_model>
 
-  <ui_model type="SaveSeparateDCSettingsModel" name="saveSeparateDCSettingsModel" backOnTrigger="1" delegateType="radioGroup">
-    <ui_model_item type="SettingItem" ID="SEPARATE_DC_OFF" label="ID_SETUP_OFF" radio="true"/>
-    <ui_model_item type="SettingItem" ID="SEPARATE_DC_ON"  label="ID_SETUP_ON"  radio="true"/>
+  <ui_model
+		type="SaveSeparateDCSettingsModel"
+		name="saveSeparateDCSettingsModel"
+		backOnTrigger="1"
+		delegateType="radioGroup"
+	>
+    <ui_model_item type="SettingItem" ID="SEPARATE_DC_OFF" label="ID_SETUP_OFF" radio="true" />
+    <ui_model_item type="SettingItem" ID="SEPARATE_DC_ON" label="ID_SETUP_ON" radio="true" />
   </ui_model>
 
   <ui_model type="SaveSettingsModel" name="saveSettingsModel">
-    <ui_model_item type="SettingItem" ID="SEPARATE_DC" label="ID_SETUP_SAVE_SEPARATE_DC" nextModel="saveSeparateDCSettingsModel" leftIcon="Ic_ImageTool_ExportNonRadiometric"/>
+    <ui_model_item
+			type="SettingItem"
+			ID="SEPARATE_DC"
+			label="ID_SETUP_SAVE_SEPARATE_DC"
+			nextModel="saveSeparateDCSettingsModel"
+			leftIcon="Ic_ImageTool_ExportNonRadiometric"
+		/>
   </ui_model>
 
     <ui_model type="ProgrammableButtonSettingsModel" name="programmableButtonSettingsModel">
-	  <ui_model_item type="SettingItem" ID="NO_ACTION"       label="ID_SETUP_PROGRAMMABLE_NO_ACTION"       radio="true"/>
-	  <ui_model_item type="SettingItem" ID="HIDE_GRAPHICS"   label="ID_SETUP_PROGRAMMABLE_HIDE_GRAPHICS"   radio="true"/>
-	  <ui_model_item type="SettingItem" ID="CALIBRATE"       label="ID_SETUP_PROGRAMMABLE_CALIBRATE"       radio="true"/>
-	  <ui_model_item type="SettingItem" ID="TOGGLE_CAMERA"   label="ID_SETUP_PROGRAMMABLE_TOGGLE_CAMERA"   radio="true"/>
-	  <ui_model_item type="SettingItem" ID="TOGGLE_MSX"      label="ID_SETUP_PROGRAMMABLE_TOGGLE_MSX"      radio="true"/>
-	  <ui_model_item type="SettingItem" ID="ZOOM"            label="ID_SETUP_PROGRAMMABLE_ZOOM"            radio="true"/>
-	  <ui_model_item type="SettingItem" ID="TOGGLE_PALETTES" label="ID_SETUP_PROGRAMMABLE_TOGGLE_PALETTES" radio="true"/>
+	  <ui_model_item type="SettingItem" ID="NO_ACTION" label="ID_SETUP_PROGRAMMABLE_NO_ACTION" radio="true" />
+	  <ui_model_item type="SettingItem" ID="HIDE_GRAPHICS" label="ID_SETUP_PROGRAMMABLE_HIDE_GRAPHICS" radio="true" />
+	  <ui_model_item type="SettingItem" ID="CALIBRATE" label="ID_SETUP_PROGRAMMABLE_CALIBRATE" radio="true" />
+	  <ui_model_item type="SettingItem" ID="TOGGLE_CAMERA" label="ID_SETUP_PROGRAMMABLE_TOGGLE_CAMERA" radio="true" />
+	  <ui_model_item type="SettingItem" ID="TOGGLE_MSX" label="ID_SETUP_PROGRAMMABLE_TOGGLE_MSX" radio="true" />
+	  <ui_model_item type="SettingItem" ID="ZOOM" label="ID_SETUP_PROGRAMMABLE_ZOOM" radio="true" />
+	  <ui_model_item type="SettingItem" ID="TOGGLE_PALETTES" label="ID_SETUP_PROGRAMMABLE_TOGGLE_PALETTES" radio="true" />
     </ui_model>
 
-  <ui_model type="DisplayIntensitySettingsModel" name="displayIntensitySettingsModel" backOnTrigger="1" delegateType="radioGroup">
-    <ui_model_item type="SettingItem" ID="LOW"    label="ID_SETUP_LOW"    radio="true"/>
-    <ui_model_item type="SettingItem" ID="MEDIUM" label="ID_SETUP_MEDIUM" radio="true"/>
-    <ui_model_item type="SettingItem" ID="HIGH"   label="ID_SETUP_HIGH"   radio="true"/>
+  <ui_model
+		type="DisplayIntensitySettingsModel"
+		name="displayIntensitySettingsModel"
+		backOnTrigger="1"
+		delegateType="radioGroup"
+	>
+    <ui_model_item type="SettingItem" ID="LOW" label="ID_SETUP_LOW" radio="true" />
+    <ui_model_item type="SettingItem" ID="MEDIUM" label="ID_SETUP_MEDIUM" radio="true" />
+    <ui_model_item type="SettingItem" ID="HIGH" label="ID_SETUP_HIGH" radio="true" />
   </ui_model>
 
-  <ui_model type="AutoPowerOffSettingsModel" name="autoPowerOffSettingsModel" backOnTrigger="1" delegateType="radioGroup">
-    <ui_model_item type="SettingItem" ID="POWER_OFF"    label="ID_SETUP_OFF"    radio="true"/>
-    <ui_model_item type="SettingItem" ID="POWER_5_MIN"  label="ID_SETUP_5_MIN"  radio="true"/>
-    <ui_model_item type="SettingItem" ID="POWER_20_MIN" label="ID_SETUP_20_MIN" radio="true"/>
+  <ui_model
+		type="AutoPowerOffSettingsModel"
+		name="autoPowerOffSettingsModel"
+		backOnTrigger="1"
+		delegateType="radioGroup"
+	>
+    <ui_model_item type="SettingItem" ID="POWER_OFF" label="ID_SETUP_OFF" radio="true" />
+    <ui_model_item type="SettingItem" ID="POWER_5_MIN" label="ID_SETUP_5_MIN" radio="true" />
+    <ui_model_item type="SettingItem" ID="POWER_20_MIN" label="ID_SETUP_20_MIN" radio="true" />
   </ui_model>
 
-  <ui_model type="LanguageSettingsModel" name="languageSettingsModel" backOnTrigger="1" delegateType="radioLanguage" translations="header"/>
+  <ui_model
+		type="LanguageSettingsModel"
+		name="languageSettingsModel"
+		backOnTrigger="1"
+		delegateType="radioLanguage"
+		translations="header"
+	/>
 
-  <ui_model type="TempUnitSettingsModel" name="temperatureUnitSettingsModel" backOnTrigger="1" delegateType="radioGroup">
-    <ui_model_item type="SettingItem" ID="CELSIUS"    label="ID_CELSIUS"    radio="true"/>
-    <ui_model_item type="SettingItem" ID="FAHRENHEIT" label="ID_FAHRENHEIT" radio="true"/>
+  <ui_model
+		type="TempUnitSettingsModel"
+		name="temperatureUnitSettingsModel"
+		backOnTrigger="1"
+		delegateType="radioGroup"
+	>
+    <ui_model_item type="SettingItem" ID="CELSIUS" label="ID_CELSIUS" radio="true" />
+    <ui_model_item type="SettingItem" ID="FAHRENHEIT" label="ID_FAHRENHEIT" radio="true" />
   </ui_model>
 
-  <ui_model type="DistanceUnitSettingsModel" name="distanceUnitSettingsModel" backOnTrigger="1" delegateType="radioGroup">
-    <ui_model_item type="SettingItem" ID="METER" label="ID_METER_M" radio="true"/>
-    <ui_model_item type="SettingItem" ID="FEET"  label="ID_FEET_F"  radio="true"/>
+  <ui_model
+		type="DistanceUnitSettingsModel"
+		name="distanceUnitSettingsModel"
+		backOnTrigger="1"
+		delegateType="radioGroup"
+	>
+    <ui_model_item type="SettingItem" ID="METER" label="ID_METER_M" radio="true" />
+    <ui_model_item type="SettingItem" ID="FEET" label="ID_FEET_F" radio="true" />
   </ui_model>
 
   <ui_model type="AmPmHourSettingsModel" name="amPmHourSettingsModel" translations="header">
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="11"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="10"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="9"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="8"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="7"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="6"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="5"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="4"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="3"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="2"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="1"/>
-    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="12"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="11"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="10"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="9"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="8"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="7"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="6"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="5"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="4"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="3"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="2"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="1"/>
-    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="12"/>
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="11" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="10" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="9" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="8" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="7" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="6" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="5" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="4" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="3" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="2" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="1" />
+    <ui_model_item type="SettingItem" ID="ID_PM_FORMAT" value="12" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="11" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="10" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="9" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="8" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="7" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="6" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="5" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="4" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="3" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="2" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="1" />
+    <ui_model_item type="SettingItem" ID="ID_AM_FORMAT" value="12" />
   </ui_model>
 
   <ui_model type="TimeZoneSettingsModel" name="timezoneSettingsModel" translations="header">
-    <ui_model_item type="SettingItem" value="+13"/>
-    <ui_model_item type="SettingItem" value="+12"/>
-    <ui_model_item type="SettingItem" value="+11"/>
-    <ui_model_item type="SettingItem" value="+10.5"/>
-    <ui_model_item type="SettingItem" value="+10"/>
-    <ui_model_item type="SettingItem" value="+9.5"/>
-    <ui_model_item type="SettingItem" value="+9"/>
-    <ui_model_item type="SettingItem" value="+8"/>
-    <ui_model_item type="SettingItem" value="+7"/>
-    <ui_model_item type="SettingItem" value="+6.5"/>
-    <ui_model_item type="SettingItem" value="+6"/>
-    <ui_model_item type="SettingItem" value="+5.75"/>
-    <ui_model_item type="SettingItem" value="+5.5"/>
-    <ui_model_item type="SettingItem" value="+5"/>
-    <ui_model_item type="SettingItem" value="+4.5"/>
-    <ui_model_item type="SettingItem" value="+4"/>
-    <ui_model_item type="SettingItem" value="+3.5"/>
-    <ui_model_item type="SettingItem" value="+3"/>
-    <ui_model_item type="SettingItem" value="+2"/>
-    <ui_model_item type="SettingItem" value="+1"/>
-    <ui_model_item type="SettingItem" value="0"/>
-    <ui_model_item type="SettingItem" value="-1"/>
-    <ui_model_item type="SettingItem" value="-2"/>
-    <ui_model_item type="SettingItem" value="-3"/>
-    <ui_model_item type="SettingItem" value="-3.5"/>
-    <ui_model_item type="SettingItem" value="-4"/>
-    <ui_model_item type="SettingItem" value="-4.5"/>
-    <ui_model_item type="SettingItem" value="-5"/>
-    <ui_model_item type="SettingItem" value="-6"/>
-    <ui_model_item type="SettingItem" value="-7"/>
-    <ui_model_item type="SettingItem" value="-8"/>
-    <ui_model_item type="SettingItem" value="-9"/>
-    <ui_model_item type="SettingItem" value="-10"/>
-    <ui_model_item type="SettingItem" value="-11"/>
-    <ui_model_item type="SettingItem" value="-12"/>
+    <ui_model_item type="SettingItem" value="+13" />
+    <ui_model_item type="SettingItem" value="+12" />
+    <ui_model_item type="SettingItem" value="+11" />
+    <ui_model_item type="SettingItem" value="+10.5" />
+    <ui_model_item type="SettingItem" value="+10" />
+    <ui_model_item type="SettingItem" value="+9.5" />
+    <ui_model_item type="SettingItem" value="+9" />
+    <ui_model_item type="SettingItem" value="+8" />
+    <ui_model_item type="SettingItem" value="+7" />
+    <ui_model_item type="SettingItem" value="+6.5" />
+    <ui_model_item type="SettingItem" value="+6" />
+    <ui_model_item type="SettingItem" value="+5.75" />
+    <ui_model_item type="SettingItem" value="+5.5" />
+    <ui_model_item type="SettingItem" value="+5" />
+    <ui_model_item type="SettingItem" value="+4.5" />
+    <ui_model_item type="SettingItem" value="+4" />
+    <ui_model_item type="SettingItem" value="+3.5" />
+    <ui_model_item type="SettingItem" value="+3" />
+    <ui_model_item type="SettingItem" value="+2" />
+    <ui_model_item type="SettingItem" value="+1" />
+    <ui_model_item type="SettingItem" value="0" />
+    <ui_model_item type="SettingItem" value="-1" />
+    <ui_model_item type="SettingItem" value="-2" />
+    <ui_model_item type="SettingItem" value="-3" />
+    <ui_model_item type="SettingItem" value="-3.5" />
+    <ui_model_item type="SettingItem" value="-4" />
+    <ui_model_item type="SettingItem" value="-4.5" />
+    <ui_model_item type="SettingItem" value="-5" />
+    <ui_model_item type="SettingItem" value="-6" />
+    <ui_model_item type="SettingItem" value="-7" />
+    <ui_model_item type="SettingItem" value="-8" />
+    <ui_model_item type="SettingItem" value="-9" />
+    <ui_model_item type="SettingItem" value="-10" />
+    <ui_model_item type="SettingItem" value="-11" />
+    <ui_model_item type="SettingItem" value="-12" />
   </ui_model>
 
-  <ui_model type="SettingsValueModel" name="yearValueModel"   qml="" valueType="time" min="2011" max="2112" step="1" sort="down" stepAcceleration="false" resource="year"/>
-  <ui_model type="SettingsValueModel" name="monthValueModel"  qml="" valueType="time" min="0"    max="12"   step="1" sort="down" stepAcceleration="false" resource="month"/>
-  <ui_model type="SettingsValueModel" name="dayValueModel"    qml="" valueType="time" min="0"    max="31"   step="1" sort="down" stepAcceleration="false" resource="day"/>
-  <ui_model type="SettingsValueModel" name="hourValueModel"   qml="" valueType="time" min="-1"   max="23"   step="1" sort="down" stepAcceleration="false" resource="hour" delimiter=":"/>
-  <ui_model type="SettingsValueModel" name="minuteValueModel" qml="" valueType="time" min="-1"   max="59"   step="1" sort="down" stepAcceleration="false" resource="minute"/>
+  <ui_model
+		type="SettingsValueModel"
+		name="yearValueModel"
+		qml=""
+		valueType="time"
+		min="2011"
+		max="2112"
+		step="1"
+		sort="down"
+		stepAcceleration="false"
+		resource="year"
+	/>
+  <ui_model
+		type="SettingsValueModel"
+		name="monthValueModel"
+		qml=""
+		valueType="time"
+		min="0"
+		max="12"
+		step="1"
+		sort="down"
+		stepAcceleration="false"
+		resource="month"
+	/>
+  <ui_model
+		type="SettingsValueModel"
+		name="dayValueModel"
+		qml=""
+		valueType="time"
+		min="0"
+		max="31"
+		step="1"
+		sort="down"
+		stepAcceleration="false"
+		resource="day"
+	/>
+  <ui_model
+		type="SettingsValueModel"
+		name="hourValueModel"
+		qml=""
+		valueType="time"
+		min="-1"
+		max="23"
+		step="1"
+		sort="down"
+		stepAcceleration="false"
+		resource="hour"
+		delimiter=":"
+	/>
+  <ui_model
+		type="SettingsValueModel"
+		name="minuteValueModel"
+		qml=""
+		valueType="time"
+		min="-1"
+		max="59"
+		step="1"
+		sort="down"
+		stepAcceleration="false"
+		resource="minute"
+	/>
 
-  <ui_model type="DateTimeSettingsModel" name="dateTimeSettingsModel" footerEnabled="true" backOnTrigger="1" delegateType="valueSelector" translations="header, footer">
-    <ui_model_item type="SettingItem" ID="TIME_ZONE" footer="ID_SETUP_TIME_ZONE" nestedModel="timezoneSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="YEAR"      footer="ID_SETUP_YEAR"      nestedModel="yearValueModel"/>
-    <ui_model_item type="SettingItem" ID="MONTH"     footer="ID_SETUP_MONTH"     nestedModel="monthValueModel"/>
-    <ui_model_item type="SettingItem" ID="DAY"       footer="ID_SETUP_DAY"       nestedModel="dayValueModel"/>
-    <ui_model_item type="SettingItem" ID="HOUR"      footer="ID_SETUP_HOUR"      nestedModel="hourValueModel"/>
-    <ui_model_item type="SettingItem" ID="MINUTE"    footer="ID_SETUP_MINUTE"    nestedModel="minuteValueModel"/>
+  <ui_model
+		type="DateTimeSettingsModel"
+		name="dateTimeSettingsModel"
+		footerEnabled="true"
+		backOnTrigger="1"
+		delegateType="valueSelector"
+		translations="header, footer"
+	>
+    <ui_model_item type="SettingItem" ID="TIME_ZONE" footer="ID_SETUP_TIME_ZONE" nestedModel="timezoneSettingsModel" />
+    <ui_model_item type="SettingItem" ID="YEAR" footer="ID_SETUP_YEAR" nestedModel="yearValueModel" />
+    <ui_model_item type="SettingItem" ID="MONTH" footer="ID_SETUP_MONTH" nestedModel="monthValueModel" />
+    <ui_model_item type="SettingItem" ID="DAY" footer="ID_SETUP_DAY" nestedModel="dayValueModel" />
+    <ui_model_item type="SettingItem" ID="HOUR" footer="ID_SETUP_HOUR" nestedModel="hourValueModel" />
+    <ui_model_item type="SettingItem" ID="MINUTE" footer="ID_SETUP_MINUTE" nestedModel="minuteValueModel" />
   </ui_model>
 
   <ui_model type="DateFormatSettingsModel" name="dateFormatSettingsModel" qml="" translations="header, values">
-    <ui_model_item type="SettingItem" ID="YYYY-MM-DD" value="ID_YYYY-MM-DD"/>
-    <ui_model_item type="SettingItem" ID="YY-MM-DD"   value="ID_YY-MM-DD"/>
-    <ui_model_item type="SettingItem" ID="MM/DD/YYYY" value="ID_MM/DD/YYYY"/>
-    <ui_model_item type="SettingItem" ID="MM/DD/YY"   value="ID_MM/DD/YY"/>
-    <ui_model_item type="SettingItem" ID="DD/MM/YYYY" value="ID_DD/MM/YYYY"/>
-    <ui_model_item type="SettingItem" ID="DD/MM/YY"   value="ID_DD/MM/YY"/>
+    <ui_model_item type="SettingItem" ID="YYYY-MM-DD" value="ID_YYYY-MM-DD" />
+    <ui_model_item type="SettingItem" ID="YY-MM-DD" value="ID_YY-MM-DD" />
+    <ui_model_item type="SettingItem" ID="MM/DD/YYYY" value="ID_MM/DD/YYYY" />
+    <ui_model_item type="SettingItem" ID="MM/DD/YY" value="ID_MM/DD/YY" />
+    <ui_model_item type="SettingItem" ID="DD/MM/YYYY" value="ID_DD/MM/YYYY" />
+    <ui_model_item type="SettingItem" ID="DD/MM/YY" value="ID_DD/MM/YY" />
   </ui_model>
 
   <ui_model type="TimeFormatSettingsModel" name="timeFormatSettingsModel" qml="" translations="header, values">
-    <ui_model_item type="SettingItem" ID="24h"   value="ID_24H"/>
-    <ui_model_item type="SettingItem" ID="AM/PM" value="ID_12H"/>
+    <ui_model_item type="SettingItem" ID="24h" value="ID_24H" />
+    <ui_model_item type="SettingItem" ID="AM/PM" value="ID_12H" />
   </ui_model>
 
-  <ui_model type="DateTimeFormatSettingsModel" name="dateTimeFormatSettingsModel" footerEnabled="true" backOnTrigger="1" delegateType="valueSelector" translations="header, footer">
-    <ui_model_item type="SettingItem" ID="DATE_FORMAT" footer="ID_SETUP_DATE_FORMAT" nestedModel="dateFormatSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="TIME_FORMAT" footer="ID_SETUP_TIME_FORMAT" nestedModel="timeFormatSettingsModel"/>
+  <ui_model
+		type="DateTimeFormatSettingsModel"
+		name="dateTimeFormatSettingsModel"
+		footerEnabled="true"
+		backOnTrigger="1"
+		delegateType="valueSelector"
+		translations="header, footer"
+	>
+    <ui_model_item
+			type="SettingItem"
+			ID="DATE_FORMAT"
+			footer="ID_SETUP_DATE_FORMAT"
+			nestedModel="dateFormatSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="TIME_FORMAT"
+			footer="ID_SETUP_TIME_FORMAT"
+			nestedModel="timeFormatSettingsModel"
+		/>
   </ui_model>
 
   <ui_model type="RegionAndTimeSettingsModel" name="regionAndTimeSettingsModel">
-    <ui_model_item type="SettingItem" ID="LANGUAGE"             label="ID_SETUP_LANGUAGE"             nextModel="languageSettingsModel"       translations="label"/>
-    <ui_model_item type="SettingItem" ID="TEMPERATURE_UNIT"     label="ID_SETUP_TEMPERATURE_UNIT"     nextModel="temperatureUnitSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="DISTANCE_UNIT"        label="ID_SETUP_DISTANCE_UNIT"        nextModel="distanceUnitSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="DATE_AND_TIME"        label="ID_SETUP_DATE_AND_TIME"        nextModel="dateTimeSettingsModel"       translations="label"/>
-    <ui_model_item type="SettingItem" ID="DATE_AND_TIME_FORMAT" label="ID_SETUP_DATE_AND_TIME_FORMAT" nextModel="dateTimeFormatSettingsModel" translations="label, value"/>
+    <ui_model_item
+			type="SettingItem"
+			ID="LANGUAGE"
+			label="ID_SETUP_LANGUAGE"
+			nextModel="languageSettingsModel"
+			translations="label"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="TEMPERATURE_UNIT"
+			label="ID_SETUP_TEMPERATURE_UNIT"
+			nextModel="temperatureUnitSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="DISTANCE_UNIT"
+			label="ID_SETUP_DISTANCE_UNIT"
+			nextModel="distanceUnitSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="DATE_AND_TIME"
+			label="ID_SETUP_DATE_AND_TIME"
+			nextModel="dateTimeSettingsModel"
+			translations="label"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="DATE_AND_TIME_FORMAT"
+			label="ID_SETUP_DATE_AND_TIME_FORMAT"
+			nextModel="dateTimeFormatSettingsModel"
+			translations="label, value"
+		/>
   </ui_model>
 
   <ui_model type="ResetSettingsModel" name="resetSettingsModel">
-    <ui_model_item type="SettingItem" ID="RESTORE_PARAMS"    label="ID_SETUP_RESTORE_CAMERA_MODE"/>
-    <ui_model_item type="SettingItem" ID="RESET_DEFAULTS"    label="ID_SETUP_RESET_FACTORY_DEFAULT"/>
-    <ui_model_item type="SettingItem" ID="DELETE_ALL_IMAGES" label="ID_SETUP_DELETE_ALL_IMAGES"/>
+    <ui_model_item type="SettingItem" ID="RESTORE_PARAMS" label="ID_SETUP_RESTORE_CAMERA_MODE" />
+    <ui_model_item type="SettingItem" ID="RESET_DEFAULTS" label="ID_SETUP_RESET_FACTORY_DEFAULT" />
+    <ui_model_item type="SettingItem" ID="DELETE_ALL_IMAGES" label="ID_SETUP_DELETE_ALL_IMAGES" />
   </ui_model>
 
   <ui_model type="RetailModeSettingsModel" name="retailModeSettingsModel" backOnTrigger="1" delegateType="radioGroup">
-    <ui_model_item type="SettingItem" ID="OFF"        label="ID_RETAIL_OFF"                     radio="true"/>
-    <ui_model_item type="SettingItem" ID="ELECTRICAL" label="ID_RETAIL_ELECTRICAL_APPLICATIONS" radio="true"/>
-    <ui_model_item type="SettingItem" ID="BUILDING"   label="ID_RETAIL_BUILDING_APPLICATIONS"   radio="true"/>
+    <ui_model_item type="SettingItem" ID="OFF" label="ID_RETAIL_OFF" radio="true" />
+    <ui_model_item type="SettingItem" ID="ELECTRICAL" label="ID_RETAIL_ELECTRICAL_APPLICATIONS" radio="true" />
+    <ui_model_item type="SettingItem" ID="BUILDING" label="ID_RETAIL_BUILDING_APPLICATIONS" radio="true" />
   </ui_model>
 
-  <ui_model type="USBModeSettingsModel" name="usbModeSettingsModel" backOnTrigger="1" delegateType="radioGroup" translations="header">
-    <ui_model_item type="SettingItem" ID="MSD"           label="MSD"                radio="true"/>
-    <ui_model_item type="SettingItem" ID="UVC"           label="UVC"                radio="true"/>
-    <ui_model_item type="SettingItem" ID="RNDIS"         label="RNDIS"              radio="true"/>
-    <ui_model_item type="SettingItem" ID="RNDIS_UVC"     label="RNDIS and UVC"      radio="true"/>
-    <ui_model_item type="SettingItem" ID="RNDIS_MSD"     label="RNDIS and MSD"      radio="true"/>
-    <ui_model_item type="SettingItem" ID="UVC_MSD"       label="UVC and MSD"        radio="true"/>
-    <ui_model_item type="SettingItem" ID="RNDIS_UVC_MSD" label="RNDIS, UVC and MSD" radio="true"/>
+  <ui_model
+		type="USBModeSettingsModel"
+		name="usbModeSettingsModel"
+		backOnTrigger="1"
+		delegateType="radioGroup"
+		translations="header"
+	>
+    <ui_model_item type="SettingItem" ID="MSD" label="MSD" radio="true" />
+    <ui_model_item type="SettingItem" ID="UVC" label="UVC" radio="true" />
+    <ui_model_item type="SettingItem" ID="RNDIS" label="RNDIS" radio="true" />
+    <ui_model_item type="SettingItem" ID="RNDIS_UVC" label="RNDIS and UVC" radio="true" />
+    <ui_model_item type="SettingItem" ID="RNDIS_MSD" label="RNDIS and MSD" radio="true" />
+    <ui_model_item type="SettingItem" ID="UVC_MSD" label="UVC and MSD" radio="true" />
+    <ui_model_item type="SettingItem" ID="RNDIS_UVC_MSD" label="RNDIS, UVC and MSD" radio="true" />
   </ui_model>
 
-  <ui_model type="VersionSettingsModel" name="versionSettingsModel" delegateType="nameValue" translations="header"/>
+  <ui_model type="VersionSettingsModel" name="versionSettingsModel" delegateType="nameValue" translations="header" />
 
-  <ui_model type="HiddenServiceSettingsModel" name="hiddenServiceSettingsModel" header="Product Service" translations="labels">
-    <ui_model_item type="SettingItem" ID="USB_MODE"        label="ID_SETUP_USB_MODE"     nextModel="usbModeSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="EXPORT_INFO"     label="ID_SETUP_EXPORT_INFO"/>
-    <ui_model_item type="SettingItem" ID="VERSION_INFO"    label="ID_SETUP_VERSION_INFO" nextModel="versionSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="LAST_CALIBRATED" label="ID_SETUP_LAST_CALIBRATED" value="*"/>
+  <ui_model
+		type="HiddenServiceSettingsModel"
+		name="hiddenServiceSettingsModel"
+		header="Product Service"
+		translations="labels"
+	>
+    <ui_model_item type="SettingItem" ID="USB_MODE" label="ID_SETUP_USB_MODE" nextModel="usbModeSettingsModel" />
+    <ui_model_item type="SettingItem" ID="EXPORT_INFO" label="ID_SETUP_EXPORT_INFO" />
+    <ui_model_item
+			type="SettingItem"
+			ID="VERSION_INFO"
+			label="ID_SETUP_VERSION_INFO"
+			nextModel="versionSettingsModel"
+		/>
+    <ui_model_item type="SettingItem" ID="LAST_CALIBRATED" label="ID_SETUP_LAST_CALIBRATED" value="*" />
   </ui_model>
 
-  <ui_model type="CertificatesSettingsModel" name="certificatesSettingsModel" backOnTrigger="1" delegateType="mixed" >
-    <ui_model_item type="SettingItem" ID="MODEL_NAME" label="Model: FLIR-E6390"           itemType="default" />
-    <ui_model_item type="SettingItem" ID="IC_TEXT"    label="IC: 5306A-FLIRE6390"         itemType="default" />
-    <ui_model_item type="SettingItem" ID="MIC_ICON"   label=""                            itemType="icon"     leftIcon="Regulatory_MIC_Astra"/>
-    <ui_model_item type="SettingItem" ID="MIC_TEXT"   label="Japan: 5GHz indoor use only" itemType="default" />
-    <ui_model_item type="SettingItem" ID="FCC_TEXT"   label="FCC ID: ZLV-FLIRE6390"       itemType="default" />
-    <ui_model_item type="SettingItem" ID="FCC_ICON"   label=""                            itemType="icon"     leftIcon="fcc" />
+  <ui_model type="CertificatesSettingsModel" name="certificatesSettingsModel" backOnTrigger="1" delegateType="mixed">
+    <ui_model_item type="SettingItem" ID="MODEL_NAME" label="Model: FLIR-E6390" itemType="default" />
+    <ui_model_item type="SettingItem" ID="IC_TEXT" label="IC: 5306A-FLIRE6390" itemType="default" />
+    <ui_model_item type="SettingItem" ID="MIC_ICON" label="" itemType="icon" leftIcon="Regulatory_MIC_Astra" />
+    <ui_model_item type="SettingItem" ID="MIC_TEXT" label="Japan: 5GHz indoor use only" itemType="default" />
+    <ui_model_item type="SettingItem" ID="FCC_TEXT" label="FCC ID: ZLV-FLIRE6390" itemType="default" />
+    <ui_model_item type="SettingItem" ID="FCC_ICON" label="" itemType="icon" leftIcon="fcc" />
   </ui_model>
   
-  <ui_model type="CameraInfoSettingsModel" name="cameraInfoSettingsModel" delegateType="nameValue" translations="header, labels">
-    <ui_model_item type="SettingItem" ID="MODEL"    label="ID_SETUP_MODEL"    value="*" hiddenModel="hiddenServiceSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="SERIAL"   label="ID_SETUP_SERIAL"   value="*" hiddenModel="hiddenServiceSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="PART"     label="ID_SETUP_PART"     value="*" hiddenModel="hiddenServiceSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="SOFTWARE" label="ID_SETUP_SOFTWARE" value="*" hiddenModel="hiddenServiceSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="STORAGE"  label="ID_SETUP_STORAGE"  value="*" hiddenModel="hiddenServiceSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="FOV"      label="ID_SETUP_LENS"     value="*" hiddenModel="hiddenServiceSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="POWER"    label="ID_SETUP_POWER"    value="*" hiddenModel="hiddenServiceSettingsModel"/>
+  <ui_model
+		type="CameraInfoSettingsModel"
+		name="cameraInfoSettingsModel"
+		delegateType="nameValue"
+		translations="header, labels"
+	>
+    <ui_model_item
+			type="SettingItem"
+			ID="MODEL"
+			label="ID_SETUP_MODEL"
+			value="*"
+			hiddenModel="hiddenServiceSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="SERIAL"
+			label="ID_SETUP_SERIAL"
+			value="*"
+			hiddenModel="hiddenServiceSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="PART"
+			label="ID_SETUP_PART"
+			value="*"
+			hiddenModel="hiddenServiceSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="SOFTWARE"
+			label="ID_SETUP_SOFTWARE"
+			value="*"
+			hiddenModel="hiddenServiceSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="STORAGE"
+			label="ID_SETUP_STORAGE"
+			value="*"
+			hiddenModel="hiddenServiceSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="FOV"
+			label="ID_SETUP_LENS"
+			value="*"
+			hiddenModel="hiddenServiceSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="POWER"
+			label="ID_SETUP_POWER"
+			value="*"
+			hiddenModel="hiddenServiceSettingsModel"
+		/>
     <!--<ui_model_item type="SettingItem" ID="CAMERA_REGISTRATION"                label="ID_SETUP_CAMERA_REGISTRATION"/>-->
   </ui_model>
 
-  <ui_model type="SettingsHorizontalModel" name="wepChannelSettingsModel" backOnTrigger="1" delegateType="valueSelector">
-    <ui_model type="SettingsValueModel" name="wepChannelSettingsValueModel" ID="CHANNEL_NUMBER" min="1" max="12" step="1" sort="up" stepAcceleration="true" resource="static_values" translations=""/>
+  <ui_model
+		type="SettingsHorizontalModel"
+		name="wepChannelSettingsModel"
+		backOnTrigger="1"
+		delegateType="valueSelector"
+	>
+    <ui_model
+			type="SettingsValueModel"
+			name="wepChannelSettingsValueModel"
+			ID="CHANNEL_NUMBER"
+			min="1"
+			max="12"
+			step="1"
+			sort="up"
+			stepAcceleration="true"
+			resource="static_values"
+			translations=""
+		/>
   </ui_model>
 
-  <ui_model type="WifiSharePasswordSettingsModel" name="wifiSharePasswordSettingsModel" footerEnabled="true" footerIcon="Ic_GlobalDialogue_Info" footer="ID_SETUP_WIFI_GENERATE_NEW_PASSWORD_FOOTER">
-    <ui_model_item type="SettingItem" ID="GENERATE_NEW_PASSWORD" label="ID_SETUP_WIFI_GENERATE_NEW_PASSWORD"/>
+  <ui_model
+		type="WifiSharePasswordSettingsModel"
+		name="wifiSharePasswordSettingsModel"
+		footerEnabled="true"
+		footerIcon="Ic_GlobalDialogue_Info"
+		footer="ID_SETUP_WIFI_GENERATE_NEW_PASSWORD_FOOTER"
+	>
+    <ui_model_item type="SettingItem" ID="GENERATE_NEW_PASSWORD" label="ID_SETUP_WIFI_GENERATE_NEW_PASSWORD" />
   </ui_model>
 
   <ui_model type="WifiShareSettingsModel" name="wifiShareSettingsModel" translations="header, labels">
-    <ui_model_item type="SettingItem" ID="CHANNEL"  label="ID_SETUP_WIFI_CHANNEL" nextModel="wepChannelSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="WEP"      label="ID_SETUP_WIFI_WEP"      checkBox="true"/>
-    <ui_model_item type="SettingItem" ID="PASSWORD" label="ID_SETUP_WIFI_PASSWORD" visible="false" nextModel="wifiSharePasswordSettingsModel"/>
+    <ui_model_item type="SettingItem" ID="CHANNEL" label="ID_SETUP_WIFI_CHANNEL" nextModel="wepChannelSettingsModel" />
+    <ui_model_item type="SettingItem" ID="WEP" label="ID_SETUP_WIFI_WEP" checkBox="true" />
+    <ui_model_item
+			type="SettingItem"
+			ID="PASSWORD"
+			label="ID_SETUP_WIFI_PASSWORD"
+			visible="false"
+			nextModel="wifiSharePasswordSettingsModel"
+		/>
   </ui_model>
 
-  <ui_model type="WifiAddNetworkWizardSettingsModel" name="wifiAddNetworkWizardSettingsModel" header="ID_SETUP_WIFI_CONNECTION_OPTIONS_SECURITY"/>
+  <ui_model
+		type="WifiAddNetworkWizardSettingsModel"
+		name="wifiAddNetworkWizardSettingsModel"
+		header="ID_SETUP_WIFI_CONNECTION_OPTIONS_SECURITY"
+	/>
 
-  <ui_model type="WifiSecuritySettingsModel" name="wifiSecuritySettingsModel" backOnTrigger="1" delegateType="radioGroup" translations="header"/>
+  <ui_model
+		type="WifiSecuritySettingsModel"
+		name="wifiSecuritySettingsModel"
+		backOnTrigger="1"
+		delegateType="radioGroup"
+		translations="header"
+	/>
 
   <ui_model type="WifiConnectionOptionsSettingsModel" name="wifiConnectionOptionsSettingsModel" translations="labels">
-    <ui_model_item type="SettingItem" ID="FORGET_NETWORK"  label="ID_SETUP_WIFI_CONNECTION_OPTIONS_FORGET"/>
-    <ui_model_item type="SettingItem" ID="CHANGE_SSID"     label="ID_SETUP_WIFI_CONNECTION_OPTIONS_NAME"/>
-    <ui_model_item type="SettingItem" ID="CHANGE_SECURITY" label="ID_SETUP_WIFI_CONNECTION_OPTIONS_SECURITY" nextModel="wifiSecuritySettingsModel"/>
-    <ui_model_item type="SettingItem" ID="CHANGE_PASSWORD" label="ID_SETUP_WIFI_PASSWORD" value="*****"/>
+    <ui_model_item type="SettingItem" ID="FORGET_NETWORK" label="ID_SETUP_WIFI_CONNECTION_OPTIONS_FORGET" />
+    <ui_model_item type="SettingItem" ID="CHANGE_SSID" label="ID_SETUP_WIFI_CONNECTION_OPTIONS_NAME" />
+    <ui_model_item
+			type="SettingItem"
+			ID="CHANGE_SECURITY"
+			label="ID_SETUP_WIFI_CONNECTION_OPTIONS_SECURITY"
+			nextModel="wifiSecuritySettingsModel"
+		/>
+    <ui_model_item type="SettingItem" ID="CHANGE_PASSWORD" label="ID_SETUP_WIFI_PASSWORD" value="*****" />
 	<!--<ui_model_item type="SettingItem" ID="IP" label="ID_SETUP_WIFI_CONNECTION_OPTIONS_IP" value="xxx.xxx.xxx.xxx" autoHidePage="false"/>-->
   </ui_model>
 
-  <ui_model type="WifiNetworksSettingsModel" name="wifiNetworksSettingsModel" delegateType="extended" translations="header, labels">
-    <ui_model_item type="SettingItem" ID="ADD_NETWORK" label="ID_SETUP_WIFI_ADD_NETWORK" leftIcon="Ic_ImageTool_GroupImageAdd" nextModel="wifiAddNetworkWizardSettingsModel" translations="label"/>
+  <ui_model
+		type="WifiNetworksSettingsModel"
+		name="wifiNetworksSettingsModel"
+		delegateType="extended"
+		translations="header, labels"
+	>
+    <ui_model_item
+			type="SettingItem"
+			ID="ADD_NETWORK"
+			label="ID_SETUP_WIFI_ADD_NETWORK"
+			leftIcon="Ic_ImageTool_GroupImageAdd"
+			nextModel="wifiAddNetworkWizardSettingsModel"
+			translations="label"
+		/>
   </ui_model>
 
-  <ui_model type="WifiSettingsModel" name="wifiSettingsModel" footerEnabled="true" footerIcon="Ic_GlobalDialogue_Info" delegateType="extended" translations="header, labels">
-    <ui_model_item type="SettingItem" ID="OFF"              label="ID_SETUP_OFF"                     radio="true"/>
-    <ui_model_item type="SettingItem" ID="SHARE"            label="ID_SETUP_WIFI_SHARE"              radio="true"/>
-    <ui_model_item type="SettingItem" ID="SHARE_SETTINGS"   label="ID_SETUP_SETTINGS"                leftIndent="true" visible="true" nextModel="wifiShareSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="CONNECT"          label="ID_SETUP_WIFI_CONNECT_TO_NETWORK" radio="true"/>
-    <ui_model_item type="SettingItem" ID="CONNECT_SETTINGS" label="ID_SETUP_WIFI_CONNECT_TO_NETWORK_NETWORKS" leftIndent="true" visible="true" nextModel="wifiNetworksSettingsModel"/>
+  <ui_model
+		type="WifiSettingsModel"
+		name="wifiSettingsModel"
+		footerEnabled="true"
+		footerIcon="Ic_GlobalDialogue_Info"
+		delegateType="extended"
+		translations="header, labels"
+	>
+    <ui_model_item type="SettingItem" ID="OFF" label="ID_SETUP_OFF" radio="true" />
+    <ui_model_item type="SettingItem" ID="SHARE" label="ID_SETUP_WIFI_SHARE" radio="true" />
+    <ui_model_item
+			type="SettingItem"
+			ID="SHARE_SETTINGS"
+			label="ID_SETUP_SETTINGS"
+			leftIndent="true"
+			visible="true"
+			nextModel="wifiShareSettingsModel"
+		/>
+    <ui_model_item type="SettingItem" ID="CONNECT" label="ID_SETUP_WIFI_CONNECT_TO_NETWORK" radio="true" />
+    <ui_model_item
+			type="SettingItem"
+			ID="CONNECT_SETTINGS"
+			label="ID_SETUP_WIFI_CONNECT_TO_NETWORK_NETWORKS"
+			leftIndent="true"
+			visible="true"
+			nextModel="wifiNetworksSettingsModel"
+		/>
   </ui_model>
 
   <ui_model type="DeviceSettingsModel" name="deviceSettingsModel">
-    <ui_model_item type="SettingItem" ID="CAMERA_SETTINGS" label="ID_SETUP_CAMERA_SETTINGS" nextModel="cameraSettingsModel" nextQML="SettingsPage.qml" settingType="entry"/>
-    <ui_model_item type="SettingItem" ID="REGION_AND_TIME"   label="ID_SETUP_REGION_AND_TIME"   nextModel="regionAndTimeSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="WIFI"              label="ID_SETUP_WIFI"              nextModel="wifiSettingsModel" caps=".services.caps.config.wlan.enabled"/>
-    <ui_model_item type="SettingItem" ID="RESET_AND_RESTORE" label="ID_SETUP_RESET_AND_RESTORE" nextModel="resetSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="AUTO_POWER_OFF"    label="ID_SETUP_AUTO_POWER_OFF"    nextModel="autoPowerOffSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="DISPLAY_INTENSITY" label="ID_SETUP_DISPLAY_INTENSITY" nextModel="displayIntensitySettingsModel"/>
-    <ui_model_item type="SettingItem" ID="RETAIL_MODE"       label="ID_SETUP_RETAIL_MODE"       nextModel="retailModeSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="CAMERA_INFO"       label="ID_SETUP_CAMERA_INFO"       nextModel="cameraInfoSettingsModel"/>
-    <ui_model_item type="SettingItem" ID="CERTIFICATES"      label="ID_SETUP_CERTIFICATES"      nextModel="certificatesSettingsModel" caps=".services.caps.config.wlan.enabled"/>
+    <ui_model_item
+			type="SettingItem"
+			ID="CAMERA_SETTINGS"
+			label="ID_SETUP_CAMERA_SETTINGS"
+			nextModel="cameraSettingsModel"
+			nextQML="SettingsPage.qml"
+			settingType="entry"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="REGION_AND_TIME"
+			label="ID_SETUP_REGION_AND_TIME"
+			nextModel="regionAndTimeSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="WIFI"
+			label="ID_SETUP_WIFI"
+			nextModel="wifiSettingsModel"
+			caps=".services.caps.config.wlan.enabled"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="RESET_AND_RESTORE"
+			label="ID_SETUP_RESET_AND_RESTORE"
+			nextModel="resetSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="AUTO_POWER_OFF"
+			label="ID_SETUP_AUTO_POWER_OFF"
+			nextModel="autoPowerOffSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="DISPLAY_INTENSITY"
+			label="ID_SETUP_DISPLAY_INTENSITY"
+			nextModel="displayIntensitySettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="RETAIL_MODE"
+			label="ID_SETUP_RETAIL_MODE"
+			nextModel="retailModeSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="CAMERA_INFO"
+			label="ID_SETUP_CAMERA_INFO"
+			nextModel="cameraInfoSettingsModel"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="CERTIFICATES"
+			label="ID_SETUP_CERTIFICATES"
+			nextModel="certificatesSettingsModel"
+			caps=".services.caps.config.wlan.enabled"
+		/>
   </ui_model>
 
   <ui_model type="MainSettingsModel" name="mainSettingsModel" header="ID_SETUP_SETTINGS" delegateType="extended">
-    <ui_model_item type="SettingItem" ID="MEASUREMENT_PARAMS" label="ID_SETUP_MEASURE_PARAMS"  nextModel="measureParamsModel"  leftIcon="Ic_Options_Parameters"/>
-    <ui_model_item type="SettingItem" ID="SAVE_SETTINGS"      label="ID_SETUP_SAVE_SETTINGS"   nextModel="saveSettingsModel"   leftIcon="Ic_Global_Save"/>
-    <ui_model_item type="SettingItem" ID="DEVICE_SETTINGS"    label="ID_SETUP_DEVICE_SETTINGS" nextModel="deviceSettingsModel" leftIcon="Ic_Options_DeviceSettings"/>
-	<ui_model_item type="SettingItem" ID="PROGRAMMABLE_BUTTON"  label="ID_SETUP_PROGRAMMABLE_BUTTON" nextModel="programmableButtonSettingsModel" nextQML="SettingsPage.qml" settingType="entry" leftIcon="Ic_Options_ProgrammableButton"/>
+    <ui_model_item
+			type="SettingItem"
+			ID="MEASUREMENT_PARAMS"
+			label="ID_SETUP_MEASURE_PARAMS"
+			nextModel="measureParamsModel"
+			leftIcon="Ic_Options_Parameters"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="SAVE_SETTINGS"
+			label="ID_SETUP_SAVE_SETTINGS"
+			nextModel="saveSettingsModel"
+			leftIcon="Ic_Global_Save"
+		/>
+    <ui_model_item
+			type="SettingItem"
+			ID="DEVICE_SETTINGS"
+			label="ID_SETUP_DEVICE_SETTINGS"
+			nextModel="deviceSettingsModel"
+			leftIcon="Ic_Options_DeviceSettings"
+		/>
+	<ui_model_item
+			type="SettingItem"
+			ID="PROGRAMMABLE_BUTTON"
+			label="ID_SETUP_PROGRAMMABLE_BUTTON"
+			nextModel="programmableButtonSettingsModel"
+			nextQML="SettingsPage.qml"
+			settingType="entry"
+			leftIcon="Ic_Options_ProgrammableButton"
+		/>
   </ui_model>
 
   <ui_model type="ListSpinnerGroupModel" name="verificationCodeModel">
-    <ui_model_item type="ListSpinnerModel" graphemes="[0,9]" shouldWrap="true"/>
-    <ui_model_item type="ListSpinnerModel" graphemes="[0,9]" shouldWrap="true"/>
-    <ui_model_item type="ListSpinnerModel" graphemes="[0,9]" shouldWrap="true"/>
-    <ui_model_item type="ListSpinnerModel" graphemes="[0,9]" shouldWrap="true"/>
+    <ui_model_item type="ListSpinnerModel" graphemes="[0,9]" shouldWrap="true" />
+    <ui_model_item type="ListSpinnerModel" graphemes="[0,9]" shouldWrap="true" />
+    <ui_model_item type="ListSpinnerModel" graphemes="[0,9]" shouldWrap="true" />
+    <ui_model_item type="ListSpinnerModel" graphemes="[0,9]" shouldWrap="true" />
   </ui_model>
 
   <!--Camera registration wizard models-->
-  <ui_model type="RegistrationWizardModel" name="registrationWizardModel" staticHeader="true" title="CAMERA_REGISTRATION_TITLE">
-    <ui_model_item type="WizardPage" index="0"  tab="ID_REGISTRATION_TAB_INFO"     left="false" right="true"  rightLabel="ID_REGISTRATION_INFO_NEXTBTN_OVERRIDE" skip="true" skipLabel="ID_REGISTRATION_INFO_SKIPBTN_OVERRIDE" title="ID_REGISTRATION_INFO_TITLE_OVERRIDE"  label="ID_REGISTRATION_INFO"     qml="CameraRegistration/Information.qml"     isList="false" opaque="FullOpacity" />
-    <ui_model_item type="WizardPage" index="1"  tab="ID_REGISTRATION_TAB_SERIAL"   left="true"  right="true"  skip="false" label="ID_REGISTRATION_SERIAL"   qml="CameraRegistration/SerialNumber.qml"     isList="false" opaque="FullOpacity" />
-    <ui_model_item type="WizardPage" index="2"  tab="ID_REGISTRATION_TAB_CODE_INFO"     left="true"  right="true"  skip="false" label="ID_REGISTRATION_CODE_INFO" qml="CameraRegistration/VerificationCodeInfo.qml" opaque="FullOpacity" />
-    <ui_model_item type="WizardPage" index="3"  tab="ID_REGISTRATION_TAB_CODE"     left="true"  right="true"  rightLabel="ID_REGISTRATION_CODE_NEXTBTN_OVERRIDE" skip="false" isList="true" delayNext="2000" label="ID_REGISTRATION_CODE" pageModel="verificationCodeModel" qml="CameraRegistration/VerificationCode.qml" opaque="FullOpacity" />
-    <ui_model_item type="WizardPage" index="4"  tab="ID_REGISTRATION_TAB_THANKYOU" left="false" right="false" skip="true"  isList="true" label="ID_REGISTRATION_THANKYOU" qml="CameraRegistration/Thankyou.qml"         lastPage="true" opaque="FullOpacity" />
+  <ui_model
+		type="RegistrationWizardModel"
+		name="registrationWizardModel"
+		staticHeader="true"
+		title="CAMERA_REGISTRATION_TITLE"
+	>
+    <ui_model_item
+			type="WizardPage"
+			index="0"
+			tab="ID_REGISTRATION_TAB_INFO"
+			left="false"
+			right="true"
+			rightLabel="ID_REGISTRATION_INFO_NEXTBTN_OVERRIDE"
+			skip="true"
+			skipLabel="ID_REGISTRATION_INFO_SKIPBTN_OVERRIDE"
+			title="ID_REGISTRATION_INFO_TITLE_OVERRIDE"
+			label="ID_REGISTRATION_INFO"
+			qml="CameraRegistration/Information.qml"
+			isList="false"
+			opaque="FullOpacity"
+		/>
+    <ui_model_item
+			type="WizardPage"
+			index="1"
+			tab="ID_REGISTRATION_TAB_SERIAL"
+			left="true"
+			right="true"
+			skip="false"
+			label="ID_REGISTRATION_SERIAL"
+			qml="CameraRegistration/SerialNumber.qml"
+			isList="false"
+			opaque="FullOpacity"
+		/>
+    <ui_model_item
+			type="WizardPage"
+			index="2"
+			tab="ID_REGISTRATION_TAB_CODE_INFO"
+			left="true"
+			right="true"
+			skip="false"
+			label="ID_REGISTRATION_CODE_INFO"
+			qml="CameraRegistration/VerificationCodeInfo.qml"
+			opaque="FullOpacity"
+		/>
+    <ui_model_item
+			type="WizardPage"
+			index="3"
+			tab="ID_REGISTRATION_TAB_CODE"
+			left="true"
+			right="true"
+			rightLabel="ID_REGISTRATION_CODE_NEXTBTN_OVERRIDE"
+			skip="false"
+			isList="true"
+			delayNext="2000"
+			label="ID_REGISTRATION_CODE"
+			pageModel="verificationCodeModel"
+			qml="CameraRegistration/VerificationCode.qml"
+			opaque="FullOpacity"
+		/>
+    <ui_model_item
+			type="WizardPage"
+			index="4"
+			tab="ID_REGISTRATION_TAB_THANKYOU"
+			left="false"
+			right="false"
+			skip="true"
+			isList="true"
+			label="ID_REGISTRATION_THANKYOU"
+			qml="CameraRegistration/Thankyou.qml"
+			lastPage="true"
+			opaque="FullOpacity"
+		/>
   </ui_model>
   
   <!-- QML -->
@@ -531,40 +1135,40 @@
     <!-- Global focus scope 1 -->
     <qml_element file="Desktop.qml" name="desktop">
 
-      <qml_element file="Archive/Archive.qml" name="archive"/>
-      <qml_element file="NotificationArea.qml" name="notificationArea"/>
-      <qml_element file="SavePreview.qml" name="savePreview"/>
-      <qml_element file="SettingsView.qml" name="settingsView"/>
+      <qml_element file="Archive/Archive.qml" name="archive" />
+      <qml_element file="NotificationArea.qml" name="notificationArea" />
+      <qml_element file="SavePreview.qml" name="savePreview" />
+      <qml_element file="SettingsView.qml" name="settingsView" />
 
     </qml_element>
     <!-- Global focus scope 2 -->
-    <qml_element file="MessageSpinner.qml" name="globalMessageSpinner"/>
-    <qml_element file="TextTablesTemplatesArea.qml" name="textTablesTemplatesArea"/>
-    <qml_element file="TextTablesLabelValueArea.qml" name="textTablesLabelValueArea"/>
+    <qml_element file="MessageSpinner.qml" name="globalMessageSpinner" />
+    <qml_element file="TextTablesTemplatesArea.qml" name="textTablesTemplatesArea" />
+    <qml_element file="TextTablesLabelValueArea.qml" name="textTablesLabelValueArea" />
 	
     <!-- Global focus scope 3 -->
     <!-- Set up the soft keyboard and connect our soft keyboard data model/controller to the qml. -->
-    <qml_element file="SoftKeyboardPage.qml" name="globalKeyboard" model="softKeyboardModel"/>
+    <qml_element file="SoftKeyboardPage.qml" name="globalKeyboard" model="softKeyboardModel" />
 
     <!-- Add the toolbars at the end, on top of everything else. -->
-    <qml_element file="Toolbar/ToolBars.qml" name="globalToolbars"/>
-    <qml_element file="GlobalMessageBox.qml" name="globalMessageBox"/>
-    <qml_element file="CameraUpdatePage.qml" name="cameraUpdatePage"/>
+    <qml_element file="Toolbar/ToolBars.qml" name="globalToolbars" />
+    <qml_element file="GlobalMessageBox.qml" name="globalMessageBox" />
+    <qml_element file="CameraUpdatePage.qml" name="cameraUpdatePage" />
 
   </qml_element>
 
-  <qml_element file="RetailDemoView.qml" name="retailDemo" view="retailDemoView" context="retailModeModel"/>
+  <qml_element file="RetailDemoView.qml" name="retailDemo" view="retailDemoView" context="retailModeModel" />
 
   <!-- States -->
 
   <ui_statemachine type="QStateMachine" name="mainStateMachine" mainStateMachine="1">
     <ui_state type="QState" name="irState" initialState="1">
-      <ui_state type="QState" name="defaultState" initialState="1"/>
-      <ui_state type="QState" name="mediaControlState"/>
+      <ui_state type="QState" name="defaultState" initialState="1" />
+      <ui_state type="QState" name="mediaControlState" />
     </ui_state>
     
-    <ui_state type="QState" name="wizardState"/>
-    <ui_state type="QState" name="archiveState"/>
+    <ui_state type="QState" name="wizardState" />
+    <ui_state type="QState" name="archiveState" />
 	<ui_state type="QState" name="promptState" />
     <ui_state type="QState" name="optionsState">
     </ui_state>
@@ -573,134 +1177,217 @@
   <!-- Transitions -->
 
 
-  <ui_transition type="SignalTransition" state="irState" sender="registrationWizardModel"
-                 signal="enterWizardState()" target="wizardState"/>
-  <ui_transition type="SignalTransition" state="wizardState" sender="registrationWizardModel"
-                 signal="exitWizardState()" target="irState"/>
+  <ui_transition
+		type="SignalTransition"
+		state="irState"
+		sender="registrationWizardModel"
+		signal="enterWizardState()"
+		target="wizardState"
+	/>
+  <ui_transition
+		type="SignalTransition"
+		state="wizardState"
+		sender="registrationWizardModel"
+		signal="exitWizardState()"
+		target="irState"
+	/>
 
-  <ui_transition type="SignalTransition" state="irState" sender="interface"
-                 signal="enterArchiveState()" target="archiveState"/>
-  <ui_transition type="SignalTransition" state="archiveState" sender="interface"
-                 signal="enterLiveState()" target="irState"/>
+  <ui_transition
+		type="SignalTransition"
+		state="irState"
+		sender="interface"
+		signal="enterArchiveState()"
+		target="archiveState"
+	/>
+  <ui_transition
+		type="SignalTransition"
+		state="archiveState"
+		sender="interface"
+		signal="enterLiveState()"
+		target="irState"
+	/>
 
-  <ui_transition type="SignalTransition" state="defaultState" sender="desktop"
-                 signal="triggerActionRequest()" target="mediaControlState"/>
-  <ui_transition type="SignalTransition" state="mediaControlState" sender="desktop"
-                 signal="triggerActionRequest()" target="mediaControlState"/>
-  <ui_transition type="SignalTransition" state="mediaControlState" sender="mediaControlObject"
-                 signal="mediaControlStateReleased()" target="defaultState"/>
+  <ui_transition
+		type="SignalTransition"
+		state="defaultState"
+		sender="desktop"
+		signal="triggerActionRequest()"
+		target="mediaControlState"
+	/>
+  <ui_transition
+		type="SignalTransition"
+		state="mediaControlState"
+		sender="desktop"
+		signal="triggerActionRequest()"
+		target="mediaControlState"
+	/>
+  <ui_transition
+		type="SignalTransition"
+		state="mediaControlState"
+		sender="mediaControlObject"
+		signal="mediaControlStateReleased()"
+		target="defaultState"
+	/>
 
-  <ui_transition type="StringSignalTransition" state="defaultState"
-                 signal="stateChangeRequestInvoked(QString)" value="optionsState" target="optionsState"/>
-  <ui_transition type="StringSignalTransition" state="optionsState"
-                 signal="stateChangeRequestInvoked(QString)" value="irState" target="irState"/>
+  <ui_transition
+		type="StringSignalTransition"
+		state="defaultState"
+		signal="stateChangeRequestInvoked(QString)"
+		value="optionsState"
+		target="optionsState"
+	/>
+  <ui_transition
+		type="StringSignalTransition"
+		state="optionsState"
+		signal="stateChangeRequestInvoked(QString)"
+		value="irState"
+		target="irState"
+	/>
 
-  <ui_transition type="SignalTransition" state="archiveState" sender="archive"
-                 signal="hideArchive()" target="irState"/>
+  <ui_transition
+		type="SignalTransition"
+		state="archiveState"
+		sender="archive"
+		signal="hideArchive()"
+		target="irState"
+	/>
 
   <!-- Handle standby -->
-  <ui_transition type="SignalTransition" state="archiveState" sender="systemObject"
-                 signal="shutdownRequested()" target="defaultState"/>
-  <ui_transition type="SignalTransition" state="optionsState" sender="systemObject"
-                 signal="shutdownRequested()" target="defaultState"/>
+  <ui_transition
+		type="SignalTransition"
+		state="archiveState"
+		sender="systemObject"
+		signal="shutdownRequested()"
+		target="defaultState"
+	/>
+  <ui_transition
+		type="SignalTransition"
+		state="optionsState"
+		sender="systemObject"
+		signal="shutdownRequested()"
+		target="defaultState"
+	/>
 
   <!-- Connections -->
 
-  <ui_connect sender="defaultState" signal="entered()"
-              receiver="interface" slot="requestDesktopFocus()"/>
-  <ui_connect sender="desktop" signal="showArchive()"
-                 receiver="interface" slot="requestArchiveState()"/>
+  <ui_connect sender="defaultState" signal="entered()" receiver="interface" slot="requestDesktopFocus()" />
+  <ui_connect sender="desktop" signal="showArchive()" receiver="interface" slot="requestArchiveState()" />
 
-  <ui_connect sender="mediaControlObject" signal="showSaveError(QVariant,QVariant)"
-              receiver="notificationArea" slot="showIconText(QVariant,QVariant)"/>
-  <ui_connect sender="mediaControlObject" signal="showSaveError(QVariant,QVariant)"
-              receiver="savePreview" slot="hide()"/>
+  <ui_connect
+		sender="mediaControlObject"
+		signal="showSaveError(QVariant,QVariant)"
+		receiver="notificationArea"
+		slot="showIconText(QVariant,QVariant)"
+	/>
+  <ui_connect
+		sender="mediaControlObject"
+		signal="showSaveError(QVariant,QVariant)"
+		receiver="savePreview"
+		slot="hide()"
+	/>
 
-  <ui_connect sender="mediaControlObject" signal="saveStart()"
-              receiver="saveObject" slot="save()"/>
-  <ui_connect sender="saveObject" signal="fileNameChanged(QVariant)"
-              receiver="mediaControlObject" slot="saveStarted(QVariant)"/>
-  <ui_connect sender="saveObject" signal="saveComplete()"
-              receiver="mediaControlObject" slot="saveComplete()"/>
-  <ui_connect sender="saveObject" signal="saveError(int)"
-              receiver="mediaControlObject" slot="saveError(int)"/>
+  <ui_connect sender="mediaControlObject" signal="saveStart()" receiver="saveObject" slot="save()" />
+  <ui_connect
+		sender="saveObject"
+		signal="fileNameChanged(QVariant)"
+		receiver="mediaControlObject"
+		slot="saveStarted(QVariant)"
+	/>
+  <ui_connect sender="saveObject" signal="saveComplete()" receiver="mediaControlObject" slot="saveComplete()" />
+  <ui_connect sender="saveObject" signal="saveError(int)" receiver="mediaControlObject" slot="saveError(int)" />
 
-  <ui_connect sender="mediaControlObject" signal="saveThumbsLoaded()"
-              receiver="savePreview" slot="show()"/>
+  <ui_connect sender="mediaControlObject" signal="saveThumbsLoaded()" receiver="savePreview" slot="show()" />
 
-  <ui_connect sender="cameraInfoSettingsModel" signal="goForCameraRegistration()"
-        receiver="desktop" slot="goForCameraRegistration()"/>
+  <ui_connect
+		sender="cameraInfoSettingsModel"
+		signal="goForCameraRegistration()"
+		receiver="desktop"
+		slot="goForCameraRegistration()"
+	/>
  
-  <ui_connect sender="desktop" signal="notifyNagMessageBox()"
-              receiver="interface" slot="showNagMessage()"/>
+  <ui_connect sender="desktop" signal="notifyNagMessageBox()" receiver="interface" slot="showNagMessage()" />
 
-  <ui_connect sender="globalMessageSpinner" signal="focusDesktopFocusGroup()"
-              receiver="desktop" slot="focusDesktopFocusGroup()"/>
+  <ui_connect
+		sender="globalMessageSpinner"
+		signal="focusDesktopFocusGroup()"
+		receiver="desktop"
+		slot="focusDesktopFocusGroup()"
+	/>
 
-  <ui_connect sender="globalKeyboard" signal="focusDesktopFocusGroup()"
-          receiver="desktop" slot="focusDesktopFocusGroup()"/>
+  <ui_connect
+		sender="globalKeyboard"
+		signal="focusDesktopFocusGroup()"
+		receiver="desktop"
+		slot="focusDesktopFocusGroup()"
+	/>
 
-  <ui_connect sender="globalKeyboard" signal="focusDesktopFocusGroup()"
-            receiver="desktop" slot="focusDesktopFocusGroup()" />
-	<ui_connect sender="textTablesTemplatesArea" signal="focusDesktopFocusGroup()"
-				receiver="desktop" slot="focusDesktopFocusGroup()" />
+  <ui_connect
+		sender="globalKeyboard"
+		signal="focusDesktopFocusGroup()"
+		receiver="desktop"
+		slot="focusDesktopFocusGroup()"
+	/>
+	<ui_connect
+		sender="textTablesTemplatesArea"
+		signal="focusDesktopFocusGroup()"
+		receiver="desktop"
+		slot="focusDesktopFocusGroup()"
+	/>
 
-  <ui_connect sender="archiveState" signal="exited()"
-              receiver="archive" slot="hide()"/>
-  <ui_connect sender="archiveState" signal="entered()"
-              receiver="archive" slot="show()"/>
-  <ui_connect sender="archiveState" signal="entered()"
-              receiver="savePreview" slot="hide()"/>
+  <ui_connect sender="archiveState" signal="exited()" receiver="archive" slot="hide()" />
+  <ui_connect sender="archiveState" signal="entered()" receiver="archive" slot="show()" />
+  <ui_connect sender="archiveState" signal="entered()" receiver="savePreview" slot="hide()" />
 
-  <ui_connect sender="interface" signal="showNotification(QVariant)"
-              receiver="notificationArea" slot="show(QVariant)"/>
-  <ui_connect sender="interface" signal="showNotification(QVariant,QVariant)"
-              receiver="notificationArea" slot="showIconText(QVariant, QVariant)"/>
-  <ui_connect sender="interface" signal="showNotification(QVariant,QVariant,QVariant)"
-              receiver="notificationArea" slot="showIconTextIcon(QVariant, QVariant,QVariant)"/>
+  <ui_connect
+		sender="interface"
+		signal="showNotification(QVariant)"
+		receiver="notificationArea"
+		slot="show(QVariant)"
+	/>
+  <ui_connect
+		sender="interface"
+		signal="showNotification(QVariant,QVariant)"
+		receiver="notificationArea"
+		slot="showIconText(QVariant, QVariant)"
+	/>
+  <ui_connect
+		sender="interface"
+		signal="showNotification(QVariant,QVariant,QVariant)"
+		receiver="notificationArea"
+		slot="showIconTextIcon(QVariant, QVariant,QVariant)"
+	/>
 
-  <ui_connect sender="interface" signal="resetMode(QVariant)"
-              receiver="notificationArea" slot="show(QVariant)"/>
+  <ui_connect sender="interface" signal="resetMode(QVariant)" receiver="notificationArea" slot="show(QVariant)" />
 
-  <ui_connect sender="defaultState" signal="entered()"
-              receiver="scaleObject" slot="enable()"/>
+  <ui_connect sender="defaultState" signal="entered()" receiver="scaleObject" slot="enable()" />
 
-  <ui_connect sender="defaultState" signal="exited()"
-              receiver="scaleObject" slot="disable()"/>
+  <ui_connect sender="defaultState" signal="exited()" receiver="scaleObject" slot="disable()" />
 
-  <ui_connect sender="defaultState" signal="entered()"
-              receiver="isothermObject" slot="enable()"/>
+  <ui_connect sender="defaultState" signal="entered()" receiver="isothermObject" slot="enable()" />
 
-  <ui_connect sender="defaultState" signal="exited()"
-              receiver="isothermObject" slot="disable()"/>
+  <ui_connect sender="defaultState" signal="exited()" receiver="isothermObject" slot="disable()" />
 
-  <ui_connect sender="mediaControlState" signal="entered()"
-              receiver="scaleObject" slot="enable()"/>
-  <ui_connect sender="mediaControlState" signal="exited()"
-              receiver="scaleObject" slot="disable()"/>
-  <ui_connect sender="mediaControlState" signal="entered()"
-              receiver="isothermObject" slot="enable()"/>
-  <ui_connect sender="mediaControlState" signal="exited()"
-              receiver="isothermObject" slot="disable()"/>
+  <ui_connect sender="mediaControlState" signal="entered()" receiver="scaleObject" slot="enable()" />
+  <ui_connect sender="mediaControlState" signal="exited()" receiver="scaleObject" slot="disable()" />
+  <ui_connect sender="mediaControlState" signal="entered()" receiver="isothermObject" slot="enable()" />
+  <ui_connect sender="mediaControlState" signal="exited()" receiver="isothermObject" slot="disable()" />
 
-  <ui_connect sender="desktop" signal="key_down(int,int)"
-              receiver="isothermObject" slot="adjust(int,int)"/>
+  <ui_connect sender="desktop" signal="key_down(int,int)" receiver="isothermObject" slot="adjust(int,int)" />
 
-  <ui_connect sender="desktop" signal="key_up(int,int)"
-              receiver="isothermObject" slot="release(int,int)"/>
+  <ui_connect sender="desktop" signal="key_up(int,int)" receiver="isothermObject" slot="release(int,int)" />
 
-  <ui_connect sender="desktop" signal="key_down(int,int)"
-              receiver="scaleObject" slot="adjust(int,int)"/>
+  <ui_connect sender="desktop" signal="key_down(int,int)" receiver="scaleObject" slot="adjust(int,int)" />
 
-  <ui_connect sender="desktop" signal="key_up(int,int)"
-              receiver="scaleObject" slot="release(int,int)"/>
+  <ui_connect sender="desktop" signal="key_up(int,int)" receiver="scaleObject" slot="release(int,int)" />
 
-  <ui_connect sender="mediaControlState" signal="entered()"
-              receiver="mediaControlObject" slot="triggerActionRequest()"/>
+  <ui_connect
+		sender="mediaControlState"
+		signal="entered()"
+		receiver="mediaControlObject"
+		slot="triggerActionRequest()"
+	/>
 
-  <ui_connect sender="desktop" signal="key_up(int,int)"
-              receiver="systemObject" slot="key_up(int,int)"/>
-  <ui_connect sender="desktop" signal="key_down(int,int)"
-              receiver="systemObject" slot="key_down(int,int)"/>
+  <ui_connect sender="desktop" signal="key_up(int,int)" receiver="systemObject" slot="key_up(int,int)" />
+  <ui_connect sender="desktop" signal="key_down(int,int)" receiver="systemObject" slot="key_down(int,int)" />
 
 </ui_config>
