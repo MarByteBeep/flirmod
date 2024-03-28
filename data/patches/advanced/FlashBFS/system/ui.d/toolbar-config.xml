@@ -138,8 +138,8 @@
 	</ToolBar>
 
 	<ToolBar name="zoomPopup">
+		<ToolBar name="imageMode_alignment" />
 		<ToolBar name="measure_global_params_menu">
-			<ToolBar name="imageMode_alignment" />
 			<ToolBar name="measure_global_params_distance" />
 			<ToolBar name="measure_global_params_emiss" />
 			<ToolBar name="measure_global_params_refl" />
