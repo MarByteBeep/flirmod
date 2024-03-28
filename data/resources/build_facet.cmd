@@ -1,1 +1,1 @@
-.\rcc.exe --format-version 1 --binary .\qresource\qrc\facet.qrc -o facet.rcc
+.\bin\rcc.exe --format-version 1 --binary .\qresource\qrc\facet.qrc -o facet.rcc
